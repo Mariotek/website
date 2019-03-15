@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Waiting from './Waiting';
 
-const Index = lazy(() => import('./site/Index'));
+import Index from './site/Index';
 // const About = lazy( () => import("./site/About") );
 // const Faq = lazy( () => import("./site/Faq") );
 // const Guide = lazy( () => import("./site/Guide") );
