@@ -173,14 +173,17 @@ html,body{
     font-weight: 900;
     text-shadow: rgba(50, 33, 82, 0.37) 0px 2px 13px;
     font-size: 3.4em;
-    -webkit-animation-name: floating;
-    animation-name: floating;
+    -webkit-animation-name: marioTekTitleFloat;
+    animation-name: marioTekTitleFloat;
     -webkit-animation-duration: 10s;
-    animation-duration: 10s;
+    animation-duration: 15s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
+    background: -webkit-linear-gradient(#5b5094, #78902f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .topTextBrand .whoAreYou {
@@ -569,7 +572,7 @@ html,body{
     }
 }
 
-@-webkit-keyframes floating {
+@-webkit-keyframes marioTekTitleFloat {
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
         transform: translate(0, 0px) rotateY(-12deg);
@@ -586,7 +589,7 @@ html,body{
         text-shadow: 10px 10px 3px rgba(0,0,0,0.15);
     }
 }
-@keyframes floating {
+@keyframes marioTekTitleFloat {
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
         transform: translate(0, 0px) rotateY(-12deg);

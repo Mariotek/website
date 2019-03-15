@@ -18,3 +18,6 @@
 - [ ] improve game physic
 - [ ] improve game UI/X
 - [ ] add some pages
+- [ ] add SSR
+- [ ] make sound sprite
+- combine all sprites together

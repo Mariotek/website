@@ -79,7 +79,9 @@ const Index = () => {
         addKeypressEvents();
     }, []);
 
-
+    /**
+     * Check if mario should fall down
+     */
     function checkMarioFallDown() {
         /**
          * Is mario on available boards
@@ -91,6 +93,57 @@ const Index = () => {
         if (!checkScoreBarHit.result && !checkGroundHit.result) {
             marioHolder.style.bottom = '85px';
         }
+    }
+
+
+    /**
+     * Change mario face
+     * @param to
+     */
+    function updateMarioChar(to = 'stand') {
+        const marioCharacter = document.getElementById('marioCharacter') || null;
+        if (marioCharacter) {
+            const context = marioCharacter.getContext('2d');
+            let frameNumber = 3;
+            switch (to) {
+                case 'stand':
+                    frameNumber = 3;
+                    break;
+                case 'jump':
+                    frameNumber = 4;
+                    break;
+                case 'seat':
+                    frameNumber = 5.03;
+                    break;
+            }
+            const spriteImage = new Image();
+            spriteImage.src = '/static/images/mario/MarioSprite2.png';
+
+            // clear and draw again
+            context.clearRect(0, 0, 52, 100);
+            context.drawImage(
+                spriteImage,
+                (frameNumber * 52),
+                0,
+                (52),
+                100,
+                0,
+                0,
+                (52),
+                100
+            );
+        }
+    }
+
+    /**
+     * Play sound based on key
+     * @param key
+     */
+    function playSound(key) {
+        const audio = document.querySelector(`audio[data-key="${key}"]`);
+        if (!audio) return;
+        audio.currentTime = 0;
+        audio.play();
     }
 
     /**
@@ -156,6 +209,9 @@ const Index = () => {
         };
     }
 
+    /**
+     * Build keypress events
+     */
     function addKeypressEvents() {
         /**
          * Manage key press
@@ -205,6 +261,9 @@ const Index = () => {
         }
     }
 
+    /**
+     * Do jump mario character
+     */
     function doJumpMario() {
         const marioHolder = document.getElementById('marioCharacterHolder') || null;
         const styleMarioChar = window.getComputedStyle(marioHolder),
@@ -233,51 +292,8 @@ const Index = () => {
 
 
     /**
-     * Change mario face
-     * @param to
+     * Do walk mario character
      */
-    function updateMarioChar(to = 'stand') {
-        const marioCharacter = document.getElementById('marioCharacter') || null;
-        if (marioCharacter) {
-            const context = marioCharacter.getContext('2d');
-            let frameNumber = 3;
-            switch (to) {
-                case 'stand':
-                    frameNumber = 3;
-                    break;
-                case 'jump':
-                    frameNumber = 4;
-                    break;
-                case 'seat':
-                    frameNumber = 5.03;
-                    break;
-            }
-            const spriteImage = new Image();
-            spriteImage.src = '/static/images/mario/MarioSprite2.png';
-
-            // clear and draw again
-            context.clearRect(0, 0, 52, 100);
-            context.drawImage(
-                spriteImage,
-                (frameNumber * 52),
-                0,
-                (52),
-                100,
-                0,
-                0,
-                (52),
-                100
-            );
-        }
-    }
-
-    function playSound(key) {
-        const audio = document.querySelector(`audio[data-key="${key}"]`);
-        if (!audio) return;
-        audio.currentTime = 0;
-        audio.play();
-    }
-
     function doWalkMario() {
         const marioHolder = document.getElementById('marioCharacterHolder') || null;
 
@@ -308,6 +324,9 @@ const Index = () => {
         waitTillWalking();
     }
 
+    /**
+     * Timeout for mario walking animation
+     */
     function waitTillWalking() {
         MARIO_WALK_TIMEOUT = setTimeout(() => {
             const now = new Date().getTime();
@@ -322,12 +341,12 @@ const Index = () => {
         <React.Fragment>
             <Sound
                 url='./static/data/audio/overworld.ogg'
-                playStatus={Sound.status.PAUSED}
+                playStatus={Sound.status.PLAYING}
                 playFromPosition={0}
                 volume={25}
                 loop={true}
             />
-            <audio data-key="jump" src='./static/data/audio/jump.ogg'></audio>
+            <audio data-key='jump' src='./static/data/audio/jump.ogg'></audio>
 
             <div className={'topLogo'}></div>
 
