@@ -1,5 +1,4 @@
 config/*
-dist/*
 node_modules
 .tmp
 .env
