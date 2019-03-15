@@ -1,0 +1,38 @@
+{
+    "extends": "adpyke-es6",
+    "parser": "babel-eslint",
+    "globals": {
+        "TorfeSystem": true
+    },
+    "rules": {
+        "no-empty-function": [
+            "error",
+            {
+                "allow": [
+                    "arrowFunctions"
+                ]
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "MemberExpression": 1
+            }
+        ],
+        "space-before-function-paren":[
+            "error" , {
+                "anonymous": "never",
+                "named": "never",
+                "asyncArrow": "never"
+            }
+        ],
+        "space-before-blocks":"off",
+        "key-spacing": [
+            "error" , {
+                "align": "colon"
+            }
+        ]
+    }
+}
