@@ -170,6 +170,7 @@ html,body{
 }
 
 .topTextBrand h1{
+    margin-top: 0 !important;
     font-weight: 900;
     text-shadow: rgba(50, 33, 82, 0.37) 0px 2px 13px;
     font-size: 3.4em;
@@ -218,13 +219,14 @@ html,body{
     color: #093510;
 }
 
-.topLogo{
-    position: fixed;
-    top:10px;
-    left:50%;
-    color:rgba(255,255,255,0.7);
-    transform: translate(50%,50%);
-    transition: all ease-in-out 1s;
+.topLogo svg{
+    width: 280px;
+    height: 280px;
+    margin-top: -13%;
+}
+
+.topLogo svg path{
+    fill:url('#logoSvgGrad') !important
 }
 
 .marioTek_container{
@@ -505,6 +507,73 @@ html,body{
 }
 
 
+.gameSettingsBtn{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background: rgba(255,255,255,0.9);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 21px;
+    padding: 10px 13px;
+    cursor: pointer;
+    color: #444;
+    box-shadow:none;
+    transition: background ease-in-out 0.3s,color ease-in-out 0.3s,box-shadow ease-in-out 0.3s;
+}
+.gameSettingsBtn:hover{
+    background: rgba(255,255,255,1);
+    color:#000;
+    box-shadow:0 0 40px -3px rgba(0,0,0,0.6);
+}
+
+#gameSettingMenu {
+    position: absolute;
+    width: 220px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 8px;
+    left: 18px;
+    bottom: 57px;
+    z-index: 222;
+}
+
+#gameSettingMenu ul {list-style-type: none;padding: 0;margin: 0;}
+
+#gameSettingMenu ul li{
+    padding: 8px 15px;
+    font-family: 'BYekan','B Yekan', BYekan , tahoma , sans-serif;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#gameSettingMenu ul li:last-child{border-bottom:none}
+#gameSettingMenu ul li > span{
+    float: left;
+    width: 23px;
+    height: 14px;
+    border: 1px solid #e6dddd70;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    position: relative;
+    top: 1px;
+    left: -5px;
+}
+
+#gameSettingMenu ul li > span.active{
+    background: #5ce759 !important;
+}
+
+#gameSettingMenu ul li > span.active::before{
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    top: 2px;
+    font-size: 11px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
 
 .animated {
     -webkit-animation-duration: 1s;

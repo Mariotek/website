@@ -170,6 +170,7 @@ html,body{
 }
 
 .topTextBrand h1{
+    margin-top: 0 !important;
     font-weight: 900;
     text-shadow: rgba(50, 33, 82, 0.37) 0px 2px 13px;
     font-size: 3.4em;
@@ -218,13 +219,14 @@ html,body{
     color: #093510;
 }
 
-.topLogo{
-    position: fixed;
-    top:10px;
-    left:50%;
-    color:rgba(255,255,255,0.7);
-    transform: translate(50%,50%);
-    transition: all ease-in-out 1s;
+.topLogo svg{
+    width: 280px;
+    height: 280px;
+    margin-top: -13%;
+}
+
+.topLogo svg path{
+    fill:url('#logoSvgGrad') !important
 }
 
 .marioTek_container{
@@ -504,6 +506,27 @@ html,body{
     transform-origin: center bottom;
 }
 
+
+.gameSettings{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background: rgba(255,255,255,0.9);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 21px;
+    padding: 10px 13px;
+    cursor: pointer;
+    color: #444;
+    box-shadow:none;
+    transition: background ease-in-out 0.3s,color ease-in-out 0.3s,box-shadow ease-in-out 0.3s;
+}
+.gameSettings:hover{
+    background: rgba(255,255,255,1);
+    color:#000;
+    box-shadow:0 0 40px -3px rgba(0,0,0,0.6);
+}
 
 
 .animated {

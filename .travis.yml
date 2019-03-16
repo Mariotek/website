@@ -8,3 +8,9 @@ install:
 
 script:
   - npm test
+
+deploy:
+  provider: surge
+  project: ./dist/
+  domain: outgoing-school.surge.sh
+  all_branches: true
