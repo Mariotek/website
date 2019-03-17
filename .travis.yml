@@ -13,6 +13,6 @@ script:
 deploy:
   provider: surge
   project: /dist/
-  domain: outgoing-school.surge.sh
+  domain: mariotek.ir
   skip_cleanup: true
   
