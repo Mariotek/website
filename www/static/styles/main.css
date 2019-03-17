@@ -575,6 +575,103 @@ html,body{
     transform: translate(-50%,0);
 }
 
+.afterGameDescription{
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+    background: url(./../images/background/alchemy.jpg) repeat;
+}
+
+.afterGameDescription::before{
+    background: linear-gradient(-45deg, transparent 16px, #ffb900 0), linear-gradient(45deg, transparent 16px, #ffb900 0);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 22px 23px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 22px;
+    position: relative;
+    top: 0;
+    left: 0px;
+    border-top: 8px solid #e0a300;
+    z-index: 999;
+}
+
+.afterGameDescription .offerText{
+    width: 500px;
+    max-width: 76%;
+    border-radius: 33px;
+    position: absolute;
+    padding: 5em 3em 4em 3em;
+    text-align: justify;
+    top: -17px;
+    left: 50%;
+    transform: translate(-50%,0);
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    line-height: 34px;
+    font-weight: 600;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-20deg, rgba(171, 42, 61, 0.98), rgba(49, 99, 128, 0.96)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 18px;
+    box-shadow: 0 9px 146px -15px rgba(0, 0, 0, 0.76);
+}
+
+.afterGameDescription svg{
+    transform: translate(-50%,-13%) rotate(180deg);
+    position: absolute;
+    left: 50%;
+    width: 144%;
+}
+
+.afterGameDescription .doPaymentBtn{background: #8fd42a;display: block;clear: both;padding: 9px 26px;position: absolute;bottom: -19px;left: 50%;transform: translate(-50%,0);border-radius: 7px;text-align: center;cursor: pointer;box-shadow: 0 7px 13px 0 rgba(0,0,0,0.1);font-family: 'B Yekan',BYekan,tahoma,sans-serif;font-size: 20px;}
+
+.afterGameDescription .doPaymentBtn i{
+    font-size: 28px;
+    position: relative;
+    left: 16px;
+    margin-right: 8px;
+    top: 3px;
+}
+
+
+.ourTeam{
+
+}
+.ourTeam .showListOfMembers{
+
+}
+.ourTeam .show3DTeamMembers{
+
+}
+.ourTeam .showListOfMembers .member {
+
+}
+.ourTeam .showListOfMembers .member h3{
+
+}
+.ourTeam .showListOfMembers .member .memberInfo{
+
+}
+.ourTeam .showListOfMembers .member .socialNetwork{
+
+}
+.ourTeam .showListOfMembers .member .socialNetwork span{
+
+}
+.ourTeam .showListOfMembers .member .socialNetwork span i{
+
+}
+
+
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
