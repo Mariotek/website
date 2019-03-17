@@ -14,5 +14,5 @@ deploy:
   provider: surge
   project: /dist/
   domain: outgoing-school.surge.sh
-  
+  skip_cleanup: true
   
