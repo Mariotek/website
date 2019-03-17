@@ -8,9 +8,11 @@ install:
 
 script:
   - npm run build
-
+  - ls
+  
 deploy:
   provider: surge
-  project: ./dist/
-  domain: outgoing-school.surge.sh
-  all_branches: true
+  project: /dist/
+  domain: mariotek.ir
+  skip_cleanup: true
+  
