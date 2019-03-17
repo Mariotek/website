@@ -1,18 +1,27 @@
 /* fallback */
 @charset "utf-8";
 
+@font-face {
+    font-family: 'SDF';
+    src: url('./../fonts/IRANSansLight.woff') format('woff'), url('./../fonts/IRANSansLight.ttf') format('truetype');
+    font-weight: 400
+}
 
+@font-face {
+    font-family: 'SDF';
+    src: url('./../fonts/IRANSansMedium.woff') format('woff'), url('./../fonts/IRANSansMedium.ttf') format('truetype');
+    font-weight: 600
+}
 
-@font-face{font-family:'SDF';src:url('./../fonts/IRANSansLight.woff') format('woff'),url('./../fonts/IRANSansLight.ttf') format('truetype');font-weight:400}
-@font-face{font-family:'SDF';src:url('./../fonts/IRANSansMedium.woff') format('woff'),url('./../fonts/IRANSansMedium.ttf') format('truetype');font-weight:600}
-@font-face{font-family:'SDF';src:url('./../fonts/IRANSansBold.woff') format('woff'),url('./../fonts/IRANSansBold.ttf') format('truetype');font-weight:800}
-
+@font-face {
+    font-family: 'SDF';
+    src: url('./../fonts/IRANSansBold.woff') format('woff'), url('./../fonts/IRANSansBold.ttf') format('truetype');
+    font-weight: 800
+}
 
 @font-face {
     font-family: 'BYekan';
-    src: url('./../fonts/BYekan.eot?#') format('eot'),  /* IE6–8 */
-    url('./../fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-    url('./../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+    src: url('./../fonts/BYekan.eot?#') format('eot'), /* IE6–8 */ url('./../fonts/BYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
 @font-face {
@@ -26,12 +35,7 @@
 @font-face {
     font-family: "PipeDream";
     src: url("./../fonts/PipeDreambyTRIFORCE89.eot"); /* IE9 Compat Modes */
-    src: url("./../fonts/PipeDreambyTRIFORCE89.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./../fonts/PipeDreambyTRIFORCE89.otf") format("opentype"), /* Open Type Font */
-    url("./../fonts/PipeDreambyTRIFORCE89.svg") format("svg"), /* Legacy iOS */
-    url("./../fonts/PipeDreambyTRIFORCE89.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./../fonts/PipeDreambyTRIFORCE89.woff") format("woff"), /* Modern Browsers */
-    url("./../fonts/PipeDreambyTRIFORCE89.woff2") format("woff2"); /* Modern Browsers */
+    src: url("./../fonts/PipeDreambyTRIFORCE89.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("./../fonts/PipeDreambyTRIFORCE89.otf") format("opentype"), /* Open Type Font */ url("./../fonts/PipeDreambyTRIFORCE89.svg") format("svg"), /* Legacy iOS */ url("./../fonts/PipeDreambyTRIFORCE89.ttf") format("truetype"), /* Safari, Android, iOS */ url("./../fonts/PipeDreambyTRIFORCE89.woff") format("woff"), /* Modern Browsers */ url("./../fonts/PipeDreambyTRIFORCE89.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
 }
@@ -52,17 +56,24 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.sdf {
+    font-family: 'SDF', SDF, tahoma, sans-serif !important;
+}
 
-.sdf{font-family:'SDF', SDF, tahoma, sans-serif !important;}
-.byekan{font-family: 'BYekan',Tahoma , sans-serif !important;}
-.bold{font-weight: bold !important;}
+.byekan {
+    font-family: 'BYekan', Tahoma, sans-serif !important;
+}
 
-body{
+.bold {
+    font-weight: bold !important;
+}
+
+body {
     background: #fff;
-    font-family: 'SDF' , sans-serif !important;
+    font-family: 'SDF', sans-serif !important;
     margin: 0;
     padding: 0;
-    direction: rtl;
+    /* direction: rtl; */
 }
 
 .mainContainer {
@@ -71,92 +82,88 @@ body{
     margin: auto 5%;
 }
 
-a, a:link{
+a, a:link {
     text-decoration: none !important;
 }
 
 .niceBackground {
-    background-image : url('/static/images/niceBackground.png') !important;
+    background-image: url('/static/images/niceBackground.png') !important;
 }
 
-.m5{
+.m5 {
     margin: 5px !important;
 }
+
 .m10 {
     margin: 10px !important;
 }
+
 .m15 {
     margin: 15px !important;
 }
 
-
-.mt5{
+.mt5 {
     margin-top: 5px !important;
 }
+
 .mt10 {
     margin-top: 10px !important;
 }
+
 .mt15 {
     margin-top: 15px !important;
 }
 
-
-.mb5{
+.mb5 {
     margin-bottom: 5px !important;
 }
+
 .mb10 {
     margin-bottom: 10px !important;
 }
+
 .mb15 {
     margin-bottom: 15px !important;
 }
 
-
-
-.mr5{
+.mr5 {
     margin-right: 5px !important;
 }
+
 .mr10 {
     margin-right: 10px !important;
 }
+
 .mr15 {
     margin-right: 15px !important;
 }
 
-
-.ml5{
+.ml5 {
     margin-left: 5px !important;
 }
+
 .ml10 {
     margin-left: 10px !important;
 }
+
 .ml15 {
     margin-left: 15px !important;
 }
 
-
-
-
-
-
-
-
-
-html,body{
+html, body {
     height: 100%;
     min-height: 100%;
     width: 100%;
 }
 
-
-.topTextBrand{
+.topTextBrand {
     border-top: 10px dashed #5252525c;
     padding: 3.5em 1em 16.5em 1em;
     text-align: center;
     position: relative;
 }
 
-.topTextBrand::before{
+.topTextBrand::before {
     background: url(./../images/background/alchemy.jpg) repeat;
     content: "";
     display: block;
@@ -169,7 +176,7 @@ html,body{
     opacity: 0.4;
 }
 
-.topTextBrand h1{
+.topTextBrand h1 {
     margin-top: 0 !important;
     font-weight: 900;
     text-shadow: rgba(50, 33, 82, 0.37) 0px 2px 13px;
@@ -185,20 +192,21 @@ html,body{
     background: -webkit-linear-gradient(#5b5094, #78902f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    prespective: 1000px;
 }
 
 .topTextBrand .whoAreYou {
     width: 567px;
-    font-family: 'BYekan',BYekan, tahoma ,sans-serif;
+    font-family: 'BYekan', BYekan, tahoma, sans-serif;
     font-size: 18px;
     padding: 25px 25px 25em 17px;
-    background: rgba(255,255,255,0.68);
+    background: rgba(255, 255, 255, 0.68);
     line-height: 32px;
     border-radius: 23px;
     box-shadow: 0 0 150px -18px rgba(41, 47, 78, 0.18);
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
 }
 
 .topTextBrand .whoAreYou p {
@@ -214,33 +222,31 @@ html,body{
     cursor: pointer;
 }
 
-
 .topTextBrand .whoAreYou #goToDown:hover {
     color: #093510;
 }
 
-.topLogo svg{
+.topLogo svg {
     width: 280px;
     height: 280px;
     margin-top: -13%;
 }
 
-.topLogo svg path{
-    fill:url('#logoSvgGrad') !important
+.topLogo svg path {
+    fill: url('#logoSvgGrad') !important
 }
 
-.marioTek_container{
+.marioTek_container {
     position: relative;
     height: 500px;
-    width:100%;
+    width: 100%;
     box-shadow: -6px -68px 144px -10px rgba(0, 0, 0, 0.32);
 }
 
-.marioTek_container svg{
+.marioTek_container svg {
     position: absolute;
     bottom: 100%;
 }
-
 
 .marioTek_container.blueGamePlay {
     background: #6686ff;
@@ -249,13 +255,14 @@ html,body{
 .marioTek_container.blueGamePlay svg .darkBackWave {
     fill: rgb(196, 206, 11) !important;
 }
-.marioTek_container.blueGamePlay svg .littleMiddleWave{
+
+.marioTek_container.blueGamePlay svg .littleMiddleWave {
     fill: rgb(230, 241, 29) !important;
 }
-.marioTek_container.blueGamePlay svg .bottomJoinerWave{
+
+.marioTek_container.blueGamePlay svg .bottomJoinerWave {
     fill: rgb(100, 132, 255) !important;
 }
-
 
 .marioTek_container.darkGamePlay {
     background: #1e1e1e;
@@ -264,96 +271,100 @@ html,body{
 .marioTek_container.darkGamePlay svg .darkBackWave {
     fill: rgb(196, 206, 11) !important;
 }
-.marioTek_container.darkGamePlay svg .littleMiddleWave{
+
+.marioTek_container.darkGamePlay svg .littleMiddleWave {
     fill: rgb(230, 241, 29) !important;
 }
-.marioTek_container.darkGamePlay svg .bottomJoinerWave{
+
+.marioTek_container.darkGamePlay svg .bottomJoinerWave {
     fill: #1e1e1e !important;
 }
 
-
-
 /* Clouds */
-.cloudsHolder{
+.cloudsHolder {
     position: relative;
     width: 100%;
 }
 
-.cloudsHolder::before{
+.cloudsHolder::before {
     content: '';
     position: absolute;
     background: url(./../images/mario/Cloud2.png) no-repeat;
     width: 214px;
     height: 159px;
-    right:20px;
-    top:30px;
+    right: 20px;
+    top: 30px;
     transform: scale(0.3);
 }
 
-.cloudsHolder::after{
+.cloudsHolder::after {
     content: '';
     position: absolute;
     background: url(./../images/mario/Cloud.png) no-repeat;
     width: 322px;
     height: 160px;
-    left:20px;
-    top:10px;
+    left: 20px;
+    top: 10px;
     transform: scale(0.3);
 
 }
 
 /* Main game play */
-.marioCharacter{
+.marioCharacter {
     position: absolute;
     left: 300px;
     bottom: 85px;
-    transition: left ease-in-out 0.02s,bottom cubic-bezier(0, 0.74, 0.24, 0.96) 0.4s;
+    transition: left ease-in-out 0.02s, bottom cubic-bezier(0, 0.74, 0.24, 0.96) 0.4s;
     z-index: 99;
 }
-.marioCharacter.toLeft{
+
+.marioCharacter.toLeft {
     transform: scale(-1, 1);
 }
+
 .marioCharacter canvas {
     display: block;
 }
 
-.scoreBar{
+.scoreBar {
     position: absolute;
     left: 360px;
     bottom: 244px;
 }
 
-.scoreBar .scoreCustom{
+.scoreBar .scoreCustom {
     height: 50px;
     width: 50px;
     position: relative;
     display: inline-block;
 }
-.scoreBar .scoreCustom::before{
+
+.scoreBar .scoreCustom::before {
     content: attr(data-letter);
     font-size: 34px;
     color: #fcff90;
     position: absolute;
     top: 8px;
     left: 12px;
-    font-family: 'PipeDream' , PipeDream , sans-serif;
+    font-family: 'PipeDream', PipeDream, sans-serif;
     text-shadow: 2px 2px 0 #333;
 }
+
 .scoreBar .scoreBrick {
     background: url(./../images/mario/Blocks/BricksPattern.png) repeat;
     height: 50px;
     width: 50px;
     display: inline-block;
 }
+
 .scoreBar .scoreQuestion {
     height: 50px;
     width: 50px;
     display: inline-block;
 }
 
-
 /* Game ground */
-.groundHolder{
+.groundHolder {
     background: url(./../images/mario/background/pattern.jpg) repeat;
     height: 85px;
     background-size: 150px 150px;
@@ -363,26 +374,27 @@ html,body{
     width: 100%;
 }
 
-.groundHolder::before{
+.groundHolder::before {
     content: '';
     background: url(./../images/mario/BackgroundMountain.png) no-repeat;
     width: 164px;
     height: 71px;
     position: absolute;
     bottom: 100%;
-    right:20%;
+    right: 20%;
     z-index: 0;
 }
-.groundHolder .wellLeft{
+
+.groundHolder .wellLeft {
     background: url(./../images/mario/Hole.png) no-repeat;
     width: 80px;
     height: 79px;
     position: absolute;
     bottom: 100%;
-    left:30px;
+    left: 30px;
 }
 
-.groundHolder .wellRight{
+.groundHolder .wellRight {
     background: url(./../images/mario/Well2.png) no-repeat;
     width: 80px;
     height: 59px;
@@ -390,16 +402,16 @@ html,body{
     bottom: 100%;
     right: 20px;
 }
-.groundHolder canvas{
+
+.groundHolder canvas {
     position: absolute;
     top: -124px;
     right: 37px;
 }
 
-
 @-webkit-keyframes marioJump {
     from,
-    0%{
+    0% {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         -webkit-transform: translate3d(0, 0, 0);
@@ -422,7 +434,7 @@ html,body{
 }
 
 @keyframes marioJump {
-    0%{
+    0% {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         -webkit-transform: translate3d(0, 0, 0);
@@ -447,7 +459,7 @@ html,body{
 
 @-webkit-keyframes marioJumpLeft {
     from,
-    0%{
+    0% {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         -webkit-transform: translate3d(0, 0, 0);
@@ -470,7 +482,7 @@ html,body{
 }
 
 @keyframes marioJumpLeft {
-    0%{
+    0% {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         -webkit-transform: scale(-1, 1) translate3d(0, 0, 0);
@@ -499,6 +511,7 @@ html,body{
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
 }
+
 .marioJump.toLeft {
     -webkit-animation-name: marioJumpLeft;
     animation-name: marioJumpLeft;
@@ -506,12 +519,11 @@ html,body{
     transform-origin: center bottom;
 }
 
-
-.gameSettingsBtn{
+.gameSettingsBtn {
     position: absolute;
     bottom: 10px;
     left: 20px;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -519,13 +531,14 @@ html,body{
     padding: 10px 13px;
     cursor: pointer;
     color: #444;
-    box-shadow:none;
-    transition: background ease-in-out 0.3s,color ease-in-out 0.3s,box-shadow ease-in-out 0.3s;
+    box-shadow: none;
+    transition: background ease-in-out 0.3s, color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
 }
-.gameSettingsBtn:hover{
-    background: rgba(255,255,255,1);
-    color:#000;
-    box-shadow:0 0 40px -3px rgba(0,0,0,0.6);
+
+.gameSettingsBtn:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+    box-shadow: 0 0 40px -3px rgba(0, 0, 0, 0.6);
 }
 
 #gameSettingMenu {
@@ -538,18 +551,25 @@ html,body{
     z-index: 222;
 }
 
-#gameSettingMenu ul {list-style-type: none;padding: 0;margin: 0;}
+#gameSettingMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-#gameSettingMenu ul li{
+#gameSettingMenu ul li {
     padding: 8px 15px;
-    font-family: 'BYekan','B Yekan', BYekan , tahoma , sans-serif;
+    font-family: 'BYekan', 'B Yekan', BYekan, tahoma, sans-serif;
     border-bottom: 1px solid #eaeaea;
     cursor: pointer;
     font-size: 14px;
 }
 
-#gameSettingMenu ul li:last-child{border-bottom:none}
-#gameSettingMenu ul li > span{
+#gameSettingMenu ul li:last-child {
+    border-bottom: none
+}
+
+#gameSettingMenu ul li > span {
     float: left;
     width: 23px;
     height: 14px;
@@ -561,28 +581,28 @@ html,body{
     left: -5px;
 }
 
-#gameSettingMenu ul li > span.active{
+#gameSettingMenu ul li > span.active {
     background: #5ce759 !important;
 }
 
-#gameSettingMenu ul li > span.active::before{
+#gameSettingMenu ul li > span.active::before {
     content: '\f00c';
     font-family: 'FontAwesome';
     top: 2px;
     font-size: 11px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
-.afterGameDescription{
+.afterGameDescription {
     overflow: hidden;
     position: relative;
-    height: 350px;
+    height: 1200px;
     background: url(./../images/background/alchemy.jpg) repeat;
 }
 
-.afterGameDescription::before{
+.afterGameDescription::before {
     background: linear-gradient(-45deg, transparent 16px, #ffb900 0), linear-gradient(45deg, transparent 16px, #ffb900 0);
     background-repeat: repeat-x;
     background-position: left bottom;
@@ -598,7 +618,7 @@ html,body{
     z-index: 999;
 }
 
-.afterGameDescription .offerText{
+.afterGameDescription .offerText {
     width: 500px;
     max-width: 76%;
     border-radius: 33px;
@@ -607,7 +627,7 @@ html,body{
     text-align: justify;
     top: -17px;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -617,23 +637,38 @@ html,body{
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #009FFF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #009FFF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(-20deg, rgba(171, 42, 61, 0.98), rgba(49, 99, 128, 0.96)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 18px;
     box-shadow: 0 9px 146px -15px rgba(0, 0, 0, 0.76);
 }
 
-.afterGameDescription svg{
-    transform: translate(-50%,-13%) rotate(180deg);
+.afterGameDescription svg {
+    transform: translate(-50%, -13%) rotate(180deg);
     position: absolute;
     left: 50%;
     width: 144%;
 }
 
-.afterGameDescription .doPaymentBtn{background: #8fd42a;display: block;clear: both;padding: 9px 26px;position: absolute;bottom: -19px;left: 50%;transform: translate(-50%,0);border-radius: 7px;text-align: center;cursor: pointer;box-shadow: 0 7px 13px 0 rgba(0,0,0,0.1);font-family: 'B Yekan',BYekan,tahoma,sans-serif;font-size: 20px;}
+.afterGameDescription .doPaymentBtn {
+    background: #8fd42a;
+    display: block;
+    clear: both;
+    padding: 9px 26px;
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    font-family: 'BYekan', BYekan, tahoma, sans-serif;
+    font-size: 20px;
+}
 
-.afterGameDescription .doPaymentBtn i{
+.afterGameDescription .doPaymentBtn i {
     font-size: 28px;
     position: relative;
     left: 16px;
@@ -641,36 +676,385 @@ html,body{
     top: 3px;
 }
 
+.ourTeam {
 
-.ourTeam{
+    position: absolute;
+
+    top: 500px;
+
+    max-width: 100%;
+
+    left: 50%;
+
+    padding: 14px 24px;
+
+    transform: translate(-50%, 0);
+
+    border-radius: 53% 62% 40% 36%/64% 56% 64% 42%;
+
+    content: "";
+
+    width: 880px;
+
+    height: 550px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    background: linear-gradient(120deg, #328bf2, #1644ad);
+}
+
+.ourTeam::before {
+    position: absolute;
+    left: 48%;
+    width: 930px;
+    height: 294px;
+    z-index: -1;
+}
+
+.ourTeam .showListOfMembers {
+
+    width: 552px;
+
+    display: inline-flex;
+
+    flex-direction: row;
+
+    flex-flow: wrap;
+
+    margin-top: 7rem;
+}
+
+.ourTeam .show3DTeamMembers {
 
 }
-.ourTeam .showListOfMembers{
 
-}
-.ourTeam .show3DTeamMembers{
-
-}
 .ourTeam .showListOfMembers .member {
 
+    padding: 6px 14px 0 14px;
+
+    width: 206px;
+
+    margin: 11px 11px 11px 11px;
+
+    border-radius: 11px;
+
+    box-shadow: 0 17px 38px -9px rgb(45, 33, 146);
+
+    transform: scale(0.99) translateZ(1px);
+
+    transition: transform ease-in-out 0.3s;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    background: #E44D26; /* fallback for old browsers */
+
+    background: -webkit-linear-gradient(to right, #F16529, #E44D26); /* Chrome 10-25, Safari 5.1-6 */
+
+    background: linear-gradient(35deg, #447ede, #88b5fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.ourTeam .showListOfMembers .member h3{
 
-}
-.ourTeam .showListOfMembers .member .memberInfo{
-
-}
-.ourTeam .showListOfMembers .member .socialNetwork{
-
-}
-.ourTeam .showListOfMembers .member .socialNetwork span{
-
-}
-.ourTeam .showListOfMembers .member .socialNetwork span i{
-
+.ourTeam .showListOfMembers .member.active {
+    transform: scale(1.1) rotate(4deg) translateZ(1px);
+    background: #fffff6;
+    box-shadow: 10px 21px 38px -6px rgb(45, 33, 146);
+    background: #36e420; /* fallback for old browsers */
+    background: -webkit-linear-gradient(35deg, #36e420, #c7e426); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(35deg, #36e420, #c7e426); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.ourTeam .showListOfMembers .member::before {
+    font-family: 'FontAwesome';
+    color: rgba(0, 0, 0, 0.07);
+    font-size: 5em;
+    position: absolute;
+    right: -14px;
+    bottom: -11px;
+}
 
+.ourTeam .showListOfMembers .member.code::before {
+    content: '\f121';
+    transform: rotate(-15deg);
+}
+
+.ourTeam .showListOfMembers .member.graphic::before {
+    content: '\f1fc';
+}
+
+.ourTeam .showListOfMembers .member.edit::before {
+    content: '\f040';
+    transform: rotate(-6deg);
+}
+
+.ourTeam .showListOfMembers .member.help::before {
+    content: '\f05b';
+}
+
+.ourTeam .showListOfMembers .member h3 {
+    background: rgba(255, 255, 255, 0.36);
+    display: inline-block;
+    padding: 8px 10px;
+    color: #444;
+    font-size: 16px;
+    margin: 4px 0 !important;
+    font-family: BYekan, tahoma, sans-serif;
+    border-radius: 11px;
+}
+
+.ourTeam .showListOfMembers .member .memberInfo {
+
+    font-size: 13px;
+
+    text-align: center;
+
+    margin-top: 7px;
+
+    padding-top: 9px;
+
+    border-top: 2px dashed rgba(0, 0, 0, 0.21);
+
+    font-weight: 900;
+
+    color: #444;
+}
+
+.ourTeam .showListOfMembers .member .socialNetwork {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.ourTeam .showListOfMembers .member .socialNetwork a {
+
+    width: 25px;
+
+    height: 25px;
+
+    display: inline-block;
+
+    background: #00000012;
+
+    border-radius: 50%;
+
+    text-align: center;
+
+    margin-left: 4px;
+}
+
+#cubeContainer {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-left: 15px;
+    box-shadow: 0 24px 67px -9px rgba(0, 0, 0, 0.77);
+    top: 10rem;
+}
+
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    -o-transition: -o-transform .5s;
+    transition: transform .5s;
+}
+
+#cube figure {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 197px;
+    font-size: 60px;
+    font-family: "BYekan";
+    color: #fff;
+    text-align: center;
+    margin: 0 !important;
+}
+
+#cube figure img {
+    width:100%;
+    height:100%;
+}
+
+#cube.panels-backface-invisible figure {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+#cube > figure {
+    background: #303030
+}
+
+#cube .front {
+    -webkit-transform: translateZ(50px);
+    -moz-transform: translateZ(50px);
+    -o-transform: translateZ(50px);
+    transform: translateZ(100px);
+}
+
+#cube .back {
+    -webkit-transform: rotateX(-180deg) translateZ(50px);
+    -moz-transform: rotateX(-180deg) translateZ(50px);
+    -o-transform: rotateX(-180deg) translateZ(50px);
+    transform: rotateX(-180deg) translateZ(100px);
+}
+
+#cube .right {
+    -webkit-transform: rotateY(90deg) translateZ(50px);
+    -moz-transform: rotateY(90deg) translateZ(50px);
+    -o-transform: rotateY(90deg) translateZ(50px);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube .left {
+    -webkit-transform: rotateY(-90deg) translateZ(50px);
+    -moz-transform: rotateY(-90deg) translateZ(50px);
+    -o-transform: rotateY(-90deg) translateZ(50px);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .top {
+    -webkit-transform: rotateX(90deg) translateZ(50px);
+    -moz-transform: rotateX(90deg) translateZ(50px);
+    -o-transform: rotateX(90deg) translateZ(50px);
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+#cube .bottom {
+    -webkit-transform: rotateX(-90deg) translateZ(50px);
+    -moz-transform: rotateX(-90deg) translateZ(50px);
+    -o-transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+#cube.show-spining {
+    -webkit-transform: translateZ(-50px) rotateX(20deg) rotateY(20deg);
+    -moz-transform: translateZ(-50px) rotateX(20deg) rotateY(20deg);
+    -o-transform: translateZ(-50px) rotateX(20deg) rotateY(20deg);
+    transform: translateZ(-50px) rotateX(20deg) rotateY(20deg);
+}
+
+#cube.show-1 {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-100px)
+}
+
+#cube.show-2 {
+    -webkit-transform: translateZ(-50px) rotateX(-180deg);
+    -moz-transform: translateZ(-50px) rotateX(-180deg);
+    -o-transform: translateZ(-50px) rotateX(-180deg);
+    transform: translateZ(-100px) rotateX(-180deg)
+}
+
+#cube.show-3 {
+    -webkit-transform: translateZ(-50px) rotateY(-90deg);
+    -moz-transform: translateZ(-50px) rotateY(-90deg);
+    -o-transform: translateZ(-50px) rotateY(-90deg);
+    transform: translateZ(-100px) rotateY(-90deg);
+}
+
+#cube.show-4 {
+    -webkit-transform: translateZ(-50px) rotateY(90deg);
+    -moz-transform: translateZ(-50px) rotateY(90deg);
+    -o-transform: translateZ(-50px) rotateY(90deg);
+    transform: translateZ(-100px) rotateY(90deg)
+}
+
+#cube.show-5 {
+    -webkit-transform: translateZ(-50px) rotateX(-90deg);
+    -moz-transform: translateZ(-50px) rotateX(-90deg);
+    -o-transform: translateZ(-50px) rotateX(-90deg);
+    transform: translateZ(-100px) rotateX(-90deg)
+}
+
+#cube.show-6 {
+    -webkit-transform: translateZ(-50px) rotateX(90deg);
+    -moz-transform: translateZ(-50px) rotateX(90deg);
+    -o-transform: translateZ(-50px) rotateX(90deg);
+    transform: translateZ(-100px) rotateX(90deg);
+}
+
+@-webkit-keyframes spaceboots {
+    0% {
+        -webkit-transform: translate(4px, 1px) rotate(0deg);
+    }
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-2deg);
+    }
+    20% {
+        -webkit-transform: translate(-4px, 0px) rotate(1deg);
+    }
+    30% {
+        -webkit-transform: translate(0px, 2px) rotate(0deg);
+    }
+    40% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-2deg);
+    }
+    60% {
+        -webkit-transform: translate(-4px, 1px) rotate(0deg);
+    }
+    70% {
+        -webkit-transform: translate(4px, 1px) rotate(-2deg);
+    }
+    80% {
+        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        -webkit-transform: translate(4px, 2px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(1px, -2px) rotate(-2deg);
+    }
+}
+
+.ourTeam {
+    display: flex;
+    justify-content: center;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.ourTeam .text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    text-transform: uppercase;
+    font-family: 'BYekan', BYekan, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -742,33 +1126,34 @@ html,body{
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
         transform: translate(0, 0px) rotateY(-12deg);
-        text-shadow: 10px 10px 3px rgba(0,0,0,0.15);
+        text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
     65% {
         -webkit-transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
         transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
-        text-shadow: -10px -10px 3px rgba(0,0,0,0.15);
+        text-shadow: -10px -10px 3px rgba(0, 0, 0, 0.15);
     }
     to {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
         transform: translate(0, 0px) rotateY(-12deg);
-        text-shadow: 10px 10px 3px rgba(0,0,0,0.15);
+        text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
 }
+
 @keyframes marioTekTitleFloat {
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
         transform: translate(0, 0px) rotateY(-12deg);
-        text-shadow: 10px 10px 3px rgba(0,0,0,0.15);
+        text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
     65% {
         -webkit-transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
         transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
-        text-shadow: -10px -10px 3px rgba(0,0,0,0.15);
+        text-shadow: -10px -10px 3px rgba(0, 0, 0, 0.15);
     }
     to {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
         transform: translate(0, 0px) rotateY(-12deg);
-        text-shadow: 10px 10px 3px rgba(0,0,0,0.15);
+        text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
 }

@@ -589,16 +589,48 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z' className={'bottomJoiner
                 </div>
 
                 <div className={'ourTeam'}>
+                    <div className='text'>ما کی هستیم؟</div>
                     <div className={'showListOfMembers'}>
-                        <div className={'member'}>
+                        <div className={'member code active'}>
                             <h3>جعفررضایی</h3>
-                            <div className={'memberInfo'}>توضیح مختصری در مورد من</div>
+                            <div className={'memberInfo'}>خودم ! یه آدم ، که عاشق کدنویسی و خلاقیت تو هر زمینه ایه و بیمارگونه مطالعه میکنه</div>
                             <div className={'socialNetwork'}>
-                                <span><i className={'fa fa-twitter'}></i></span>
+                                <a><i className={'fa fa-github'} /></a>
+                                <a><i className={'fa fa-instagram'} /></a>
+                            </div>
+                        </div>
+                        <div className={'member graphic'}>
+                            <h3>مسعود پرینت</h3>
+                            <div className={'memberInfo'}>یه دوچوخه سوار ، طراح حرفه ای در مورد گرافیک و امور طراحی کتاب و خلاقیت های تبلیغاتی</div>
+                            <div className={'socialNetwork'}>
+                                <a><i className={'fa fa-twitter'} /></a>
+                            </div>
+                        </div>
+                        <div className={'member edit'}>
+                            <h3>هادی تبادلی</h3>
+                            <div className={'memberInfo'}>دوست خوش حوصله و خندان ما که در امر ویراستاری کتاب ها همواره پشت ما هستن</div>
+                            <div className={'socialNetwork'}>
+                                <a><i className={'fa fa-instagram'} /></a>
+                            </div>
+                        </div>
+                        <div className={'member help'}>
+                            <h3>آرش میلانی</h3>
+                            <div className={'memberInfo'}>هکر و نینجای خوشحال سازی پینگونیو که از تجربیاتشون استفاده کردیم :)</div>
+                            <div className={'socialNetwork'}>
+                                <a><i className={'fa fa-twitter'} /></a>
                             </div>
                         </div>
                     </div>
-                    <div className={'show3DTeamMembers'}>#D</div>
+                    <section id='cubeContainer'>
+                        <div id='cube' className='show-6'>
+                            <figure className='front'><img src={"/static/images/jafarrezaei.jpg"} /></figure>
+                            <figure className='back'>2</figure>
+                            <figure className='right'>3</figure>
+                            <figure className='left'>4</figure>
+                            <figure className='top'>5</figure>
+                            <figure className='bottom'><img src={"/static/images/jafarrezaei.jpg"} /></figure>
+                        </div>
+                    </section>
                 </div>
 
             </div>
