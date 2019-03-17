@@ -607,8 +607,8 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z' className={'bottomJoiner
                             </div>
                         </div>
                         <div className={'member edit'}>
-                            <h3>هادی تبادلی</h3>
-                            <div className={'memberInfo'}>دوست خوش حوصله و خندان ما که در امر ویراستاری کتاب ها همواره پشت ما هستن</div>
+                            <h3> مهدی رحیمی</h3>
+                            <div className={'memberInfo'}>دوست خوش حوصله و خندان ما که در امر نگارش و ویراستاری کتاب ها همواره پشت ما هستن</div>
                             <div className={'socialNetwork'}>
                                 <a><i className={'fa fa-instagram'} /></a>
                             </div>
