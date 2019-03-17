@@ -24,12 +24,12 @@
     src: url('./../fonts/BYekan.eot?#') format('eot'), /* IE6–8 */ url('./../fonts/BYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/materialIcons.woff2') format('woff2');
-}
+/*@font-face {*/
+    /*font-family: 'Material Icons';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: url('../fonts/materialIcons.woff2') format('woff2');*/
+/*}*/
 
 /* font converted using font-converter.net. thank you! */
 @font-face {
@@ -40,21 +40,28 @@
     font-style: normal;
 }
 
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -moz-font-feature-settings: 'liga';
-    -moz-osx-font-smoothing: grayscale;
+html, body {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
 }
+
+
+/*.material-icons {*/
+    /*font-family: 'Material Icons';*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+    /*font-size: 24px;*/
+    /*line-height: 1;*/
+    /*letter-spacing: normal;*/
+    /*text-transform: none;*/
+    /*display: inline-block;*/
+    /*white-space: nowrap;*/
+    /*word-wrap: normal;*/
+    /*direction: ltr;*/
+    /*-moz-font-feature-settings: 'liga';*/
+    /*-moz-osx-font-smoothing: grayscale;*/
+/*}*/
 
 .sdf {
     font-family: 'SDF', SDF, tahoma, sans-serif !important;
@@ -64,16 +71,11 @@
     font-family: 'BYekan', Tahoma, sans-serif !important;
 }
 
-.bold {
-    font-weight: bold !important;
-}
-
 body {
     background: #fff;
     font-family: 'SDF', sans-serif !important;
     margin: 0;
     padding: 0;
-    /* direction: rtl; */
 }
 
 .mainContainer {
@@ -86,75 +88,6 @@ a, a:link {
     text-decoration: none !important;
 }
 
-.niceBackground {
-    background-image: url('/static/images/niceBackground.png') !important;
-}
-
-.m5 {
-    margin: 5px !important;
-}
-
-.m10 {
-    margin: 10px !important;
-}
-
-.m15 {
-    margin: 15px !important;
-}
-
-.mt5 {
-    margin-top: 5px !important;
-}
-
-.mt10 {
-    margin-top: 10px !important;
-}
-
-.mt15 {
-    margin-top: 15px !important;
-}
-
-.mb5 {
-    margin-bottom: 5px !important;
-}
-
-.mb10 {
-    margin-bottom: 10px !important;
-}
-
-.mb15 {
-    margin-bottom: 15px !important;
-}
-
-.mr5 {
-    margin-right: 5px !important;
-}
-
-.mr10 {
-    margin-right: 10px !important;
-}
-
-.mr15 {
-    margin-right: 15px !important;
-}
-
-.ml5 {
-    margin-left: 5px !important;
-}
-
-.ml10 {
-    margin-left: 10px !important;
-}
-
-.ml15 {
-    margin-left: 15px !important;
-}
-
-html, body {
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-}
 
 .topTextBrand {
     border-top: 10px dashed #5252525c;
