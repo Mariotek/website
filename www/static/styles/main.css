@@ -755,8 +755,8 @@ a, a:link {
 
     display: inline-block;
 
-    background: #00000012;
-
+    background: rgba(0, 0, 0, 0.07);
+    color:#fff;
     border-radius: 50%;
 
     text-align: center;

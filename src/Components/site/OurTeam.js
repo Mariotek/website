@@ -11,15 +11,17 @@ const OurTeam = () => {
                     <h3>جعفررضایی</h3>
                     <div className={'memberInfo'}>خودم ! یه آدم ، که عاشق کدنویسی و خلاقیت تو هر زمینه ایه و بیمارگونه مطالعه میکنه</div>
                     <div className={'socialNetwork'}>
-                        <a><i className={'fa fa-github'} /></a>
-                        <a><i className={'fa fa-instagram'} /></a>
+                        <a target={'_blank'} href='https://github.com/jafar-rezaei'><i className={'fa fa-github'} /></a>
+                        <a target={'_blank'} href='http://instagram.com/j.rezaei73'><i className={'fa fa-instagram'} /></a>
+                        <a target={'_blank'} href='http://jrjs.ir'><i className={'fa fa-globe'} /></a>
                     </div>
                 </div>
                 <div className={`member graphic ${member === 'masud' ? 'active':''}`} onClick={() => SetMember('masud')}>
                     <h3>مسعود ساجدی</h3>
                     <div className={'memberInfo'}>یه دوچوخه سوار ، طراح حرفه ای در مورد گرافیک و امور طراحی کتاب و خلاقیت های تبلیغاتی</div>
                     <div className={'socialNetwork'}>
-                        <a><i className={'fa fa-twitter'} /></a>
+                        <a target={'_blank'} href={'http://instagram.com/masoudsajedi'}><i className={'fa fa-instagram'} /></a>
+                        <a target={'_blank'} href={'http://masoudsajedi.ir'}><i className={'fa fa-globe'} /></a>
                     </div>
                 </div>
                 <div className={`member edit ${member === 'mehdi' ? 'active':''}`} onClick={() => SetMember('mehdi')}>
