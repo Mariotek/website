@@ -24,12 +24,25 @@
     src: url('./../fonts/BYekan.eot?#') format('eot'), /* IE6–8 */ url('./../fonts/BYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
+
+@font-face {
+    font-family: 'LalezarRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lalezar Regular'), url('./../fonts/Lalezar-Regular.woff') format('woff');
+}
+
 /*@font-face {*/
-    /*font-family: 'Material Icons';*/
+    /*font-family: 'lalezarregular';*/
+    /*src: url('./../fonts/Lalezar-Regular-webfont.eot');*/
+    /*src: url('./../fonts/Lalezar-Regular-webfont.eot?#iefix') format('embedded-opentype'),*/
+    /*url('./../fonts/Lalezar-Regular-webfont.woff') format('woff'),*/
+    /*url('./../fonts/Lalezar-Regular-webfont.ttf') format('truetype'),*/
+    /*url('./../fonts/Lalezar-Regular-webfont.svg#lalezarregular') format('svg');*/
+    /*font-weight: normal;*/
     /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*src: url('../fonts/materialIcons.woff2') format('woff2');*/
 /*}*/
+
 
 /* font converted using font-converter.net. thank you! */
 @font-face {
@@ -113,7 +126,7 @@ a, a:link {
     margin-top: 0 !important;
     font-weight: 900;
     text-shadow: rgba(50, 33, 82, 0.37) 0px 2px 13px;
-    font-size: 3.4em;
+    font-size: 3.8em;
     -webkit-animation-name: marioTekTitleFloat;
     animation-name: marioTekTitleFloat;
     -webkit-animation-duration: 10s;
@@ -122,10 +135,10 @@ a, a:link {
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
-    background: -webkit-linear-gradient(#5b5094, #78902f);
+    background: -webkit-linear-gradient(#9685f5, #4e201c, #a8310d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    prespective: 1000px;
+    font-family: 'LalezarRegular' , Tahoma , sans-serif;
 }
 
 .topTextBrand .whoAreYou {
@@ -610,31 +623,18 @@ a, a:link {
 }
 
 .ourTeam {
-
     position: absolute;
-
     top: 500px;
-
     max-width: 100%;
-
     left: 50%;
-
     padding: 14px 24px;
-
     transform: translate(-50%, 0);
-
     border-radius: 53% 62% 40% 36%/64% 56% 64% 42%;
-
     content: "";
-
     width: 880px;
-
     height: 550px;
-
     box-sizing: border-box;
-
     display: flex;
-
     background: linear-gradient(120deg, #328bf2, #1644ad);
 }
 
@@ -672,27 +672,18 @@ a, a:link {
     margin: 11px 11px 11px 11px;
 
     border-radius: 11px;
-
     box-shadow: 0 17px 38px -9px rgb(45, 33, 146);
-
     transform: scale(0.99) translateZ(1px);
-
     transition: transform ease-in-out 0.3s;
-
     cursor: pointer;
-
     overflow: hidden;
-
     background: #E44D26; /* fallback for old browsers */
-
-    background: -webkit-linear-gradient(to right, #F16529, #E44D26); /* Chrome 10-25, Safari 5.1-6 */
-
+    background: -webkit-linear-gradient(to right, #447ede, #88b5fb); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(35deg, #447ede, #88b5fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .ourTeam .showListOfMembers .member.active {
     transform: scale(1.1) rotate(4deg) translateZ(1px);
-    background: #fffff6;
     box-shadow: 10px 21px 38px -6px rgb(45, 33, 146);
     background: #36e420; /* fallback for old browsers */
     background: -webkit-linear-gradient(35deg, #36e420, #c7e426); /* Chrome 10-25, Safari 5.1-6 */
@@ -882,42 +873,42 @@ a, a:link {
     transform: translateZ(-50px) rotateX(20deg) rotateY(20deg);
 }
 
-#cube.show-1 {
+#cube.show-jafar {
     -webkit-transform: translateZ(-50px);
     -moz-transform: translateZ(-50px);
     -o-transform: translateZ(-50px);
     transform: translateZ(-100px)
 }
 
-#cube.show-2 {
+#cube.show-masud {
     -webkit-transform: translateZ(-50px) rotateX(-180deg);
     -moz-transform: translateZ(-50px) rotateX(-180deg);
     -o-transform: translateZ(-50px) rotateX(-180deg);
     transform: translateZ(-100px) rotateX(-180deg)
 }
 
-#cube.show-3 {
+#cube.show-mehdi {
     -webkit-transform: translateZ(-50px) rotateY(-90deg);
     -moz-transform: translateZ(-50px) rotateY(-90deg);
     -o-transform: translateZ(-50px) rotateY(-90deg);
     transform: translateZ(-100px) rotateY(-90deg);
 }
 
-#cube.show-4 {
+#cube.show-hadi {
     -webkit-transform: translateZ(-50px) rotateY(90deg);
     -moz-transform: translateZ(-50px) rotateY(90deg);
     -o-transform: translateZ(-50px) rotateY(90deg);
     transform: translateZ(-100px) rotateY(90deg)
 }
 
-#cube.show-5 {
+#cube.show-you1 {
     -webkit-transform: translateZ(-50px) rotateX(-90deg);
     -moz-transform: translateZ(-50px) rotateX(-90deg);
     -o-transform: translateZ(-50px) rotateX(-90deg);
     transform: translateZ(-100px) rotateX(-90deg)
 }
 
-#cube.show-6 {
+#cube.show-you2 {
     -webkit-transform: translateZ(-50px) rotateX(90deg);
     -moz-transform: translateZ(-50px) rotateX(90deg);
     -o-transform: translateZ(-50px) rotateX(90deg);
@@ -1058,17 +1049,17 @@ a, a:link {
 @-webkit-keyframes marioTekTitleFloat {
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: translate(0, 0px) rotateY(-12deg);
+        transform: scale(0.95) translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
     65% {
         -webkit-transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
-        transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
+        transform: scale(0.99) translate(0, 15px) rotateY(10deg) rotateX(10deg);
         text-shadow: -10px -10px 3px rgba(0, 0, 0, 0.15);
     }
     to {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: translate(0, 0px) rotateY(-12deg);
+        transform: scale(1) translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
 }
@@ -1076,17 +1067,17 @@ a, a:link {
 @keyframes marioTekTitleFloat {
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: translate(0, 0px) rotateY(-12deg);
+        transform: scale(0.95) translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
     65% {
         -webkit-transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
-        transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
+        transform: scale(0.99) translate(0, 15px) rotateY(10deg) rotateX(10deg);
         text-shadow: -10px -10px 3px rgba(0, 0, 0, 0.15);
     }
     to {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: translate(0, 0px) rotateY(-12deg);
+        transform: scale(1) translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
 }
