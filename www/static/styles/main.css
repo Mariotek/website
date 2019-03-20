@@ -24,7 +24,6 @@
     src: url('./../fonts/BYekan.eot?#') format('eot'), /* IE6–8 */ url('./../fonts/BYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
-
 @font-face {
     font-family: 'LalezarRegular';
     font-style: normal;
@@ -33,16 +32,15 @@
 }
 
 /*@font-face {*/
-    /*font-family: 'lalezarregular';*/
-    /*src: url('./../fonts/Lalezar-Regular-webfont.eot');*/
-    /*src: url('./../fonts/Lalezar-Regular-webfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('./../fonts/Lalezar-Regular-webfont.woff') format('woff'),*/
-    /*url('./../fonts/Lalezar-Regular-webfont.ttf') format('truetype'),*/
-    /*url('./../fonts/Lalezar-Regular-webfont.svg#lalezarregular') format('svg');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
+/*font-family: 'lalezarregular';*/
+/*src: url('./../fonts/Lalezar-Regular-webfont.eot');*/
+/*src: url('./../fonts/Lalezar-Regular-webfont.eot?#iefix') format('embedded-opentype'),*/
+/*url('./../fonts/Lalezar-Regular-webfont.woff') format('woff'),*/
+/*url('./../fonts/Lalezar-Regular-webfont.ttf') format('truetype'),*/
+/*url('./../fonts/Lalezar-Regular-webfont.svg#lalezarregular') format('svg');*/
+/*font-weight: normal;*/
+/*font-style: normal;*/
 /*}*/
-
 
 /* font converted using font-converter.net. thank you! */
 @font-face {
@@ -59,21 +57,20 @@ html, body {
     width: 100%;
 }
 
-
 /*.material-icons {*/
-    /*font-family: 'Material Icons';*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-    /*font-size: 24px;*/
-    /*line-height: 1;*/
-    /*letter-spacing: normal;*/
-    /*text-transform: none;*/
-    /*display: inline-block;*/
-    /*white-space: nowrap;*/
-    /*word-wrap: normal;*/
-    /*direction: ltr;*/
-    /*-moz-font-feature-settings: 'liga';*/
-    /*-moz-osx-font-smoothing: grayscale;*/
+/*font-family: 'Material Icons';*/
+/*font-weight: normal;*/
+/*font-style: normal;*/
+/*font-size: 24px;*/
+/*line-height: 1;*/
+/*letter-spacing: normal;*/
+/*text-transform: none;*/
+/*display: inline-block;*/
+/*white-space: nowrap;*/
+/*word-wrap: normal;*/
+/*direction: ltr;*/
+/*-moz-font-feature-settings: 'liga';*/
+/*-moz-osx-font-smoothing: grayscale;*/
 /*}*/
 
 .sdf {
@@ -100,7 +97,6 @@ body {
 a, a:link {
     text-decoration: none !important;
 }
-
 
 .topTextBrand {
     border-top: 10px dashed #5252525c;
@@ -138,7 +134,7 @@ a, a:link {
     background: -webkit-linear-gradient(#9685f5, #4e201c, #a8310d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'LalezarRegular' , Tahoma , sans-serif;
+    font-family: 'LalezarRegular', Tahoma, sans-serif;
 }
 
 .topTextBrand .whoAreYou {
@@ -632,7 +628,7 @@ a, a:link {
     border-radius: 53% 62% 40% 36%/64% 56% 64% 42%;
     content: "";
     width: 880px;
-    height: 550px;
+    height: 670px;
     box-sizing: border-box;
     display: flex;
     background: linear-gradient(120deg, #328bf2, #1644ad);
@@ -656,7 +652,7 @@ a, a:link {
 
     flex-flow: wrap;
 
-    margin-top: 7rem;
+    margin-top: 6.6rem;
 }
 
 .ourTeam .show3DTeamMembers {
@@ -720,12 +716,13 @@ a, a:link {
 .ourTeam .showListOfMembers .member h3 {
     background: rgba(255, 255, 255, 0.36);
     display: inline-block;
-    padding: 8px 10px;
+    padding: 7px 10px;
     color: #444;
     font-size: 16px;
     margin: 4px 0 !important;
     font-family: BYekan, tahoma, sans-serif;
     border-radius: 11px;
+    margin: 3px 0 !important;
 }
 
 .ourTeam .showListOfMembers .member .memberInfo {
@@ -738,7 +735,7 @@ a, a:link {
 
     padding-top: 9px;
 
-    border-top: 2px dashed rgba(0, 0, 0, 0.21);
+    border-top: 1px dashed rgba(0, 0, 0, 0.12);
 
     font-weight: 900;
 
@@ -777,8 +774,9 @@ a, a:link {
     perspective: 1000px;
     cursor: pointer;
     margin-left: 15px;
+    top: 12rem;
     box-shadow: 0 24px 67px -9px rgba(0, 0, 0, 0.77);
-    top: 10rem;
+    border-radius: 13px;
 }
 
 #cube {
@@ -806,11 +804,13 @@ a, a:link {
     color: #fff;
     text-align: center;
     margin: 0 !important;
+    border-radius: 13px;
+    overflow: hidden;
 }
 
 #cube figure img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 #cube.panels-backface-invisible figure {
@@ -828,42 +828,42 @@ a, a:link {
     -webkit-transform: translateZ(50px);
     -moz-transform: translateZ(50px);
     -o-transform: translateZ(50px);
-    transform: translateZ(100px);
+    transform: translateZ(110px);
 }
 
 #cube .back {
     -webkit-transform: rotateX(-180deg) translateZ(50px);
     -moz-transform: rotateX(-180deg) translateZ(50px);
     -o-transform: rotateX(-180deg) translateZ(50px);
-    transform: rotateX(-180deg) translateZ(100px);
+    transform: rotateX(-180deg) translateZ(110px);
 }
 
 #cube .right {
     -webkit-transform: rotateY(90deg) translateZ(50px);
     -moz-transform: rotateY(90deg) translateZ(50px);
     -o-transform: rotateY(90deg) translateZ(50px);
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(110px);
 }
 
 #cube .left {
     -webkit-transform: rotateY(-90deg) translateZ(50px);
     -moz-transform: rotateY(-90deg) translateZ(50px);
     -o-transform: rotateY(-90deg) translateZ(50px);
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(110px);
 }
 
 #cube .top {
     -webkit-transform: rotateX(90deg) translateZ(50px);
     -moz-transform: rotateX(90deg) translateZ(50px);
     -o-transform: rotateX(90deg) translateZ(50px);
-    transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(122px);
 }
 
 #cube .bottom {
     -webkit-transform: rotateX(-90deg) translateZ(50px);
     -moz-transform: rotateX(-90deg) translateZ(50px);
     -o-transform: rotateX(-90deg) translateZ(50px);
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(110px);
 }
 
 #cube.show-spining {
@@ -962,7 +962,7 @@ a, a:link {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, 17%);
     text-transform: uppercase;
     font-family: 'BYekan', BYekan, sans-serif;
     font-size: 4em;
