@@ -15,5 +15,4 @@ deploy:
   project: /dist/
   domain: mariotek.ir
   skip_cleanup: true
-  on:
-    branch: all
+  all_branches: true
