@@ -8,8 +8,7 @@ install:
 
 script:
   - npm run build
-  - ls
-  
+
 deploy:
   provider: surge
   project: /dist/
