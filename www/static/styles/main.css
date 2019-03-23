@@ -150,6 +150,7 @@ a, a:link {
     left: 50%;
     transform: translate(-50%, 0%);
     max-width: calc(100% - 42px);
+    z-index: -1;
 }
 
 .topTextBrand .whoAreYou p {
@@ -193,6 +194,7 @@ a, a:link {
 
 .marioTek_container.blueGamePlay {
     background: #6686ff;
+    /* z-index: -1; */
 }
 
 .marioTek_container.blueGamePlay svg .darkBackWave {
@@ -315,6 +317,7 @@ a, a:link {
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .groundHolder::before {
@@ -346,10 +349,11 @@ a, a:link {
     right: 20px;
 }
 
-.groundHolder canvas {
+#PoisonousFlower {
     position: absolute;
-    top: -124px;
+    animation: MoveUpDown 10s linear infinite;
     right: 37px;
+    z-index: 0;
 }
 
 @-webkit-keyframes marioJump {
@@ -1088,5 +1092,15 @@ a, a:link {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
         transform: translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+    }
+    90% {
+        bottom: 135px;
     }
 }
