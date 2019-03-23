@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import Cookies from 'js-cookie';
 import makeSpriteLoop from '../../helpers/spriteHelper';
 import OurTeam from './OurTeam';
@@ -192,21 +192,15 @@ const Index = () => {
                     objectTop = bottomSpaceObj + parseInt(styleObjectElement.getPropertyValue('height')),
                     objectRight = leftSpaceObj + parseInt(styleObjectElement.getPropertyValue('width'));
 
-                console.log('Object  : ', {
-                    left  : (leftSpaceMario <= objectRight),
-                    right : (marioRight >= leftSpaceObj),
-                    top   : ((sideHit && bottomSpaceMario <= objectTop) || (!sideHit && bottomSpaceMario >= objectTop)),
-                    bottom: (sideHit || marioTop >= bottomSpaceObj),
-                    hitObject
-                });
 
+                console.log("bottomSpaceMario :: " , bottomSpaceMario , "objectTop : ", objectTop)
                 if (
                     leftSpaceMario <= objectRight
                     && marioRight >= leftSpaceObj
                     && (
                         (sideHit && bottomSpaceMario <= objectTop)
-                        || (!sideHit && bottomSpaceMario >= objectTop)
-                        || headHit
+                        || (!sideHit && !headHit && bottomSpaceMario >= objectTop)
+                        || (headHit && bottomSpaceMario < objectTop)
                     )
                     && (
                         (sideHit || marioTop >= bottomSpaceObj)
@@ -405,7 +399,7 @@ const Index = () => {
     return (
         <React.Fragment>
 
-            <TopBrand />
+            <TopBrand/>
             <audio data-key='background' src='./static/audio/overworld.ogg' loop={true}/>
             <audio data-key='jump' src='./static/audio/jump.ogg'/>
             <audio data-key='bump' src='./static/audio/bump.ogg'/>
@@ -436,7 +430,7 @@ c11.4,6.3,25,11.2,45.7,11.2C953.7,96,968.5,83.2,985.8,72z' className={'littleMid
 c11.4,6.3,25,11.1,45.7,11.1C712.4,96,727.3,84.2,743.8,73.5z' className={'littleMiddleWave'}/>
                     <path d='M265.5,72.3c-1.5-0.2-3.2-0.3-5.1-0.3c-19.4,0-19.6,13-39,13c-19.4,0-19.6-13-39-13
 c-15.9,0-18.9,8.7-30.1,11.9C164.1,90.6,178,96,200,96C233.7,96,248.4,83.4,265.5,72.3z'
-                    className={'littleMiddleWave'}/>
+                          className={'littleMiddleWave'}/>
                     <path d='M1692.3,96V85c0,0,0,0-19.5,0s-19.6-13-39-13s-19.6,13-39,13c-0.1,0-0.2,0-0.4,0c11.4,6.2,24.9,11,45.6,11
 C1669.9,96,1684.8,96,1692.3,96z' className={'littleMiddleWave'}/>
                     <path
@@ -468,7 +462,7 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z' className={'bottomJoiner
                 </div>
                 <div className={'groundHolder'}>
                     <i className={'fa fa-cog gameSettingsBtn'}/>
-                    <div id={'gameSettingMenu'} style={{ display: 'none' }}>
+                    <div id={'gameSettingMenu'} style={{display: 'none'}}>
                         <ul>
                             <li data-id={'backgroundMusicControl'}>
                                 <i className={'fa fa-music ml5'}/> آهنگ پس زمینه
@@ -488,15 +482,15 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z' className={'bottomJoiner
 
             <div className={'afterGameDescription'}>
                 <svg version='1.0' xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 278.000000 213.000000' preserveAspectRatio='xMidYMid meet'>
+                     viewBox='0 0 278.000000 213.000000' preserveAspectRatio='xMidYMid meet'>
                     <defs>
                         <linearGradient id='grad2' x1='0%' y1='0%' x2='0%' y2='100%'>
-                            <stop offset='0%' stopColor='#fff536' stopOpacity='1' />
-                            <stop offset='90%' stopColor='#ffffff' stopOpacity='0.6' />
+                            <stop offset='0%' stopColor='#fff536' stopOpacity='1'/>
+                            <stop offset='90%' stopColor='#ffffff' stopOpacity='0.6'/>
                         </linearGradient>
                     </defs>
                     <g transform='translate(0.000000,213.000000) scale(0.100000,-0.100000)' fill='url(#grad2)'
-                        stroke='none'>
+                       stroke='none'>
                         <path
                             d='M140 2061 c0 -2 44 -73 98 -157 53 -85 102 -162 107 -172 6 -9 46 -73 89 -142 44 -69 142 -224 219 -345 76 -121 154 -242 172 -270 51 -77 388 -614 419 -668 15 -26 30 -47 33 -47 2 0 2 3 0 8 -2 4 -31 54 -64 112 -33 58 -126 220 -205 360 -80 140 -184 325 -233 410 -48 85 -125 220 -170 300 -45 80 -142 249 -214 377 l-132 231 -59 4 c-33 1 -60 1 -60 -1z'/>
                         <path
@@ -551,11 +545,11 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z' className={'bottomJoiner
                 <div className={'offerText'}>میتونین کتاب ها رو از طریق سایت سفارش بدین تا دو تا استیکر خوشگل 😍 با
                     المان‌های بازی سوپر ماریو به همراه کتاب 📖 امضای شده توسط نویسنده دریافت کنید.
 
-                <div className={'doPaymentBtn'}><i className={'fa fa-shopping-basket'} /> ثبت سفارش</div>
+                    <div className={'doPaymentBtn'}><i className={'fa fa-shopping-basket'}/> ثبت سفارش</div>
                 </div>
 
 
-                <OurTeam />
+                <OurTeam/>
 
             </div>
         </React.Fragment>
