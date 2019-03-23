@@ -149,6 +149,7 @@ a, a:link {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
+    max-width: calc(100% - 42px);
 }
 
 .topTextBrand .whoAreYou p {
@@ -270,7 +271,7 @@ a, a:link {
 
 .scoreBar {
     position: absolute;
-    left: 360px;
+    left: 30%;
     bottom: 244px;
 }
 
@@ -644,7 +645,7 @@ a, a:link {
 
 .ourTeam .showListOfMembers {
 
-    width: 552px;
+    width: 545px;
 
     display: inline-flex;
 
@@ -663,18 +664,26 @@ a, a:link {
 
     padding: 6px 14px 0 14px;
 
-    width: 206px;
+    width: 183px;
 
     margin: 11px 11px 11px 11px;
 
     border-radius: 11px;
+
     box-shadow: 0 17px 38px -9px rgb(45, 33, 146);
+
     transform: scale(0.99) translateZ(1px);
+
     transition: transform ease-in-out 0.3s;
+
     cursor: pointer;
+
     overflow: hidden;
+
     background: #E44D26; /* fallback for old browsers */
+
     background: -webkit-linear-gradient(to right, #447ede, #88b5fb); /* Chrome 10-25, Safari 5.1-6 */
+
     background: linear-gradient(35deg, #447ede, #88b5fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -1049,17 +1058,17 @@ a, a:link {
 @-webkit-keyframes marioTekTitleFloat {
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: scale(0.95) translate(0, 0px) rotateY(-12deg);
+        transform: translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
     65% {
         -webkit-transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
-        transform: scale(0.99) translate(0, 15px) rotateY(10deg) rotateX(10deg);
+        transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
         text-shadow: -10px -10px 3px rgba(0, 0, 0, 0.15);
     }
     to {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: scale(1) translate(0, 0px) rotateY(-12deg);
+        transform: translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
 }
@@ -1067,17 +1076,17 @@ a, a:link {
 @keyframes marioTekTitleFloat {
     from {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: scale(0.95) translate(0, 0px) rotateY(-12deg);
+        transform:translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
     65% {
         -webkit-transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
-        transform: scale(0.99) translate(0, 15px) rotateY(10deg) rotateX(10deg);
+        transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
         text-shadow: -10px -10px 3px rgba(0, 0, 0, 0.15);
     }
     to {
         -webkit-transform: translate(0, 0px) rotateY(-12deg);
-        transform: scale(1) translate(0, 0px) rotateY(-12deg);
+        transform: translate(0, 0px) rotateY(-12deg);
         text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
     }
 }
