@@ -9,7 +9,7 @@ const OurTeam = () => {
             <div className={'showListOfMembers'}>
                 <div className={`member code ${member === 'jafar' ? 'active':''}`} onClick={() => SetMember('jafar')}>
                     <h3>جعفررضایی</h3>
-                    <div className={'memberInfo'}>خودم ! یه آدم ، که عاشق کدنویسی و خلاقیت تو هر زمینه ایه و بیمارگونه مطالعه میکنه</div>
+                    <div className={'memberInfo'}>خودم ! یه آدم ، که عاشق کدنویسی و خلاقیت تو هر زمینه ایه و از زیبایی ها لذت می‌بره</div>
                     <div className={'socialNetwork'}>
                         <a target={'_blank'} href='https://github.com/jafar-rezaei'><i className={'fa fa-github'} /></a>
                         <a target={'_blank'} href='http://instagram.com/j.rezaei73'><i className={'fa fa-instagram'} /></a>
@@ -28,14 +28,14 @@ const OurTeam = () => {
                     <h3> مهدی رحیمی</h3>
                     <div className={'memberInfo'}>دوست خوش حوصله و خندان ما که در امر نگارش و ویراستاری کتاب ها همواره پشت ما هستن</div>
                     <div className={'socialNetwork'}>
-                        <a><i className={'fa fa-instagram'} /></a>
+                        <a href={'javascript:;'}><i className={'fa fa-twitter'} /></a>
                     </div>
                 </div>
                 <div className={`member help ${member === 'hadi' ? 'active':''}`} onClick={() => SetMember('hadi')}>
                     <h3>هادی تبادلی</h3>
                     <div className={'memberInfo'}> هادی ، یک شخص سوم که مطالب محتوای آموزشی رو میخونه و نظرسازنده میده :)</div>
                     <div className={'socialNetwork'}>
-                        <a><i className={'fa fa-twitter'} /></a>
+                        <a href={'javascript:;'}><i className={'fa fa-instagram'} /></a>
                     </div>
                 </div>
                 <div className={`member help ${member === 'you1' ? 'active':''}`} onClick={() => SetMember('you1')}>
