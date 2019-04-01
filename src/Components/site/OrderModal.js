@@ -1,4 +1,5 @@
 import React from 'react';
+import zarrinPal from './../../pay/zarinpal';
 
 const OrderModal = props => (
     <div className={`modal ${props.showing ? 'active' : ''}`}>
@@ -23,7 +24,20 @@ const OrderModal = props => (
         <div className={'doBuy ripple'}>
             <div className={'ripple'}>
                 <i className='fa fa-shopping-basket' />
-                <div className={'payText'}>پرداخت</div>
+                <div onClick={() => zarrinPal.request(
+                    5000,
+                    'bomber.man87@yahoo.com',
+                    '09147426907',
+                    '',
+                    12,
+                    res => {
+                        if (res.status){
+                            window.url = res.url;
+                        } else {
+                            alert(res.code);
+                        }
+                    }
+                )} className={'payText'}>پرداخت</div>
             </div>
         </div>
         <div className={'buyPrice'}>
