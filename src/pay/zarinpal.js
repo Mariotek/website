@@ -20,7 +20,7 @@ export default {
             'Description': zpdesc,
             'Email'      : zpemail,
             'Mobile'     : zpphone,
-            'CallbackURL': `${appConfig.appAddress}:${appConfig.appPort}/verify/?Amount=${zpamount}&pid=${zppid}`
+            'CallbackURL': `${appConfig.appAddress}/verify/?Amount=${zpamount}&pid=${zppid}`
         };
         soap.createClient(url, (err, client) => {
             client.PaymentRequest(args, (err, result) => {
