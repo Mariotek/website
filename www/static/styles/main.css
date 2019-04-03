@@ -31,6 +31,10 @@
     src: local('Lalezar Regular'), url('./../fonts/Lalezar-Regular.woff') format('woff');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /*@font-face {*/
 /*font-family: 'lalezarregular';*/
 /*src: url('./../fonts/Lalezar-Regular-webfont.eot');*/
@@ -689,7 +693,7 @@ a, a:link {
 
     padding: 6px 14px 0 14px;
 
-    width: 183px;
+    width: 170px;
 
     margin: 11px 11px 11px 11px;
 
