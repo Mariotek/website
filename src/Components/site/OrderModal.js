@@ -24,7 +24,7 @@ const OrderModal = props => (
         <div className={'doBuy ripple'}>
             <div className={'ripple'}>
                 <i className='fa fa-shopping-basket' />
-                <div onClick={() => zarrinPal.request(
+                <div onClick={() => {console.log('clicked !');zarrinPal.request(
                     5000,
                     'bomber.man87@yahoo.com',
                     '09147426907',
@@ -37,7 +37,7 @@ const OrderModal = props => (
                             alert(res.code);
                         }
                     }
-                )} className={'payText'}>پرداخت</div>
+                )}} className={'payText'}>پرداخت</div>
             </div>
         </div>
         <div className={'buyPrice'}>
