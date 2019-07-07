@@ -15,5 +15,69 @@
 <body>
 <div id="root"></div>
 <script type="text/javascript" src="static/js/main.f0b27520.js"></script>
+<script type="text/javascript">
+    function ready(fn) {
+        if (document.readyState != 'loading'){
+            fn();
+        } else if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            document.attachEvent('onreadystatechange', function() {
+                if (document.readyState != 'loading')
+                    fn();
+            });
+        }
+    }
+    ready(function () {
+        function readCodeContent(file , callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onload = function () {
+                if(rawFile.status === 200 || rawFile.status == 0) {
+                    var allText = rawFile.responseText;
+                    callback(allText);
+                }
+            };
+            rawFile.send();
+        }
+
+        function addCodeToCli(text) {
+            var el = document.querySelector(".cli");
+            el.value = text;
+            el.focus();
+
+            setTimeout(function () {
+
+                var evt= new Event('keydown');
+                el.dispatchEvent(evt);
+                el.dispatchEvent(new KeyboardEvent('keydown',{'key':'Space'}));
+
+
+                var keyboardEvent = document.createEvent("KeyboardEvent");
+                var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
+
+
+                keyboardEvent[initMethod](
+                    "keydown", // event type : keydown, keyup, keypress
+                    true, // bubbles
+                    false, // cancelable
+                    window, // viewArg: should be window
+                    false, // ctrlKeyArg
+                    false, // altKeyArg
+                    false, // shiftKeyArg
+                    false, // metaKeyArg
+                    40, // keyCodeArg : unsigned long the virtual key code, else 0
+                    0 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
+                );
+                document.dispatchEvent(keyboardEvent);
+
+            } , 1200);
+        }
+
+        readCodeContent('http://localhost:8022/console/codes/chapter01/code02.js' , addCodeToCli);
+
+    });
+
+</script>
 </body>
 </html>
