@@ -1,5 +1,5 @@
 import React from 'react';
-import zarrinPal from './../../pay/zarinpal';
+// import zarrinPal from './../../pay/zarinpal';
 
 const OrderModal = props => (
     <div className={`modal ${props.showing ? 'active' : ''}`}>
@@ -7,7 +7,7 @@ const OrderModal = props => (
             <div className='bookName'>
                 کتاب آموزش اصولی جاوا اسکریپت (پایه)
             </div>
-            <span className={'pageNumbers'}>267 صفحه</span>
+            <span className={'pageNumbers'}>250 صفحه</span>
             <i onClick={ props.closeCallback || (() => {}) } className={'fa fa-times closeModal'}/>
         </div>
 
@@ -21,27 +21,14 @@ const OrderModal = props => (
         <div className={'modalBody'}>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
         </div>
-        <div className={'doBuy ripple'}>
+        <a href={'https://zarinp.al/242088'} className={'doBuy ripple'}>
             <div className={'ripple'}>
                 <i className='fa fa-shopping-basket' />
-                <div onClick={() => {console.log('clicked !');zarrinPal.request(
-                    5000,
-                    'bomber.man87@yahoo.com',
-                    '09147426907',
-                    '',
-                    12,
-                    res => {
-                        if (res.status){
-                            window.url = res.url;
-                        } else {
-                            alert(res.code);
-                        }
-                    }
-                )}} className={'payText'}>پرداخت</div>
+                <div className={'payText'}>پرداخت</div>
             </div>
-        </div>
+        </a>
         <div className={'buyPrice'}>
-            54,300
+            38,000
             <span className={'toman'} >تومان</span>
         </div>
     </div>
