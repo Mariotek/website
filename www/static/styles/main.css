@@ -693,7 +693,7 @@ a, a:link {
 
     padding: 6px 14px 0 14px;
 
-    width: 170px;
+    width: 200px;
 
     margin: 11px 11px 11px 11px;
 
@@ -714,6 +714,14 @@ a, a:link {
     background: -webkit-linear-gradient(to right, #447ede, #88b5fb); /* Chrome 10-25, Safari 5.1-6 */
 
     background: linear-gradient(35deg, #447ede, #88b5fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+@media only screen and (max-width: 680px) {
+    .ourTeam .showListOfMembers .member {
+        padding: 6px 14px 0 14px;
+        width: 170px;
+    }
 }
 
 .ourTeam .showListOfMembers .member.active {

@@ -39,8 +39,8 @@ const OurTeam = () => {
                     </div>
                 </div>
                 <div className={`member help ${member === 'you1' ? 'active':''}`} onClick={() => SetMember('you1')}>
-                    <h3>جای شما</h3>
-                    <div className={'memberInfo'}>فکر میکنین میتونین کمکی بهمون ، ماریوتک جای شماست</div>
+                    <h3>آرش میلانی</h3>
+                    <div className={'memberInfo'}> آرش میلانی، هـکر و نینجای خوشحال‌سازی و عاشق کوه ، بهمون توی طراحی ، نوشتن و پیشبرد اهدافمون کمک میکنه</div>
                     <div className={'socialNetwork'} />
                 </div>
                 <div className={`member help ${member === 'you2' ? 'active':''}`} onClick={() => SetMember('you2')}>
@@ -55,7 +55,7 @@ const OurTeam = () => {
                     <figure className='back'><img src={'/static/images/masudSajedi.jpeg'} /></figure>
                     <figure className='right'><img src={'/static/images/mehdiRahimi.jpeg'} /></figure>
                     <figure className='left'><img src={'/static/images/hadiTabadoli.jpeg'} /></figure>
-                    <figure className='top'>شما</figure>
+                    <figure className='top'><img src={'/static/images/ArshMilani.jpeg'} /></figure>
                     <figure className='bottom'>شما</figure>
                 </div>
             </section>
