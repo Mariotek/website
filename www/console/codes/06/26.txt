@@ -1,0 +1,12 @@
+“use strict”;
+
+var user = {
+   get info() {
+      return {
+          id : 1,
+          name : “         ”
+      };
+   }
+};
+
+user.info = {};        	// This will cause an error

@@ -1,0 +1,16 @@
+// declare variable
+var getAge;
+
+// hoisted function
+function getAge() {
+	  console.log( 16 );
+}
+
+
+// call method
+getAge();
+
+// functions as variable
+getAge = function() {
+	  console.log( 26 );
+};

@@ -1,0 +1,4 @@
+import { getData } from ‘./dataManager’;
+
+var data = getData(); 
+console.log(data);

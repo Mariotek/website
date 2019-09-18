@@ -1,0 +1,7 @@
+// ES6
+var [x, y] = point;
+var { name, age } = obj;
+
+// ES5
+var x = point[0], y = point[1];
+var name = obj.name, age = obj.age;

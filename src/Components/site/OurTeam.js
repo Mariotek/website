@@ -40,7 +40,7 @@ const OurTeam = () => {
                 </div>
                 <div className={`member help ${member === 'you1' ? 'active':''}`} onClick={() => SetMember('you1')}>
                     <h3>آرش میلانی</h3>
-                    <div className={'memberInfo'}> آرش میلانی، هـکر و نینجای خوشحال‌سازی و عاشق کوه ، بهمون توی طراحی ، نوشتن و پیشبرد اهدافمون کمک میکنه</div>
+                    <div className={'memberInfo'}> آرش میلانی، هـکر و نینجای خوشحال‌سازی ، با نظرات و راهنمایی‌هاش بهمون کمک میکنه</div>
                     <div className={'socialNetwork'} />
                 </div>
                 <div className={`member help ${member === 'you2' ? 'active':''}`} onClick={() => SetMember('you2')}>

@@ -1,0 +1,4 @@
+array.reduce(
+    function(total, currentValue, currentIndex, array),
+    initialValue
+)

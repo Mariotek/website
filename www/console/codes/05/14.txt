@@ -1,0 +1,8 @@
+var array = [1, 2, 3, 4, 5, 6];
+
+var doubledArray = array.map(function(number){
+    return num * 2;
+});
+console.log(doubledArray); // output [2, 4, 6, 8, 10, 12]
+
+console.log(array); // output: [1, 2, 3, 4, 5, 6]

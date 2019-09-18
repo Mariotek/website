@@ -1,0 +1,8 @@
+var sum = 12;
+
+(function produceCounter(start){
+    var sum = start + 50;
+    console.log(sum);  // 60
+})(10);
+
+console.log(sum); // 12

@@ -1,0 +1,6 @@
+const arr = Array(100).map(function(_, i){
+    return i;
+});
+
+// check if index 0 is 0 ?
+console.log(arr[0] === undefined);  // true

@@ -1,0 +1,3 @@
+(function (root) {
+    // code
+})(this);S

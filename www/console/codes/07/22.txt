@@ -1,0 +1,7 @@
+var addTwo = createAdder(2);
+var addTen = createAdder(10);
+
+addTwo(6);  // 6 + 2 = 8
+addTen(5);  // 5 + 10 = 15
+
+createAdder(8)(6);    // 8 + 6 = 14

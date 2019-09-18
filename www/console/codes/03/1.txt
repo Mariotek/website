@@ -1,0 +1,5 @@
+var classMatesCount = 100;
+var myFriends = 5;
+if (myFriends < classMatesCount) {
+    console.log(“I have few friends”);
+}

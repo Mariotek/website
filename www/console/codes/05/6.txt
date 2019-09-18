@@ -1,0 +1,5 @@
+var array = [1, 2, 3, 4, 5, 6];
+
+array.splice(1 , 2 , “newOne” , “newTwo”);  // [2,3]
+
+console.log(array);  // [1, “newOne”, “newTwo”, 4, 5, 6]

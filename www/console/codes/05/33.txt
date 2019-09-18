@@ -1,0 +1,13 @@
+const arraySpread = [...Array(10)];
+
+console.log(arraySpread); 
+/*
+{
+   0: undefined,
+   1: undefined,
+   2: undefined,
+   ...
+   9: undefined,
+   length: 10
+}
+*/

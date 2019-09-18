@@ -1,0 +1,15 @@
+var House = function(area){
+    this.area = area;
+}
+
+// instance of House
+var myHouse = new House(60);
+var hisHouse = new House(85);
+
+
+House.prototype.calcPrice = function(){
+    return this.area * 14509000;
+}
+
+myHouse.calcPrice();       // 870540000
+hisHouse.calcPrice();      // 1233265000

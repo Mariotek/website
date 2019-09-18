@@ -1,0 +1,3 @@
+var studentsScoreAverage= students.filter(function(student){
+    return student.schoolName === ‘motahari’;
+})

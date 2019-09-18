@@ -1,0 +1,3 @@
+var isMotahhariStudent = function(student){
+    return student.school === ‘motahari’;
+};

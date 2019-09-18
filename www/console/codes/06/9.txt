@@ -1,0 +1,4 @@
+// functions as variable
+getAge = function() {
+	  console.log( 26 );
+};

@@ -1,0 +1,5 @@
+var isArray = (function () {
+  if (Array.isArray) {
+    return Array.isArray;
+  }
+})();

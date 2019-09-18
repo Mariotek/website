@@ -1,0 +1,10 @@
+const user = {
+    name: “ali”,
+    age : 32,
+    married: false,
+    favoriteColors: [“green” , “blue”]
+};
+
+const newUser = Object.assign(user , {name: “mehdi”, class: “4B”});
+
+console.log(newUser.name);   // “mehdi”

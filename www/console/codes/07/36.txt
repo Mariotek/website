@@ -1,0 +1,5 @@
+var SubModule = (function (MyApp) {
+    
+    // we have access to `MyApp`
+    
+})(MyApp);

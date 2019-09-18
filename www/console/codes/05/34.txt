@@ -1,0 +1,15 @@
+const user = {
+    name: “ali”,
+    age: 32,
+    married: false,
+    favoriteColors: [“green” , “blue”]
+};
+console.log(Object.keys(user));
+/* 
+output: [
+   “name”,
+   “age”,
+   “married” ,
+   “favoriteColors”
+]
+*/

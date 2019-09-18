@@ -1,0 +1,6 @@
+function foo() {
+    a = 1; // `a` not formally declared
+}
+
+foo();
+a; // `1` auto global variable

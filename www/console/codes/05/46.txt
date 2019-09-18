@@ -1,0 +1,3 @@
+var studentScore = function(student){
+    return (student.score * 100) / 20;
+};

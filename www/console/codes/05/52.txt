@@ -1,0 +1,6 @@
+.reduce( function([sum , count] , current) {
+    return [
+        sum + score ,
+        ++count
+    ];
+} , [0,0]);

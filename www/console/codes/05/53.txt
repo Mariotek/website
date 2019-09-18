@@ -1,0 +1,3 @@
+.reduce(function(sum, count){
+    return sum/count;
+});

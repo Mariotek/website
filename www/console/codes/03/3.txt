@@ -1,0 +1,10 @@
+switch(expression) {
+    case n:
+        // code block
+        break;
+    case m:
+    	 // code block
+        break;
+    default:
+        // default code block
+}

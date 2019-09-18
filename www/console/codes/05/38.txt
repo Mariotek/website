@@ -1,0 +1,15 @@
+const user = {
+    name: “ali”,
+    age : 32,
+    married: false,
+    favoriteColors: [“green” , “blue”]
+};
+Object.seal(user);
+
+
+user.name = “mehdi”; 
+console.log(user.name);    // output : “mehdi”
+
+
+delete user.name;              //  Throws an error
+user.newProprty = “newValue”;  //  Throws an error

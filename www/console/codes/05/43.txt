@@ -1,0 +1,12 @@
+// create array to sum,count
+.reduce(function([sum , count], score) {
+    return [
+        sum + score ,
+        ++count
+    ];  
+} , [0 , 0])
+
+// calculate average with created `sum` and `count` 
+.reduce(function(sum, count){
+    return sum/count;
+});

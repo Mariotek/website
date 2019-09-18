@@ -1,0 +1,11 @@
+(function add(start){
+   var sum = start + 50;
+
+   if(sum < 100){
+
+      // call sum function again
+      add(sum);
+   }else{
+      console.log(sum);   // console : 110
+   }
+})(10);

@@ -1,0 +1,5 @@
+var studentsScoreAverage = students
+    .filter(isMotahhariStudent)
+    .map(studentScore)
+    .reduce(calulateSumAndCount , [0 , 0])
+    .reduce(getAverage);  // output : 88.33

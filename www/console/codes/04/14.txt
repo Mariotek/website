@@ -1,0 +1,7 @@
+var House = function(area){
+    this.area = area;
+}
+
+// instance of House
+var myHouse = new House(60);
+var hisHouse = new House(85);

@@ -1,0 +1,8 @@
+var isArray = (function () {
+  if (Array.isArray) {
+    return Array.isArray;
+  }
+  return function (collection) {
+    return Object.prototype.toString.call(collection) === ‘[object Array]’;
+  };
+})();

@@ -1,0 +1,3 @@
+npm install --save-dev @babel/preset-env
+
+./node_modules/.bin/babel src --out-dir lib --presets=@babel/env

@@ -1,7 +1,6 @@
 /* eslint-disable global-require */
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import persistState from 'redux-localstorage';
 import { makeRootReducer } from '../reducers/index';
 import requests from './requests';
 
@@ -13,12 +12,7 @@ middleware.push(createLogger({ collapsed: true, diff: true }));
 // }
 
 const enhancer = compose(
-    applyMiddleware(...middleware),
-    persistState([
-        'csrf_token',
-        'loginAndRegister',
-        'karriz_get'
-    ]),
+    applyMiddleware(...middleware)
 );
 
 // Store Instantiation and HMR Setup

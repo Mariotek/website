@@ -1,0 +1,6 @@
+var calulateSumAndCount = function([sum , count], score) {
+    return [
+        sum + score ,
+        ++count
+    ];  
+};

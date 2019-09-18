@@ -1,0 +1,7 @@
+var House = function(area){
+    this.area = area;
+}
+House.prototype.calcPrice = function(){
+    return this.area * 14509000;
+}
+House.prototype.features = [“pool” , “roof garden”];

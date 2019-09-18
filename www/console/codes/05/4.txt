@@ -1,0 +1,2 @@
+array.push(item1, item2, ..., itemX)
+array.pop()    // no parameter

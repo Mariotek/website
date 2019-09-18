@@ -1,0 +1,8 @@
+[“ali” , “mohammad” , “reza”];
+
+{
+    0 : “ali”,
+    1 : “mohammad”,
+    2 : “reza”
+    length : 3
+}

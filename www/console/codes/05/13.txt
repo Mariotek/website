@@ -1,0 +1,10 @@
+// just larger than 3
+var filteredArray = array.filter(function(number){
+    if(number > 3){
+        return true;
+    }else{
+        return false;
+    }
+});
+
+console.log(filteredArray); // output: [4, 5, 6]

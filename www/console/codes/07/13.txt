@@ -1,0 +1,5 @@
+(function add(start){
+    var sum = start + 50;
+
+    console.log(sum);   // console : 60
+})(10);

@@ -1,0 +1,4 @@
+var House = function(){ }
+
+// instance of House
+var myHouse = new House();

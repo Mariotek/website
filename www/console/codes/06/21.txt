@@ -1,0 +1,6 @@
+var descriptor = {
+  enumerable: false,
+  configurable: false,
+  writable: false,
+  value: ‘        ’
+}

@@ -1,0 +1,3 @@
+import { getData as data } from ‘./dataManager’;
+
+data(); 

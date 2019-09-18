@@ -1,0 +1,13 @@
+var array = [1, 2, 3, 4, 5, 6];
+
+// has greater than 4 ?
+var hasLargeThanFour = array.some(function(number){
+    return num > 4;
+});
+console.log(hasLargeThanFour); // output: true
+
+// has negative or zero
+var hasNegative = array.some(function(number){
+    return num <= 0;
+});
+console.log(hasNegative); // output: false

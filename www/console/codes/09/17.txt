@@ -1,0 +1,2 @@
+// isArray polyfill function
+function isArray (collection) {}

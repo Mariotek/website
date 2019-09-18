@@ -33,9 +33,12 @@
             var rawFile = new XMLHttpRequest();
             rawFile.open("GET", file, false);
             rawFile.onload = function () {
-                if(rawFile.status === 200 || rawFile.status == 0) {
+                console.log({rawFile});
+                if(rawFile.status === 200 && rawFile.status !== 0) {
                     var allText = rawFile.responseText;
                     callback(allText);
+                }else{
+
                 }
             };
             rawFile.send();
@@ -74,7 +77,12 @@
             } , 1200);
         }
 
-        readCodeContent('http://localhost:8022/console/codes/chapter01/code02.js' , addCodeToCli);
+        const _PATH_HASH = window.location.hash;
+        const CodePath = _PATH_HASH.substr(1,2) + '/' + _PATH_HASH.substr(3,2);
+
+        console.log(CodePath);
+
+        readCodeContent('http://mariotek.ir/console/codes/' + CodePath + '.txt' , addCodeToCli);
 
     });
 

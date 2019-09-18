@@ -1,0 +1,7 @@
+var Module = (function () {
+  
+  var privateMethod = function () {
+    // do some operations
+  };
+
+})();

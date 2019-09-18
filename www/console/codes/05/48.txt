@@ -1,0 +1,3 @@
+var getAverage = function(sum, count){
+    return sum/count;
+};

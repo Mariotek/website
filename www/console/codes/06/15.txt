@@ -1,0 +1,7 @@
+“use strict”;
+
+// This will cause an error
+x = {
+    name: “Ali”,
+    family: “Naeimi”
+};  

@@ -1,0 +1,4 @@
+function myFunction() {
+	var value = arguments[0] !== (void 0) ? arguments[0] : 12;
+	console.log( value );
+}

@@ -1,0 +1,6 @@
+Module.publicProperty;  // value
+Module.publicMethod();  // amount : 312
+Module.age;     // undefined
+
+Module._collectAmount();  
+// TypeError: Module._collectAmount 

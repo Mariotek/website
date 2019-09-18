@@ -1,0 +1,4 @@
+“use strict”;
+
+// SyntaxError: duplicate formal argument a
+function average(a, b, a) { }

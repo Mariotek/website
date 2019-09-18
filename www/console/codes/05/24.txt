@@ -1,0 +1,10 @@
+function testArguments(){
+    // error: not an array
+    var joined = arguments.join(“, “);       
+    console.log(typeof arguments);  // “object”
+}
+
+document.querySelector(“.row”).join(“,”);  
+// error: not an array
+
+typeof document.querySelector(“.row”);  // returns “object”

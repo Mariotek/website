@@ -1,0 +1,19 @@
+console.log(myHouse.__proto__);
+/* {
+    constructor: House()
+    arguments: null
+    caller: null
+    length: 0
+    name: “House”
+    prototype: Object { ... }
+} */
+
+console.log(House.prototype);
+/* {
+    constructor: House()
+    arguments: null
+    caller: null
+    length: 0
+    name: “House”
+    prototype: Object { ... }
+} */

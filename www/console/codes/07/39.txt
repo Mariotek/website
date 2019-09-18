@@ -1,0 +1,7 @@
+// require needed dependency
+var dep1 = require(‘./dependency1’);  
+var dep2 = require(‘./dependency2’);
+
+module.exports = function(){  
+  // ...
+}

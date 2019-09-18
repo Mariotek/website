@@ -1,0 +1,7 @@
+// Function in IIFE format
+(function produceCounter(start){
+    var sum = start + 50;
+    console.log(sum);
+})(10);
+
+// console = 60

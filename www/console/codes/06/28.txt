@@ -1,0 +1,5 @@
+“use strict”;
+
+// This will cause an error 
+eval (“var variable = 2”);
+alert (variable);          

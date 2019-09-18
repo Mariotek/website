@@ -1,0 +1,2 @@
+console.log(House.prototype === myHouse.__proto__);  
+// true

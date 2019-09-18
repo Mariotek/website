@@ -1,0 +1,6 @@
+var array = [2, 1, 6, 3, 5, 6];
+var ordered = array.sort(function(a, b){
+    return (a > b) ? 1 : -1;
+});
+
+console.log(descOrder); // output: [1,2,3,4,5,6]

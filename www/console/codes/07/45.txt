@@ -1,0 +1,13 @@
+export default function sayHello(){  
+  console.log(‘I will say default Hello’);
+}
+
+export function getBase64(){  
+  console.log(‘I Am Not Base64’);
+}
+
+export const imagesPrefix = ‘/test/src/’;
+
+export const imagesOptions = { 
+  responsive : true
+}

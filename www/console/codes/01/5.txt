@@ -1,0 +1,5 @@
+/* Declare a, give it the value of 1
+Declare a, give it the value of 1 */
+var a = 1;
+var b = 2;
+var a = /* Declare a, give it the value of 1 */ 1;

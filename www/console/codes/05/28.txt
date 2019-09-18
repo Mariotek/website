@@ -1,0 +1,7 @@
+const array1 = Array(7);
+const array2 = [7];
+const array3 = Array.of(7);
+
+console.log(array1);  // [ <7 empty items> ]
+console.log(array2);  // [ 7 ]
+console.log(array3);  // [ 7 ]

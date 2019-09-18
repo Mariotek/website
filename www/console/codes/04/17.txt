@@ -1,0 +1,6 @@
+var House = function(area){
+    this.area = area;
+    this.calcPrice = function(){
+        return this.area * 14509000;
+    }
+}

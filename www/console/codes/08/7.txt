@@ -1,0 +1,5 @@
+// Write
+localStorage.setItem(“bookName”, “js book”);
+
+// Read
+console.log(localStorage.getItem(“bookName”));

@@ -1,0 +1,7 @@
+// ./src/test.js
+function myFunction(value = 12) {
+    console.log( value );
+}
+
+myFunction();	  // 12
+myFunction( 42 );	  // 42

@@ -1,0 +1,19 @@
+var getAge;
+
+// call method
+getAge();
+
+// first get age
+function getAge() {
+	  console.log( 16 );
+}
+
+// functions as variables
+getAge = function() {
+	  console.log( 26 );
+};
+
+// second get age method !
+function getAge() {
+	  console.log( 36 );
+}

@@ -1,0 +1,4 @@
+var user = {};
+
+// set name of user
+user.name = “ali”;

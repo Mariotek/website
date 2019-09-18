@@ -1,0 +1,5 @@
+const map = new Map([[1, ‘one’], [2, ‘two’]]);
+map.get(1);    // 1
+
+const set = new Set([‘a’, ‘b’, ‘c’]);
+set.has(‘c’);  // true

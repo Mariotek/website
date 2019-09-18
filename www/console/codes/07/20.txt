@@ -1,0 +1,5 @@
+var persianTranslator = createTranslator(“fa”);
+var englishTranslator = createTranslator(“en”);
+
+persianTranslator(“hi”);  // ????
+englishTranslator(“hi”);  // Hello

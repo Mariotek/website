@@ -1,0 +1,6 @@
+var count = 15; // Declare and Assign 15 to count
+var elem = document.getElementById(“dataCount”);
+// Find an element
+
+elem.innerHTML = count;                 
+// Display count in the element

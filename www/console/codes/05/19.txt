@@ -1,0 +1,7 @@
+var arr = [1, 2, 3, 4, 5, 6];
+
+// sort in descending order
+var descOrder = arr.sort(function(a, b){
+    return (a > b) ? -1 : 1;
+});
+console.log(descOrder); // output: [6, 5, 4, 3, 2, 1]

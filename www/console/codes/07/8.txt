@@ -1,0 +1,2 @@
+// what is it correct ?!
+undefined = true;

@@ -1,0 +1,7 @@
+// Set properties
+Object.defineProperty( myObject, ‘a’, {
+  value: “some value”,
+  writable: true,
+  enumerable: true,
+  configurable: true
+});

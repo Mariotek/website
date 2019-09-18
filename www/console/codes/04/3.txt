@@ -1,0 +1,14 @@
+const MONEY_PROFIT = 0.20;
+
+/**
+* To calculate profit added to money at bank
+*/
+function calculateProfit(money) {
+    // calculate the new money amount with the profit
+    money = money + (money * MONEY_PROFIT);
+    // return the new amount
+    return money;
+}
+
+var newMoney = calculateProfit(20000000);
+console.log(newMoney); // 24000000

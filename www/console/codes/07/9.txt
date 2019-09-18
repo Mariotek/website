@@ -1,0 +1,5 @@
+undefined = true;
+
+(function (window, document, undefined) {
+    // undefined is a local undefined variable
+})(window, document);

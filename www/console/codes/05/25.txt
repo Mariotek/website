@@ -1,0 +1,6 @@
+function testArguments(){
+    var joined = Array.from(arguments).join(“, “);
+    console.log(joined); 
+}
+
+testArguments(1,2,3);   // 1, 2, 3

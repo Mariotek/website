@@ -1,0 +1,8 @@
+var Module = (function () {
+  return {
+    publicProperty : “value”,
+    publicMethod: function () {
+      // code goes here
+    }
+  };
+})();

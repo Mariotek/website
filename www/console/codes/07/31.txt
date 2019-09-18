@@ -1,0 +1,19 @@
+var Module = (function () {
+
+  // local private variable and function
+  var age = 12;
+
+  // private module
+  function _collectAmount(){
+      return age + 300;
+  }
+  var publicAPI = {
+      publicMethod : function(){
+          console.log(“Hi there !”);
+      }
+  };
+
+  // return publicAPI object
+  return publicAPI;
+
+})();ss

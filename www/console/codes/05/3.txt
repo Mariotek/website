@@ -1,0 +1,8 @@
+var array = [1, 2, 3, 4, 5, 6];
+
+array.pop();    // 6
+array.pop();    // 5
+
+array.push(9);  // 4
+
+console.log(array);   // [1,2,3,4,9]

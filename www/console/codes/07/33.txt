@@ -1,0 +1,20 @@
+var MyApp = (function () {
+
+  var _doSomePrivateThing = function () {
+    // private
+  };
+
+  var publicMethod = function () {
+    // public
+  };
+
+  var mySecondPublicMethod = function () {
+    // public
+  };
+  
+  return {
+    publicMethod: publicMethod,
+    mySecondPublicMethod: mySecondPublicMethod
+  };
+
+})();

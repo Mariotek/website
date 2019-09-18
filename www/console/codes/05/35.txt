@@ -1,0 +1,8 @@
+const user = {
+    name: “ali”,
+    age : 32,
+    married: false,
+    favoriteColors: [“green” , “blue”]
+};
+console.log(Object.values(user));
+// output: Array [“ali”, 32, false , [“green” , “blue”] ]

@@ -1,0 +1,8 @@
+(function (window, document, undefined) {
+   console.log(window); // Object window
+})(window, document);
+
+// minified 
+(function (a, b, c) {
+   console.log(a); // Object window
+})(window, document);

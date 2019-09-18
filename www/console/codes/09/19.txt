@@ -1,0 +1,7 @@
+// isArray polyfill function
+function isArray (collection) {
+  if (Array.isArray) {
+    return Array.isArray(collection);
+  }
+  return Object.prototype.toString.call(collection) === ‘[object Array]’;
+}

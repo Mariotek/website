@@ -13,11 +13,6 @@ require('@babel/polyfill');
 
 import App from './Components/App';
 
-// create csrf token and set it in store
-// import { getToken } from './actions/csrf_token';
-//
-// store.dispatch(getToken());
-
 ReactDOM.render(
     <Provider store={store}>
         <App/>

@@ -1,0 +1,8 @@
+
+function foo() {
+    “use strict”;  // turn on strict mode
+    data = 1;      // `var` missing, ReferenceError
+}
+ 
+foo();
+ 

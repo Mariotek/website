@@ -1,0 +1,5 @@
+var TAX_RATE = 0.10; // 10% sales tax
+var amount = 20;
+amount = amount * 2;
+amount = amount + (amount * TAX_RATE);
+console.log( amount ); // 44

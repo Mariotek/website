@@ -1,0 +1,5 @@
+/* Chain1 */ 
+House.constructor.constructor.constructor ;
+
+/* Chain2 */
+House.prototype.constructor.prototype.constructor ;

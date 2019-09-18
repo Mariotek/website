@@ -1,0 +1,6 @@
+// isArray polyfill function
+function isArray (collection) {
+  if (Array.isArray) {
+    return Array.isArray(collection);
+  }
+}

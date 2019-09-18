@@ -1,0 +1,18 @@
+// Languages string data object
+var languagesData = {
+    “en” : {
+        “hi” : “Hello”
+    },
+    “fa” : {
+        “hi” : “     ”
+    },
+};
+
+// function that we use to create translator
+function createTranslator(lang) {
+
+	function translator(key) {
+		return languagesData[lang][key];
+	}
+	return translator;
+}
