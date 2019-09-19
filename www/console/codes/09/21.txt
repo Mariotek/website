@@ -3,6 +3,6 @@ var isArray = (function () {
     return Array.isArray;
   }
   return function (collection) {
-    return Object.prototype.toString.call(collection) === ‘[object Array]’;
+    return Object.prototype.toString.call(collection) === '[object Array]';
   };
 })();

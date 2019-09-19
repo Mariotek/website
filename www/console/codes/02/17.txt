@@ -1,1 +1,1 @@
-sampleObject.hasOwnProperty(‘property’);   // true
+sampleObject.hasOwnProperty('property');   // true

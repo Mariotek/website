@@ -1,12 +1,12 @@
 function getStudentsScoreAverage(data) {
    var sum = 0,count = 0;
    for (var i = 0; i < data.length; i++){
-       if (data[i].schoolName === ‘motahari’){
+       if (data[i].schoolName === 'motahari'){
            var tempScore = data[i].score;
            sum += (tempScore * 100 / 20);
            count++;
        }
    }
    return sum/count;
-}   
+}
 getStudentsScoreAverage(students);   // 88.33

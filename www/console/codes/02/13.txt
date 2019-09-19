@@ -1,8 +1,8 @@
 var object = {
-    foo: “hello world”,
+    foo: 'hello world',
     b: 42
-};  
+};
 
-var b = “foo”;
-object[b];          // “hello world”
-object[“b”];        // 42
+var b = 'foo';
+object[b];          // 'hello world'
+object['b'];        // 42

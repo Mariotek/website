@@ -1,17 +1,17 @@
 // dataManager.js
 var data = {
-    title: “Js book test”
+    title: 'Js book test'
 };
 
 // Export variable default
 export default data;
 
 // Export the function
-export function getData(){  
+export function getData(){
     return data;
 }
 
 // Do not export the function
-function somePrivateFunction(){  
+function somePrivateFunction(){
     // some code
 }

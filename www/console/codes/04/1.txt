@@ -3,7 +3,7 @@ function showUserAge() {
 }
 
 var userAge = 28;
-showUserAge(); // “28”
+showUserAge(); // '28'
 
 userAge = userAge * 365; // age is days
-showUserAge(); // “10220”
+showUserAge(); // '10220'

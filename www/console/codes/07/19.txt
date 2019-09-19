@@ -1,10 +1,10 @@
 // Languages string data object
 var languagesData = {
-    “en” : {
-        “hi” : “Hello”
+    'en' : {
+        'hi' : 'Hello'
     },
-    “fa” : {
-        “hi” : “     ”
+    'fa' : {
+        'hi' : '     '
     },
 };
 

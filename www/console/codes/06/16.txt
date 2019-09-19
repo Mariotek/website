@@ -1,4 +1,4 @@
-“use strict”;
+'use strict';
 var age = 30;
 
 delete age;   	// This will cause an error

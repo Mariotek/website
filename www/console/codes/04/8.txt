@@ -5,7 +5,7 @@ function getUserInfo(id , callback){
             callback(xhttp.responseText);
 	      }
     };
-    xhttp.open(“GET”, “/path”, true);
+    xhttp.open('GET', '/path', true);
     xhttp.send();
 }
 getUserInfo(12 , function(res){

@@ -1,4 +1,4 @@
-import { getData } from ‘./dataManager’;
+import { getData } from './dataManager';
 
-var data = getData(); 
+var data = getData();
 console.log(data);

@@ -1,1 +1,1 @@
-document.cookie = “studentName=AliKarimi”;
+document.cookie = 'studentName=AliKarimi';

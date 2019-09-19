@@ -4,10 +4,10 @@ function showMessage(info){
 function createUserObject(id){
     var obj = {
         id : id,
-        name : “unknown”
+        name : 'unknown'
     };
     showMessage(obj);
 }
 
 // if we want get user info and show it
-createUserObject(12);  // {id : 12 , name : “unknown”}
+createUserObject(12);  // {id : 12 , name : 'unknown'}

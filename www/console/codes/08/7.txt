@@ -1,5 +1,5 @@
 // Write
-localStorage.setItem(“bookName”, “js book”);
+localStorage.setItem('bookName', 'js book');
 
 // Read
-console.log(localStorage.getItem(“bookName”));
+console.log(localStorage.getItem('bookName'));

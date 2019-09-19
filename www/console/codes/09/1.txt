@@ -13,14 +13,14 @@ class Glass extends Things {
     capture() {
     // call parent method
     super.capture();
-        // …
+        // '
     }
 }
 
 // ES5 code
 var Things = function() {
-    // … 
+    // '
 };
 Things.prototype.capture = function() {
-    // …
+    // '
 };

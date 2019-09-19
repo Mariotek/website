@@ -1,5 +1,5 @@
 //Calling define with a dependency array and a factory function
-define([‘dependency1’, ‘dependency2’], function (dep1, dep2) {
+define(['dependency1', 'dependency2'], function (dep1, dep2) {
     //Define the module value by returning a value.
     return function () {};
 });

@@ -5,13 +5,13 @@ var User = {
 }
 
 var userOne = {
-    name: “Ali”,
-    family: “Ahmadi”,
+    name: 'Ali',
+    family: 'Ahmadi',
 };
 
 var userTwo = {
-    name: “Reza”,
-    family: “Karimi”,
+    name: 'Reza',
+    family: 'Karimi',
 };
 
-User.getFullName.call(userOne);  // “Ali Ahmadi”
+User.getFullName.call(userOne);  // 'Ali Ahmadi'

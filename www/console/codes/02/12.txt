@@ -1,1 +1,1 @@
-obj[“hello world!”]
+obj['hello world!']

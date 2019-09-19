@@ -1,3 +1,3 @@
-$.get(‘/data’, (response) => {
+$.get('/data', (response) => {
    this.data = response.data;
 });

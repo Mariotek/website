@@ -1,11 +1,11 @@
 -function () {
-    console.log(“run with - “);
+    console.log('run with - ');
 }();
 
 +function () {
-    console.log(“run with + “);
+    console.log('run with + ');
 }();
 
 ~function () {
-    console.log(“run with ~ “);
+    console.log('run with ~ ');
 }();

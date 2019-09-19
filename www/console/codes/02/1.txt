@@ -2,6 +2,6 @@ var amount = 2000;
 amount = amount * 2;
 console.log( amount ); // 4000
 
-// convert `amount` to a string, and add ‘Toman’ to the end
-amount = String( amount ) + “Toman”;
-console.log( amount ); // “4000 Toman”
+// convert `amount` to a string, and add 'Toman' to the end
+amount = String( amount ) + 'Toman';
+console.log( amount ); // '4000 Toman'

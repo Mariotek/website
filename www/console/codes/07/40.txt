@@ -1,8 +1,8 @@
 (function (root, factory) {
-  if (typeof define === ‘function’ && define.amd) {
-      define([‘dep’], factory);
-  } else if (typeof module === ‘object’ && module.exports){
-    module.exports = factory(require(‘dep’));
+  if (typeof define === 'function' && define.amd) {
+      define(['dep'], factory);
+  } else if (typeof module === 'object' && module.exports){
+    module.exports = factory(require('dep'));
   } else {
     // Browser globals (root is window)
     root.returnExports = factory(root.b);
@@ -12,4 +12,4 @@
   //use b in some fashion.
   return {};
 
-}));			
+}));

@@ -1,10 +1,10 @@
 const user = {
-    name: “ali”,
+    name: 'ali',
     age : 32,
     married: false,
-    favoriteColors: [“green” , “blue”]
+    favoriteColors: ['green' , 'blue']
 };
 Object.freeze(user);
 
-user.name = “mehdi”;           // Throws an error
-user.newProprty = “newValue”;  // Throws an error
+user.name = 'mehdi';           // Throws an error
+user.newProprty = 'newValue';  // Throws an error

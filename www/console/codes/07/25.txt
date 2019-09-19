@@ -5,12 +5,12 @@ function Car(){
 	  function _make(name,id) {
 	      returngetAjaxData(na)
 	  }
-      
+
     // get data from url
 	  function getAjaxData(car,id) {
 
        // we get car data from some URL
-       // carInfo will set here 
+       // carInfo will set here
        return carInfo;
 	  }
 
@@ -22,4 +22,4 @@ function Car(){
 // create a `Car` module instance
 var car = Car();
 
-car.make( “peykan”, 23 );
+car.make( 'peykan', 23 );

@@ -11,7 +11,7 @@ var myHouse = new House(60);
 var hisHouse = new House(85);
 
 
-myHouse.features.push(“parket”);
+myHouse.features.push('parket');
 
-myHouse.features;   // [“pool” , “roof garden”]
-hisHouse.features;  // [“pool” , “roof garden” , “parket”]
+myHouse.features;   // ['pool' , 'roof garden']
+hisHouse.features;  // ['pool' , 'roof garden' , 'parket']

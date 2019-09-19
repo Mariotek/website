@@ -9,7 +9,7 @@ var Module = (function () {
   }
   var publicAPI = {
       publicMethod : function(){
-          console.log(“Hi there !”);
+          console.log('Hi there !');
       }
   };
 

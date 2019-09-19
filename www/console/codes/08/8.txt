@@ -1,1 +1,1 @@
-localStorage.removeItem(“bookName”);
+localStorage.removeItem('bookName');

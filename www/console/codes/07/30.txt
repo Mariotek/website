@@ -8,7 +8,7 @@ var Module = (function () {
       return age + 300;
   }
   publicAPI.publicMethod = function(){
-      console.log(“Hi there !”);
+      console.log('Hi there !');
   }
   // return publicAPI object
   return publicAPI;

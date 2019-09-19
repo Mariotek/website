@@ -1,7 +1,7 @@
-var scope = “I am global”;
+var scope = 'I am global';
 
 function whatismyscope() {
-    var scope = “I am just a local”;
+    var scope = 'I am just a local';
     function func() {
         return scope;
     }

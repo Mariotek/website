@@ -1,14 +1,14 @@
 var a;
-typeof a; // “undefined”
-a = “hello world”;
-typeof a; // “string”
+typeof a; // 'undefined'
+a = 'hello world';
+typeof a; // 'string'
 a = 42;
-typeof a; // “number”
+typeof a; // 'number'
 a = true;
-typeof a; // “boolean”
+typeof a; // 'boolean'
 a = null;
-typeof a; // “object” -- weird
+typeof a; // 'object' -- weird
 a = undefined;
-typeof a; // “undefined”
-a = { b: “c” };
-typeof a; // “object”
+typeof a; // 'undefined'
+a = { b: 'c' };
+typeof a; // 'object'

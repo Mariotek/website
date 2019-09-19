@@ -1,8 +1,8 @@
 var a = 1;
-var b = (a > 2) ? “hello” : “world”;
+var b = (a > 2) ? 'hello' : 'world';
 
 // if (a > 2) {
-//     b = “hello”;
+//     b = 'hello';
 // } else {
-//     b = “world”;
+//     b = 'world';
 // }

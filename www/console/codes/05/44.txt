@@ -1,5 +1,5 @@
 var studentsScoreAverage= students.filter(function(student){
-    return student.schoolName === ‘motahari’;
+    return student.schoolName === 'motahari';
 })
 .map(function(student){
     return (student.score * 100) / 20;
@@ -8,7 +8,7 @@ var studentsScoreAverage= students.filter(function(student){
     return [
         sum + score ,
         ++count
-    ];  
+    ];
 } , [0 , 0])
 .reduce(function(sum, count){
     return sum/count;

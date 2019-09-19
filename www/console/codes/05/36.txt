@@ -1,16 +1,16 @@
 const user = {
-    name: “ali”,
+    name: 'ali',
     age : 32,
     married: false,
-    favoriteColors: [“green” , “blue”]
+    favoriteColors: ['green' , 'blue']
 };
 Object.entries(user);
 /*
 output : [
-    0: Array [ “name”, “ali” ]
-    1: Array [ “age”, 32 ]
-    2: Array [ “married”, false ]
-    3: Array [ “favoriteColors”, [“green” , “blue”] ]
+    0: Array [ 'name', 'ali' ]
+    1: Array [ 'age', 32 ]
+    2: Array [ 'married', false ]
+    3: Array [ 'favoriteColors', ['green' , 'blue'] ]
     length: 4
-] 
+]
 */

@@ -1,5 +1,5 @@
 function () {
-     console.log(“run ! “);
+     console.log('run ! ');
 }();
 
 // SyntaxError: function statement requires a name

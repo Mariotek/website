@@ -1,6 +1,6 @@
 var Module = (function () {
   return {
-    publicProperty : “value”,
+    publicProperty : 'value',
     publicMethod: function () {
       // code goes here
     }

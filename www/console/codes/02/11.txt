@@ -1,1 +1,1 @@
-sampleObject[‘property’];    // 100
+sampleObject['property'];    // 100

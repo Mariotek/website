@@ -2,9 +2,9 @@ function showUserAge(age) {
     console.log(age);
 }
 function formatUserAge() {
-    return userAge + “ days”;
+    return userAge + ' days';
 }
 var userAge = 28;
-showUserAge(userAge); // “28”
+showUserAge(userAge); // '28'
 userAge = formatUserAge();
-console.log( userAge ); // “10220 days”
+console.log( userAge ); // '10220 days'

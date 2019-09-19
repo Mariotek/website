@@ -4,7 +4,7 @@ console.log(myHouse.__proto__);
     arguments: null
     caller: null
     length: 0
-    name: “House”
+    name: 'House'
     prototype: Object { ... }
 } */
 
@@ -14,6 +14,6 @@ console.log(House.prototype);
     arguments: null
     caller: null
     length: 0
-    name: “House”
+    name: 'House'
     prototype: Object { ... }
 } */

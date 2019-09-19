@@ -5,7 +5,7 @@ function Student() {
 
 $.extend(Student.prototype, {
     getData: function() {
-       $.get(‘/data’, function(response) {
+       $.get('/data', function(response) {
            this.data = response.data;
        });
     },

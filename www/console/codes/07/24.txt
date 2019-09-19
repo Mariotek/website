@@ -21,4 +21,4 @@ function Car(){
 var car = Car();
 
 // create specific car
-car.make( “peykan”, “white” );
+car.make( 'peykan', 'white' );

@@ -1,8 +1,8 @@
 var sayName = function(name){
-    console.log(“Name : “ + name);
+    console.log('Name : ' + name);
 }
 
 function manageList( list , func ) {
     list.forEach(func);
 }
-manageList( [“ali” , “reza” , “karim”] , sayName );
+manageList( ['ali' , 'reza' , 'karim'] , sayName );

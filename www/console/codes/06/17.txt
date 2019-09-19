@@ -1,7 +1,7 @@
-“use strict”;
+'use strict';
 
 function sum(a, b) {
     // code
 };
 
-delete sum;         // This will cause an error 
+delete sum;         // This will cause an error
