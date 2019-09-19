@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon-192.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon-192.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <title>jsconsole</title>
+    <base href="/console/" />
+    <link href="static/css/main.e714727a.css" rel="stylesheet">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/javascript" src="static/js/main.f0b27520.js"></script>
+<script type="text/javascript">
+    function ready(fn) {
+        if (document.readyState != 'loading'){
+            fn();
+        } else if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            document.attachEvent('onreadystatechange', function() {
+                if (document.readyState != 'loading')
+                    fn();
+            });
+        }
+    }
+    ready(function () {
+        function readCodeContent(file , callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onload = function () {
+                console.log({rawFile});
+                if(rawFile.status === 200 && rawFile.status !== 0) {
+                    var allText = rawFile.responseText;
+                    callback(allText);
+                }else{
+
+                }
+            };
+            rawFile.send();
+        }
+
+        function addCodeToCli(text) {
+            var el = document.querySelector(".cli");
+            el.value = text;
+            el.focus();
+
+            setTimeout(function () {
+
+                var evt= new Event('keydown');
+                el.dispatchEvent(evt);
+                el.dispatchEvent(new KeyboardEvent('keydown',{'key':'Space'}));
+
+
+                var keyboardEvent = document.createEvent("KeyboardEvent");
+                var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
+
+
+                keyboardEvent[initMethod](
+                    "keydown", // event type : keydown, keyup, keypress
+                    true, // bubbles
+                    false, // cancelable
+                    window, // viewArg: should be window
+                    false, // ctrlKeyArg
+                    false, // altKeyArg
+                    false, // shiftKeyArg
+                    false, // metaKeyArg
+                    40, // keyCodeArg : unsigned long the virtual key code, else 0
+                    0 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
+                );
+                document.dispatchEvent(keyboardEvent);
+
+            } , 1200);
+        }
+
+        const _PATH_HASH = window.location.hash;
+        const CodePath = _PATH_HASH.substr(1,2) + '/' + _PATH_HASH.substr(3,2);
+
+
+        console.log(CodePath);
+
+        readCodeContent('http://mariotek.ir/console/codes/' + CodePath + '.txt' , addCodeToCli);
+
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.cookie = 'name=value;expires=Thu, 23 Dec 2019 15:45:00 UTC; domain=my.domain.com; path=/; HttpOnly;';

@@ -1,0 +1,3 @@
+webpackJsonp([14],{116:/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/boilerplates/svelte/codepan.svelte ***!
+  \**************************************************************************//*! dynamic exports provided *//*! all exports used */function(a){a.exports="<div id=\"app\">\n  <h2>{{ count }}</h2>\n  <button on:click=\"inc()\">inc</button>\n  <button on:click=\"dec()\">dec</button>\n</div>\n\n<script>\nexport default {\n  data() {\n    return {\n      count: 0\n    }\n  },\n\n  methods: {\n    inc() {\n      this.set({\n        count: this.get('count') + 1\n      })\n    },\n    dec() {\n      this.set({\n        count: this.get('count') - 1\n      })\n    }\n  }\n}\n</script>\n"}});

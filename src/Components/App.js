@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Waiting from './Waiting';
 
 import Index from './site/Index';
@@ -9,7 +9,7 @@ const NotFound = lazy(() => import('./404'));
 
 
 const App = () => (
-    <HashRouter>
+    <BrowserRouter>
         <React.Fragment>
             <Suspense fallback={ <Waiting /> }>
                 <Switch>
@@ -21,7 +21,7 @@ const App = () => (
                 </Switch>
             </Suspense>
         </React.Fragment>
-    </HashRouter>
+    </BrowserRouter>
 );
 
 
