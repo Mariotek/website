@@ -80,6 +80,7 @@
         const _PATH_HASH = window.location.hash;
         const CodePath = _PATH_HASH.substr(1,2) + '/' + _PATH_HASH.substr(3,2);
 
+
         console.log(CodePath);
 
         readCodeContent('http://mariotek.ir/console/codes/' + CodePath + '.txt' , addCodeToCli);
