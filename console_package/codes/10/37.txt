@@ -1,0 +1,19 @@
+function* give(count, iterator) {
+    let counter = 0;
+    for (let value of iterator) {
+        if (counter >= count) {
+            return;
+        }
+        counter++;
+        yield value;
+    }
+}
+
+give(2, ['ali', 'ahmad', 'reza', 'mani'])
+// 'ali' , 'ahmad'
+
+give(7, naturalNumbers());
+// 1 2 3 4 5 6 7
+
+give(5, powerSeries(3, 2));
+// 9 16 25 36 49

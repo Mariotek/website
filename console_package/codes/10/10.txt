@@ -1,0 +1,5 @@
+let index = '1';
+let obj = {
+    foo: 'bar',
+    [ 'baz' + index ]: 42
+}

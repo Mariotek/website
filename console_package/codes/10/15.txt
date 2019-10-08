@@ -1,0 +1,3 @@
+for (const teacher of schoolTeachers) {
+   console.log(teacher);
+}

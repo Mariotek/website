@@ -1,0 +1,5 @@
+const friends = ['ali', 'ahmad', 'reza', 'mani'];
+const topTwoFriends = give(2 , friends);
+
+console.log(...topTwoFriends) // 'ali' 'ahmad'
+console.log(...topTwoFriends) // This will not give any data

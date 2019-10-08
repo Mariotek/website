@@ -1,0 +1,8 @@
+foo: {
+  console.log(“first”);
+  break foo;
+  console.log(“second”);
+}
+
+// > first
+// -> undefined

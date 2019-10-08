@@ -1,0 +1,30 @@
+        // iteratable object
+        return { 
+            next(){
+                const teachers = majors[majorsIndex];
+
+                // if this major teachers finished
+                if(teachers.length <= teachersIndex){
+                    teachersIndex = 0;
+                    majorsIndex++; 
+                }
+
+                // if majors iteration are finished
+                if(majors.length <= majorsIndex){
+                    // state is finished
+                    return {
+                        value : undefined ,
+                        done : true
+                    }; 
+                }
+
+                return { 
+                     value : 
+                     majors[majorsIndex][teachersIndex],
+                     done : false
+                };
+
+            }  // end next method
+        }; // end return
+            } // end symbol iterator
+];

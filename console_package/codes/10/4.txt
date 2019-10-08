@@ -1,0 +1,4 @@
+// for-of loop
+for(var member of classMates){
+    console.log(member);
+}

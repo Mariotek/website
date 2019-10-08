@@ -1,0 +1,4 @@
+a;
+a;
+// This is also valid
+a, a;

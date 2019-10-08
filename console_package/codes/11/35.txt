@@ -1,0 +1,9 @@
+// Declare a new constant which is a string ‘constructor’
+const c = “constructor”;
+
+// c is a string
+c; // -> ‘constructor’
+
+// Getting a constructor of string
+c[c]; // -> [Function: String]
+

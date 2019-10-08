@@ -1,0 +1,10 @@
+function* generatorOne() {
+    yield 3;
+}
+
+function* generatorTwo() {
+    yield* generatorOne();
+}
+
+const iterator = generatorTwo();
+console.log(iterator.next().value); // output value : 3

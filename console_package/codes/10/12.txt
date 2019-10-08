@@ -1,0 +1,6 @@
+var levelCounter = Iterable[Symbol.iterator]();
+
+levelCounter.next();    // {value : 'Level 1' , done : false}
+levelCounter.next();    // {value : 'Level 2' , done : false}
+levelCounter.next();    // {value : 'Level 3' , done : false}
+levelCounter.next();    // {value : undefined , done : true}

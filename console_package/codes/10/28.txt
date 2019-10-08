@@ -1,0 +1,14 @@
+function* advancedGenerator(input){
+    console.log(input);
+    const j = 2 * (yield(input * 10));
+    console.log(j);
+    const k = yield( (5 * j) / 4);
+    console.log(k);
+    return (input + j + k);
+}
+
+var gnFunction = advancedGenerator(10);
+
+gnFunction.next(5);    // {value : 100 , done : false } 10
+gnFunction.next(20);   // {value : 50 , done : false } 40
+gnFunction.next(30);   // {value : 80 , done : false } 10

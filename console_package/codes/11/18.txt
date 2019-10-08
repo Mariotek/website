@@ -1,0 +1,23 @@
+[] == ‘‘   // -> true
+[] == 0    // -> true
+[‘‘] == ‘‘ // -> true
+[0] == 0   // -> true
+[0] == ‘‘  // -> false
+[‘‘] == 0  // -> true
+
+[null] == ‘‘      // true
+[null] == 0       // true
+[undefined] == ‘‘ // true
+[undefined] == 0  // true
+
+[[]] == 0  // true
+[[]] == ‘‘ // true
+
+[[[[[[]]]]]] == ‘‘ // true
+[[[[[[]]]]]] == 0  // true
+
+[[[[[[ null ]]]]]] == 0  // true
+[[[[[[ null ]]]]]] == ‘‘ // true
+
+[[[[[[ undefined ]]]]]] == 0  // true
+[[[[[[ undefined ]]]]]] == ‘‘ // true

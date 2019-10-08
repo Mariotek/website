@@ -1,0 +1,4 @@
+(function* jsBook(ver){
+    yield 'first version : ' + ver;
+    yield 'version : ' + (ver + 1);
+})(1).next().next();  // ERROR

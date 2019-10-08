@@ -1,0 +1,25 @@
+const schoolTeachers = [
+    allTeachers : {
+        math : [
+             'Mr.B.Ahmadian',
+             'Mr.A.Salami',
+             'Mrs.S.Gholami'
+        ],
+        chemistry : [
+             'Mrs.F.Roshani',
+             'Mr.J.Rezaei',
+             'Mr.R.Tavakolli'
+        ],
+        computer : [
+             'Mr.T.Alinezhad',
+             'Mr.D.Gholami'
+        ]
+    },
+
+    // this will act like for...of
+    [Symbol.iterator](){
+
+        // get all majors list
+        const majors = Object.values(this.allTeachers);
+        let teachersIndex,
+            majorsIndex = 0;

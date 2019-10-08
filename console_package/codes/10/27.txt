@@ -1,0 +1,14 @@
+function* jsBook(ver){
+    var x = yield 'first version : ' + ver;
+    return 'returned, x = ' + x;
+
+    // will not run
+    yield 'version : ' + (ver + 1);
+}
+
+var book = jsBook(1);
+console.log(book.next());
+// {value: 'first version : 1', done: false}
+
+console.log(book.next(4));
+// {value: 'returned, x = 4', done: true}

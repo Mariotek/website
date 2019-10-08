@@ -1,0 +1,8 @@
+Object.prototype.toString.call([]);  
+// -> ‘[object Array]’
+
+Object.prototype.toString.call(new Date());
+// -> ‘[object Date]’
+
+Object.prototype.toString.call(null);
+// -> ‘[object Null]’

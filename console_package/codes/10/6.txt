@@ -1,0 +1,4 @@
+for(const teacher of schoolTeachers){
+      console.log(teacher);
+}
+// TypeError: {} is not iterable

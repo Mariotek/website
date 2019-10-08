@@ -1,0 +1,25 @@
+const schoolTeachers = {
+    allTeachers : {
+        // ...
+    },
+
+    // this method will give allTeachers array
+    getAllTeachers : function(){
+        const teachers = [];
+        // loop over math teachers
+        for(const teacher of this.allTeachers.math){
+            teachers.push(teacher); 
+        }
+
+        // loop over chemistry teachers
+        for(const teacher of this.allTeachers.chemistry){
+            teachers.push(teacher);
+        }
+
+        // loop over computer teachers
+        for(const teacher of this.allTeachers.computer){
+            teachers.push(teacher);
+        }
+        return teachers;
+    }
+};

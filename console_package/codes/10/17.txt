@@ -1,0 +1,1 @@
+new Map([['ali', 2]])[Symbol.iterator]() // MapIterator {'ali' => 2}

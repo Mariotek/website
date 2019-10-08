@@ -1,0 +1,2 @@
+!!null; // -> false
+null == false; // -> false

@@ -1,0 +1,6 @@
+// while loop
+var index = 0;
+while(index < classMates.length){
+    console.log(classMates[index]);
+    index++;
+}

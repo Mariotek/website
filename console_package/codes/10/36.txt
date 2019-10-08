@@ -1,0 +1,6 @@
+function* generatorTwo() {
+    yield 1;
+    yield 2;
+    yield* [3,4,5];
+    yield 6;
+}

@@ -1,0 +1,9 @@
+(1)
+  .__proto__(
+    // -> [Number: 0]
+    1
+  )
+  .__proto__.__proto__(
+    // -> {}
+    1
+  ).__proto__.__proto__.__proto__; // -> null

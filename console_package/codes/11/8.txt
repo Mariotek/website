@@ -1,0 +1,2 @@
+NaN === NaN; // -> false
+NaN == NaN;  // -> false

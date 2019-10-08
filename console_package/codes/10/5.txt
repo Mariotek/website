@@ -1,0 +1,18 @@
+const schoolTeachers = {
+    allTeachers : {
+        math : [
+            'Mr.B.Ahmadian',
+            'Mr.A.Salami',
+            'Mrs.S.Gholami'
+        ],
+        chemistry : [
+            'Mrs.F.Roshani',
+            'Mr.J.Rezaei',
+            'Mr.R.Tavakolli'
+        ],
+        computer : [
+            'Mr.T.Alinezhad',
+            'Mr.D.Gholami'
+        ]
+    }
+};

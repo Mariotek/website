@@ -1,0 +1,6 @@
+Math.min(1, 4, 7, 2); // -> 1
+Math.max(1, 4, 7, 2); // -> 7
+
+Math.min(); // -> Infinity
+Math.max(); // -> -Infinity
+Math.min() > Math.max(); // -> true

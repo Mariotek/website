@@ -1,0 +1,32 @@
+const Iterable = {
+    [Symbol.iterator]() {
+        let level = 0;
+        const iterator = {
+            next() {
+                level += 1;
+                if(level === 1){
+                    return {
+                        value : 'Level 1 ',
+                        done : false
+                    };
+                }else if(level === 2){
+                    return {
+                        value : 'Level 2 ',
+                        done : false
+                    };
+                }else if(level === 3){
+                    return {
+                        value : 'Level 3 ',
+                        done : false
+                     };
+                }
+
+                return {
+                     value : undefined ,
+                     done : true
+                };
+            };
+        };
+        return iterator;
+    }
+}

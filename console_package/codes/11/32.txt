@@ -1,0 +1,5 @@
+new String(“str”) == “str”; // -> true
+typeof new String(“str”); // -> ‘object’
+
+// object ?
+new String(“str”); // -> [String: ‘str’]

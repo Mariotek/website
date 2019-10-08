@@ -1,0 +1,22 @@
+function* generatorOne() {
+    yield 3;
+    // return 'finished';
+    yield 4;
+}
+
+function* generatorTwo() {
+    yield 1;
+    yield 2;
+    yield* generatorOne();
+    yield 6;
+}
+
+const iterator = generatorTwo();
+
+console.log(iterator.next()); // {value : 1 , done : false}
+console.log(iterator.next()); // {value : 2 , done : false}
+console.log(iterator.next()); // {value : 3 , done : false}
+console.log(iterator.next()); // {value : 4 , done : false}
+console.log(iterator.next()); // {value : 5 , done : false}
+console.log(iterator.next()); // {value : 6 , done : false}
+console.log(iterator.next()); // {value : undefined , done : true}

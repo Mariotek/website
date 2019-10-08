@@ -1,0 +1,2 @@
+console.log(Symbol('foo') === Symbol('foo'));
+// output: false

@@ -1,0 +1,3 @@
+'hi'[Symbol.iterator]()            // StringIterator {}
+['1'][Symbol.iterator]()           // Array Iterator {}
+new Set([1, 2])[Symbol.iterator]() // SetIterator {1, 2}

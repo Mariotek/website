@@ -1,0 +1,2 @@
+const c = “constructor”;
+c[c][c](‘console.log(“MyMessage?”)’)(); // > MyMessage?
