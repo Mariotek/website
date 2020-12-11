@@ -20,9 +20,7 @@ function Waiting(props) {
     }
 
     return (
-        <main>
-            <h1>اینجا انیمیشن لودینگ است !</h1>
-        </main>
+        <main></main>
     );
 }
 
