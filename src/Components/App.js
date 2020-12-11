@@ -6,6 +6,7 @@ import Index from './site/Index';
 const About = lazy(() => import('./About'));
 const Faq = lazy(() => import('./Faq'));
 const Success = lazy(() => import('./Success'));
+const Failure = lazy(() => import('./Failure'));
 const NotFound = lazy(() => import('./404'));
 
 
@@ -19,6 +20,7 @@ const App = () => (
                     <Route path='/about' component={About}/>
                     <Route path='/faq' component={Faq}/>
                     <Route path='/success' component={Success}/>
+                    <Route path='/failure' component={Failure}/>
                     <Route component={NotFound}/>
                 </Switch>
             </Suspense>
