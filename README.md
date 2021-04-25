@@ -4,13 +4,13 @@ https://mariotek.ir
 > 😄 React + hooks mario party bros game site
 
 <p align="center">
-    <img src="publicemo.png" >
+    <img src="/public/demo.png" >
 </p>
 
 ### Super mario bros in website
 We build super mario bros level 1 in our website to give discount to our users 😁. This Game is set up using Phaser, ion-phaser and react.js.
 <p align="center">
-    <img src="publicuperMario.png" >
+    <img src="/public/superMario.png" >
 </p>
 
 ## Available Scripts
