@@ -1,2 +1,0 @@
-sampleObject.property = 1000;
-sampleObject.property;   // 1000;

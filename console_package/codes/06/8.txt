@@ -1,6 +1,0 @@
-var getAge;
-getAge();
-
-function getAge() {
-	  console.log( 16 );
-}

@@ -1,8 +1,0 @@
-test()
-    arguments: null
-    caller: null
-    length: 1
-    name: 'test'
-    prototype: Object {
-        constructor: function test()??
-    }

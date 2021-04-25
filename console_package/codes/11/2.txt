@@ -1,2 +1,0 @@
-if( [] )
-    console.log(“working”); // will fire

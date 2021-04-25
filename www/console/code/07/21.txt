@@ -1,8 +1,0 @@
-function createAdder(size) {
-
-	   function add(y) {
-		  return y + size;
-    }
-
-    return add;
-}

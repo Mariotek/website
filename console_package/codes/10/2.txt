@@ -1,4 +1,0 @@
-// regular for loop
-for(var i = 0;i< classMates.length; i++){
-    console.log(classMates[i]);
-}

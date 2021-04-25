@@ -1,6 +1,0 @@
-(function ($, window) {
-   // use $ to refer to jQuery
-
-   // $(document).addClass('test');
-
-})(jQuery, window);

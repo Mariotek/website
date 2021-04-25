@@ -1,3 +1,0 @@
-createUserObject(12 , function(obj){
-    console.log(obj);a
-});

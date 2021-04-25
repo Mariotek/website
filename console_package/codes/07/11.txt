@@ -1,7 +1,0 @@
-
-// no needs to ( ... )
-!function () {
-     console.log('run ! ');
-}();
-
-// console : 'run !'

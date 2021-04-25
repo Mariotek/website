@@ -1,6 +1,0 @@
-// use the (`)
-// ES6
-console.log(`          ${name}, ${timeName}       `);
-
-// ES5
-console.log('        ' + name + ', ' + timeName  + '        ');

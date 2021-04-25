@@ -1,3 +1,0 @@
-var mid = [3, 4];
-var arr = [1, 2, mid, 5, 6];
-console.log(arr.concat(mid));  // [1,2,5,6,3,4]

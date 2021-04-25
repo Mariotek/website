@@ -1,1 +1,0 @@
-array.splice(index, howmany, item1, ....., itemX)

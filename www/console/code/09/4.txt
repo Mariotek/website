@@ -1,4 +1,0 @@
-var self = this;
-$.get('/data', function(response) {
-    self.data = response.data;
-});

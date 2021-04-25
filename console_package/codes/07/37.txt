@@ -1,8 +1,0 @@
-var SubModule = (function (MyApp) {
-    
-    MyApp.subModule = function(){
-         // Our app public function code here !
-    }
-    return MyApp;
-    
-})(MyApp || {} );

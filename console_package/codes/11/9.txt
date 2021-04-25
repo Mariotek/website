@@ -1,5 +1,0 @@
-typeof []; // -> ‘object’
-typeof null; // -> ‘object’
-
-// however
-null instanceof Object; // false

@@ -1,2 +1,0 @@
-['ali' , 'reza' , 'mohammad' ].join('_');
- // 'ali_reza_mohammad

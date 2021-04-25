@@ -1,7 +1,0 @@
-var newObject = {};
-
-// or
-var newObject = Object.create( Object.prototype );
-
-// or
-var newObject = new Object();

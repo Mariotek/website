@@ -1,8 +1,0 @@
-// we are sure to call this fn
-function foo(){
-     var a = 'MyTest';
-     console.log(a);
-}
-
-// call fn
-foo();

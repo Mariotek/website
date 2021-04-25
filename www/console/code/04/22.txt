@@ -1,5 +1,0 @@
-function showUserAge(userAge) {
-    console.log(userAge);
-}
-
-showUserAge.call(this , 26);

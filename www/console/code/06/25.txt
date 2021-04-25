@@ -1,2 +1,0 @@
-'use strict';
-var octal = 0o10;

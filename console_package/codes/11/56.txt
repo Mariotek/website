@@ -1,4 +1,0 @@
-var a, a, a;
-
-var a;
-var a;

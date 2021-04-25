@@ -1,7 +1,0 @@
-getAge();
-
-function getAge() {
-	  console.log( age ); // undefined
-
-	  var age = 20;
-}

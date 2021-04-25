@@ -1,4 +1,0 @@
-{
-   //no index keys!
-   length: 7
-}

@@ -1,4 +1,0 @@
-var array = [1, 2, 3, 4, 5, 6];
-
-array.includes(2); // output: true
-array.includes(7); // output: false

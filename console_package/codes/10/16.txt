@@ -1,2 +1,0 @@
-console.log([...schoolTeachers]);   // array of teachers
-console.log(...schoolTeachers);     // string of teachers 

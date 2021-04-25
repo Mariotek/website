@@ -1,4 +1,0 @@
-var alpha = ['e', 'a', 'c', 'u', 'y'];
-
-var ascOrder = alpha.sort();
-console.log(ascOrder); // output: ['a', 'c', 'e', 'u', 'y']

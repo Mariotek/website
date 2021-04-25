@@ -1,4 +1,0 @@
-const arraySizeFive = [];
-for (var i = 0; i < 5; i++) {
-   arraySizeFive[i] = i;
-}

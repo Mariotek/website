@@ -1,8 +1,0 @@
-
-// Use welcome fn before declare
-welcome('      ');
-
-// Declare welcome fn
-function welcome(name) {
-  return '         ? ' + name;
-}

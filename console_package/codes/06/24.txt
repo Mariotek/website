@@ -1,4 +1,0 @@
-'use strict';
-
-// This will cause an error
-var octal = 010;

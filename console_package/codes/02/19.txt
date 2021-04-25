@@ -1,4 +1,0 @@
-var color1 = 'blue';
-var color2 = 'red';
-var color3 = 'green';
-var color4 = 'yellow';

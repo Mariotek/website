@@ -1,4 +1,0 @@
-typeof String(“str”); // -> ‹string›
-String(“str”); // -> ‹str›
-String(“str”) == «str»; // -> true
-String(“str”) instanceof String; // -> false

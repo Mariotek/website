@@ -1,6 +1,0 @@
-(function() {
-  return
-  {
-    b: 10;
-  }
-})(); // -> undefined

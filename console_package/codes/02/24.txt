@@ -1,3 +1,0 @@
-var a = 'hello world';
-
-(new String(a)).length; // 11

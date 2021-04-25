@@ -1,5 +1,0 @@
-sampleObject.nextProp = 20;
-sampleObject.nextProp; // 20
-
-sampleObject['otherProp'] = 40;
-sampleObject.otherProp; // 40

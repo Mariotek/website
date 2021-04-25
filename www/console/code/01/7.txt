@@ -1,3 +1,0 @@
-<script>
-document.getElementById('elementId').innerHTML = 'JavaScript Code';
-</script>

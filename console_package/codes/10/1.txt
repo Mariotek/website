@@ -1,6 +1,0 @@
-const classMates = [
-   'Alireza masomi',
-   'Mohammad ahmadi',
-   'Reza shirdel',
-   'Farhad yosefian'
-];

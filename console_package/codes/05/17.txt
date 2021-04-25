@@ -1,5 +1,0 @@
-// all elements are less than 10
-var lessThanTen = array.every(function(number){
-    return number < 10
-});
-console.log(lessThanTen); // output: true

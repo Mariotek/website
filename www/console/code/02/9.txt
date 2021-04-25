@@ -1,1 +1,0 @@
-var sampleObject = {property: 100};

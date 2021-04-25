@@ -1,6 +1,0 @@
-
-var user = {};
-Object.defineProperty(user, 'id', {
-    value:12,
-    writable:false
-});

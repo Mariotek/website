@@ -1,9 +1,0 @@
-// regular function
-let f = function() {
-  return arguments;
-};
-f(“a”); // -> { ‘0’: ‘a’ }
-
-// arrow function
-let fa = () => arguments;
-fa(“a”); // -> Uncaught ReferenceError: arguments is not defined

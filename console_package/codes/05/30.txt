@@ -1,3 +1,0 @@
-const array1 = Array(7);
-
-array1[2];      // undefined

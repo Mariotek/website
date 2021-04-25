@@ -1,3 +1,0 @@
-$.get('/data', (response) => {
-   this.data = response.data;
-});

@@ -1,6 +1,0 @@
-// create sth
-{
-   [{}]: {}
-} 
-
-// { ‘[object Object]’: {} }

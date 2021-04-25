@@ -1,4 +1,0 @@
-isArray([12]);
-
-// support   : Array.isArray([12])
-// no-support: Object.prototype.toString.call([12]) === '[object Array]'

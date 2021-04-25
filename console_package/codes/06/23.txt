@@ -1,5 +1,0 @@
-'use strict';
-var user = {};
-Object.defineProperty(user, 'id', {value:12, writable:false});
-
-user.id = 15;   // TypeError: 'id' is read-only
