@@ -1,25 +1,6 @@
 import Phaser, { Game } from "phaser-ce";
 import { DEBUG, GRAVITY, PLAY_SOUND, SCALE, SPEED } from "./constants";
 
-function marioHit() {
-  // body: any
-  // bodyB: any,
-  // shapeA: any,
-  // shapeB: any,
-  // equation: any
-  //  The block hit something.
-  //
-  //  This callback is sent 5 arguments:
-  //
-  //  The Phaser.Physics.P2.Body it is in contact with. *This might be null* if the Body was created directly in the p2 world.
-  //  The p2.Body this Body is in contact with.
-  //  The Shape from this body that caused the contact.
-  //  The Shape from the contact body.
-  //  The Contact Equation data array.
-  //
-  //  The first argument may be null or not have a sprite property, such as when you hit the world bounds.
-}
-
 class GameState extends Phaser.State {
   private map: Phaser.Tilemap | undefined;
   private layer: Phaser.TilemapLayer | undefined;
@@ -28,8 +9,9 @@ class GameState extends Phaser.State {
   private runButton: Phaser.Key | undefined;
 
   private mario: Phaser.Sprite | undefined;
+  private enemy: Phaser.Sprite | undefined;
   private doNothing = true;
-  private direction = "right";
+  private direction: "right" | "left" = "right";
 
   init() {
     this.stage.backgroundColor = "#5C94FC";
@@ -55,6 +37,7 @@ class GameState extends Phaser.State {
       34,
       7
     );
+    this.load.spritesheet("enemy", "static/images/mario/enemy1.png", 41, 36, 3);
 
     // load sounds
     this.load.audio("jump", "static/audio/jump.ogg");
@@ -77,6 +60,22 @@ class GameState extends Phaser.State {
       this.world.height * SCALE
     );
 
+    // writing a text
+    const style = {
+      font: "24px Arial",
+      fill: "#fff",
+      align: "center",
+      stroke: "#3e4d67",
+      strokeThickness: 4,
+    };
+    const logo = this.add.text(80, 100, "Super Mariotek", style);
+    logo.z = -1;
+    this.add.text(1650, 100, "...", {
+      ...style,
+      font: "18px tahoma",
+    });
+    this.add.text(1800, 200, "😉", { ...style, font: "18px tahoma" });
+
     map.addTilesetImage("items", "tiles");
     map.setCollisionBetween(14, 16);
     map.setCollisionBetween(21, 22);
@@ -88,25 +87,41 @@ class GameState extends Phaser.State {
 
     const mario = this.add.sprite(50, 50, "mario");
     mario.scale.setTo(1 + SCALE / 6, 1 + SCALE / 6);
+    mario.x = 200;
     mario.anchor.x = 0.5;
     mario.anchor.y = 0.5;
     mario.animations.add("walk");
 
+    const enemy = this.add.sprite(50, 50, "enemy");
+    enemy.scale.setTo(1 + SCALE / 12, 1 + SCALE / 12);
+    enemy.x = 1400;
+    enemy.y = 0.5;
+    enemy.anchor.x = 0.5;
+    enemy.anchor.y = 0.5;
+    enemy.animations.add("walkEnemy", [0, 1], 10, true);
+    enemy.animations.add("dieEnemy", [2], 10, true);
+
     this.physics.enable(mario);
+    this.physics.enable(enemy);
     this.physics.arcade.gravity.y = GRAVITY;
 
     mario.body.bounce.y = 0;
     mario.body.linearDamping = 1;
     mario.body.collideWorldBounds = true;
+    enemy.body.bounce.y = 0;
+    enemy.body.linearDamping = 1;
+    enemy.body.collideWorldBounds = true;
 
     mario.animations.add("left", [2, 4, 5], 10, true);
     mario.animations.add("wait", [0], 10, true);
     mario.animations.add("jump", [6], 10, true);
     mario.animations.add("die", [1], 10, true);
 
+    enemy.body.fixedRotation = true;
     mario.body.fixedRotation = true;
-    mario.body.onBeginContact?.add(marioHit, this);
-    mario.alive = true;
+
+    // check colliding
+    // mario.body.onBeginContact?.add(marioHit, this);
 
     if (PLAY_SOUND) this.sound.play("background", 0.1, true);
     this.camera.follow(mario);
@@ -118,13 +133,25 @@ class GameState extends Phaser.State {
     this.mario = mario;
     this.map = map;
     this.layer = layer;
+    this.enemy = enemy;
   }
 
   update() {
-    const { mario, direction, layer, cursors, jumpButton, runButton } = this;
+    const {
+      mario,
+      enemy,
+      direction,
+      layer,
+      cursors,
+      jumpButton,
+      runButton,
+    } = this;
     if (!mario) return;
 
     this.physics.arcade.collide(mario, layer);
+    this.physics.arcade.collide(enemy, layer);
+
+    if (enemy && enemy.alive) enemy.animations.play("walkEnemy", 3);
     this.doNothing = true;
 
     if (cursors?.left.isDown && mario.alive) {
@@ -174,6 +201,7 @@ class GameState extends Phaser.State {
       this.doNothing = false;
     }
 
+    // jump
     if (cursors?.up.justDown || jumpButton?.justDown) {
       if (mario.body.onFloor()) {
         if (PLAY_SOUND) this.sound.play("jump", 0.25);
@@ -186,6 +214,8 @@ class GameState extends Phaser.State {
         }
       }
     }
+
+    // stay
     if (this.doNothing) {
       if (mario?.body.velocity.x > 10) {
         mario.body.velocity.x -= 10;
@@ -200,7 +230,16 @@ class GameState extends Phaser.State {
     }
 
     // check death
-    if (mario.body.y + mario.body.height === this.world.height && mario.alive) {
+    const hitEnemy =
+      mario.body.x + mario.body.width > 1386 &&
+      mario.body.x < 1416 &&
+      mario.body.onFloor() &&
+      enemy &&
+      enemy.alive;
+    const fallDown =
+      mario.body.y + mario.body.height === this.world.height && mario.alive;
+    if (hitEnemy || fallDown) {
+      this.direction = "right";
       this.sound.removeByKey("background");
       this.sound.play("die", 0.5);
       mario.animations.play("die", 20, true);
@@ -210,21 +249,31 @@ class GameState extends Phaser.State {
 
       setTimeout(() => {
         this.game.state.restart();
-      }, 1500);
+      }, 1300);
+    }
+
+    // check enemy death
+    if (
+      mario.body.x + mario.body.width > 1386 &&
+      mario.body.x < 1414 &&
+      // mario.body.y > 300 &&
+      !mario.body.onFloor() &&
+      enemy &&
+      enemy.alive
+    ) {
+      console.log("HIT killing");
+      enemy.animations.stop("walkEnemy");
+      enemy.animations.play("dieEnemy", 20, true);
+      enemy.body.collideWorldBounds = false;
+      enemy.body.y = 550;
+
+      enemy.alive = false;
     }
   }
 
   render(game: Game) {
     // game.debug.text(this.world?.height.toString(), 32, 320);
     if (this.mario && DEBUG) {
-      game.debug.text(
-        `m: ${this.mario.body.y + this.mario.body.height} , wod:${
-          this.world.height
-        }`,
-        32,
-        320
-      );
-
       game.debug.bodyInfo(this.mario, 32, 32);
     }
   }

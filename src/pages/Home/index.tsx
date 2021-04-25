@@ -10,7 +10,7 @@ const Home = () => (
     <Hero />
     <Game />
 
-    <div className={"afterGameDescription"}>
+    <div className="afterGameDescription">
       <LightBeam />
       <OrderBox />
       <OurTeam />
