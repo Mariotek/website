@@ -261,6 +261,7 @@ class GameState extends Phaser.State {
       enemy &&
       enemy.alive
     ) {
+      // eslint-disable-next-line no-console
       console.log("HIT killing");
       enemy.animations.stop("walkEnemy");
       enemy.animations.play("dieEnemy", 20, true);
