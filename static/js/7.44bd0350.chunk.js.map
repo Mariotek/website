@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/About/index.tsx"],"names":["Faq"],"mappings":"mGAAA,uBAIeA,UAFH,kBAAM","file":"static/js/7.44bd0350.chunk.js","sourcesContent":["import React from \"react\";\n\nconst Faq = () => <div>about</div>;\n\nexport default Faq;\n"],"sourceRoot":""}

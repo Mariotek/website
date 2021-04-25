@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/404.tsx"],"names":["NotFound"],"mappings":"mGAAA,uBAIeA,UAFE,kBAAM","file":"static/js/6.f663ae33.chunk.js","sourcesContent":["import React from \"react\";\n\nconst NotFound = () => <div>متاسفیم ، صفحه مورد نظر پیدا نشد !</div>;\n\nexport default NotFound;\n"],"sourceRoot":""}

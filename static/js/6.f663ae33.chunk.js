@@ -1,0 +1,2 @@
+(this.webpackJsonpwebsite=this.webpackJsonpwebsite||[]).push([[6],{64:function(e,t,s){"use strict";s.r(t);s(0);var i=s(3);t.default=function(){return Object(i.jsx)("div",{children:"\u0645\u062a\u0627\u0633\u0641\u06cc\u0645 \u060c \u0635\u0641\u062d\u0647 \u0645\u0648\u0631\u062f \u0646\u0638\u0631 \u067e\u06cc\u062f\u0627 \u0646\u0634\u062f !"})}}}]);
+//# sourceMappingURL=6.f663ae33.chunk.js.map
