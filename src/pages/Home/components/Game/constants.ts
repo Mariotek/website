@@ -23,4 +23,12 @@ export const DEBUG = true;
  */
 export const PLAY_SOUND = false;
 
-
+/**
+ * Enemies
+ */
+export const ENEMIES = [
+  {
+    x: 1348,
+    showOn: 0,
+  },
+];

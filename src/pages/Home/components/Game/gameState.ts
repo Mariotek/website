@@ -1,5 +1,7 @@
 import Phaser, { Game } from "phaser-ce";
-import { DEBUG, GRAVITY, PLAY_SOUND, SCALE, SPEED } from "./constants";
+import { DEBUG, ENEMIES, GRAVITY, PLAY_SOUND, SCALE, SPEED } from "./constants";
+
+type Direction = "right" | "left";
 
 class GameState extends Phaser.State {
   private map: Phaser.Tilemap | undefined;
@@ -9,11 +11,11 @@ class GameState extends Phaser.State {
   private runButton: Phaser.Key | undefined;
 
   private mario: Phaser.Sprite | undefined;
-  private enemies: [Phaser.Sprite] | undefined;
+  private enemies: Phaser.Sprite[] = [];
   private doNothing = true;
   private gameFinished = false;
-  private direction: "right" | "left" = "right";
-  private enemiesDirection: string[] = ["right"];
+  private direction: Direction = "right";
+  private enemiesDirection: Direction[] = ["right"];
 
   init() {
     this.stage.backgroundColor = "#5C94FC";
@@ -118,25 +120,30 @@ class GameState extends Phaser.State {
     mario.anchor.y = 0.5;
     mario.animations.add("walk");
 
-    const enemy = this.add.sprite(50, 50, "enemy");
-    enemy.scale.setTo(1 + SCALE / 12, 1 + SCALE / 12);
-    enemy.x = 1400;
-    enemy.y = 0.5;
-    enemy.anchor.x = 0.5;
-    enemy.anchor.y = 0.5;
-    enemy.animations.add("walkEnemy", [0, 1], 10, true);
-    enemy.animations.add("dieEnemy", [2], 10, true);
+    ENEMIES.map(({ x }) => {
+      const enemy = this.add.sprite(50, 50, "enemy");
+      enemy.scale.setTo(1 + SCALE / 12, 1 + SCALE / 12);
+      enemy.x = x;
+      enemy.anchor.x = 0.5;
+      enemy.anchor.y = 0.5;
+      enemy.animations.add("walkEnemy", [0, 1], 10, true);
+      enemy.animations.add("dieEnemy", [2], 10, true);
+
+      this.physics.enable(enemy);
+      this.enemies.push(enemy);
+
+      enemy.body.bounce.y = 0;
+      enemy.body.linearDamping = 1;
+      enemy.body.collideWorldBounds = true;
+      enemy.body.fixedRotation = true;
+    });
 
     this.physics.enable(mario);
-    this.physics.enable(enemy);
     this.physics.arcade.gravity.y = GRAVITY + SCALE * 20;
 
     mario.body.bounce.y = 0;
     mario.body.linearDamping = 1;
     mario.body.collideWorldBounds = true;
-    enemy.body.bounce.y = 0;
-    enemy.body.linearDamping = 1;
-    enemy.body.collideWorldBounds = true;
 
     mario.animations.add("left", [2, 4, 5], 10, true);
     mario.animations.add("wait", [0], 10, true);
@@ -144,11 +151,7 @@ class GameState extends Phaser.State {
     mario.animations.add("die", [1], 10, true);
     mario.animations.add("win", [4], 10, true);
 
-    enemy.body.fixedRotation = true;
     mario.body.fixedRotation = true;
-
-    // check colliding
-    // mario.body.onBeginContact?.add(marioHit, this);
 
     if (PLAY_SOUND) this.sound.play("background", 0.1, true);
     this.camera.follow(mario);
@@ -160,13 +163,12 @@ class GameState extends Phaser.State {
     this.mario = mario;
     this.map = map;
     this.layer = layer;
-    this.enemy = enemy;
   }
 
   update() {
     const {
       mario,
-      enemy,
+      enemies,
       direction,
       layer,
       cursors,
@@ -175,26 +177,6 @@ class GameState extends Phaser.State {
       gameFinished,
     } = this;
     if (!mario) return;
-
-    this.physics.arcade.collide(
-      mario,
-      layer,
-      () => undefined,
-      () => {
-        return !gameFinished;
-      }
-    );
-    this.physics.arcade.collide(
-      enemy,
-      layer,
-      () => undefined,
-      () => {
-        return enemy?.alive;
-      }
-    );
-
-    if (enemy && enemy.alive) enemy.animations.play("walkEnemy", 3);
-    this.doNothing = true;
 
     /**
      * Walk
@@ -260,17 +242,40 @@ class GameState extends Phaser.State {
       this.doNothing = false;
     };
 
-    // enemy walking
-    if (enemy && enemy.body.onFloor()) {
-      if (enemy.body.blocked.left) {
-        wait(enemy);
-        this.enemyDirection = "right";
-      } else if (enemy.body.blocked.right) {
-        wait(enemy);
-        this.enemyDirection = "left";
+    this.physics.arcade.collide(
+      mario,
+      layer,
+      () => undefined,
+      () => {
+        return !gameFinished;
       }
-      walk(enemy, this.enemyDirection);
-    }
+    );
+    enemies.map((enemy, index) => {
+      this.physics.arcade.collide(
+        enemy,
+        layer,
+        () => undefined,
+        () => {
+          return enemy?.alive;
+        }
+      );
+
+      if (enemy && enemy.alive) enemy.animations.play("walkEnemy", 3);
+
+      // enemy walking
+      if (enemy && enemy.body.onFloor()) {
+        if (enemy.body.blocked.left) {
+          wait(enemy);
+          this.enemiesDirection[index] = "right";
+        } else if (enemy.body.blocked.right) {
+          wait(enemy);
+          this.enemiesDirection[index] = "left";
+        }
+        walk(enemy, this.enemiesDirection[index]);
+      }
+    });
+
+    this.doNothing = true;
 
     if (mario.alive && !gameFinished) {
       const marioSpeed = runButton?.isDown ? "fast" : "regular";
@@ -305,14 +310,9 @@ class GameState extends Phaser.State {
     }
 
     // check death
-    const hitEnemy =
-      mario.body.x + mario.body.width > 1386 &&
-      mario.body.x < 1416 &&
-      mario.body.onFloor() &&
-      enemy &&
-      enemy.alive;
     const fallDown =
       mario.body.y + mario.body.height === this.world.height && mario.alive;
+    const hitEnemy = false;
     if (hitEnemy || fallDown) {
       this.direction = "right";
       this.sound.removeByKey("background");
@@ -365,16 +365,16 @@ class GameState extends Phaser.State {
       mario.body.x < 1414 &&
       // mario.body.y > 300 &&
       !mario.body.onFloor() &&
-      enemy &&
-      enemy.alive
+      enemies[0] &&
+      enemies[0].alive
     ) {
       // eslint-disable-next-line no-console
       console.log("HIT killing");
-      enemy.animations.stop("walkEnemy");
-      enemy.animations.play("dieEnemy", 20, true);
-      enemy.body.collideWorldBounds = false;
+      enemies[0].animations.stop("walkEnemy");
+      enemies[0].animations.play("dieEnemy", 20, true);
+      enemies[0].body.collideWorldBounds = false;
 
-      enemy.alive = false;
+      enemies[0].alive = false;
     }
   }
 
@@ -382,9 +382,9 @@ class GameState extends Phaser.State {
     if (this.mario && DEBUG) {
       game.debug.bodyInfo(this.mario, 32, 32);
     }
-    if (this.enemy && DEBUG) {
-      game.debug.bodyInfo(this.enemy, 32, 280);
-    }
+    // if (this.enemy && DEBUG) {
+    //   game.debug.bodyInfo(this.enemy, 32, 280);
+    // }
   }
 }
 
