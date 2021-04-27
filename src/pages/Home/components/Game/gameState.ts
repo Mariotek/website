@@ -21,6 +21,7 @@ class GameState extends Phaser.State {
   private gameFinished = false;
   private hitOneOfEnemies = false;
   private direction: Direction = "right";
+  private killedEnemies = 0;
   private enemiesDirection: Direction[] = [];
 
   init() {
@@ -172,6 +173,7 @@ class GameState extends Phaser.State {
       runButton,
       gameFinished,
       hitOneOfEnemies,
+      killedEnemies,
     } = this;
     if (!mario) return;
 
@@ -325,9 +327,9 @@ class GameState extends Phaser.State {
 
       // check kill enemy
       if (
-        mario.body.x + mario.body.width > enemies[0].body.x &&
-        mario.body.x < enemies[0].body.x + enemies[0].body.width &&
-        mario.body.y > 370 &&
+        mario.body.x + mario.body.width > enemy.body.x &&
+        mario.body.x < enemy.body.x + enemy.body.width &&
+        mario.body.y + mario.body.height > enemy.body.y &&
         mario.body.velocity.y > 100 &&
         !mario.body.onFloor() &&
         enemy &&
@@ -335,8 +337,16 @@ class GameState extends Phaser.State {
       ) {
         enemy.animations.stop("walkEnemy");
         enemy.animations.play("dieEnemy", 20, true);
-        this.add.text(enemy.body.x, enemy.body.y, "+ صد تومن", {
+
+        let price = "صد";
+        if (killedEnemies > 0) {
+          price = "صد و سی";
+        }
+
+        this.killedEnemies = killedEnemies + 1;
+        this.add.text(enemy.body.x, enemy.body.y, ` ${price} تومن +`, {
           font: "14px 'SuperMario', 'SDF'",
+          fontWeight: 700,
           fill: "#fff",
         });
         enemy.body.collideWorldBounds = false;
@@ -400,6 +410,7 @@ class GameState extends Phaser.State {
 
       setTimeout(() => {
         this.gameFinished = false;
+        this.killedEnemies = 0;
         resetGame(this.game);
         clearInterval(walkInterval);
       }, 5400);
@@ -422,6 +433,7 @@ class GameState extends Phaser.State {
       setTimeout(() => {
         clearInterval(dieInterval);
         this.hitOneOfEnemies = false;
+        this.killedEnemies = 0;
         resetGame(this.game);
       }, 1300);
     }
