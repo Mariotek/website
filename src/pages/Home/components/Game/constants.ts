@@ -16,12 +16,22 @@ export const SCALE = 2;
 /**
  * Control and debug mario object
  */
-export const DEBUG = true;
+export const DEBUG = false;
 
 /**
  * Do we want to play game sounds
  */
-export const PLAY_SOUND = false;
+export const PLAY_SOUND = true;
+
+/**
+ * Background music volume
+ */
+export const MUSIC_VOLUME = 0.1;
+
+/**
+ * VFX sound volume
+ */
+export const VFX_VOLUME = 0.5;
 
 /**
  * Enemies

@@ -1,5 +1,14 @@
 import Phaser, { Game } from "phaser-ce";
-import { DEBUG, ENEMIES, GRAVITY, PLAY_SOUND, SCALE, SPEED } from "./constants";
+import {
+  DEBUG,
+  ENEMIES,
+  GRAVITY,
+  MUSIC_VOLUME,
+  PLAY_SOUND,
+  SCALE,
+  SPEED,
+  VFX_VOLUME,
+} from "./constants";
 
 type Direction = "right" | "left";
 
@@ -150,7 +159,7 @@ class GameState extends Phaser.State {
 
     mario.body.fixedRotation = true;
 
-    if (PLAY_SOUND) this.sound.play("background", 0.1, true);
+    if (PLAY_SOUND) this.sound.play("background", MUSIC_VOLUME, true);
     this.camera.follow(mario);
 
     this.cursors = this.input.keyboard.createCursorKeys();
@@ -317,7 +326,7 @@ class GameState extends Phaser.State {
       const hitEnemy =
         mario.body.x + mario.body.width > enemy.body.x &&
         mario.body.x < enemy.body.x + enemy.body.width &&
-        mario.body.y === enemy.body.y &&
+        // mario.body.y === enemy.body.y &&
         mario.body.y > 380 &&
         enemy &&
         enemy.alive;
@@ -327,6 +336,7 @@ class GameState extends Phaser.State {
 
       // check kill enemy
       if (
+        mario.alive &&
         mario.body.x + mario.body.width > enemy.body.x &&
         mario.body.x < enemy.body.x + enemy.body.width &&
         mario.body.y + mario.body.height > enemy.body.y &&
@@ -350,7 +360,7 @@ class GameState extends Phaser.State {
           fill: "#fff",
         });
         enemy.body.collideWorldBounds = false;
-        this.sound.play("stomp", 0.5);
+        if (PLAY_SOUND) this.sound.play("stomp", VFX_VOLUME);
         enemy.alive = false;
 
         // jump
@@ -374,7 +384,7 @@ class GameState extends Phaser.State {
 
       // jump
       if ((cursors?.up.isDown || jumpButton?.isDown) && mario.body.onFloor()) {
-        if (PLAY_SOUND) this.sound.play("jump", 0.25);
+        if (PLAY_SOUND) this.sound.play("jump", VFX_VOLUME / 2);
         mario.body.velocity.y = -310 - SPEED * SCALE * 1.2;
         mario.animations.play("jump", 20, true);
         this.doNothing = false;
@@ -392,7 +402,7 @@ class GameState extends Phaser.State {
 
       mario.animations.play("win", 20, true);
       this.sound.removeByKey("background");
-      this.sound.play("endGame", 0.5);
+      if (PLAY_SOUND) this.sound.play("endGame", VFX_VOLUME);
 
       this.add.text(
         6400,
@@ -421,7 +431,7 @@ class GameState extends Phaser.State {
     if ((hitOneOfEnemies || (!hitOneOfEnemies && fallDown)) && mario.alive) {
       this.direction = "right";
       this.sound.removeByKey("background");
-      this.sound.play("die", 0.5);
+      if (PLAY_SOUND) this.sound.play("die", VFX_VOLUME);
       mario.body.velocity.y = -310 - SPEED * SCALE * 1.2;
 
       const dieInterval = setInterval(() => {
@@ -451,9 +461,6 @@ class GameState extends Phaser.State {
     if (this.mario && DEBUG) {
       game.debug.bodyInfo(this.mario, 32, 32);
     }
-    // if (this.enemy && DEBUG) {
-    //   game.debug.bodyInfo(this.enemy, 32, 280);
-    // }
   }
 }
 
