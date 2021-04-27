@@ -15,7 +15,7 @@ class GameState extends Phaser.State {
   private doNothing = true;
   private gameFinished = false;
   private direction: Direction = "right";
-  private enemiesDirection: Direction[] = ["right"];
+  private enemiesDirection: Direction[] = [];
 
   init() {
     this.stage.backgroundColor = "#5C94FC";
@@ -131,6 +131,7 @@ class GameState extends Phaser.State {
 
       this.physics.enable(enemy);
       this.enemies.push(enemy);
+      this.enemiesDirection.push("left");
 
       enemy.body.bounce.y = 0;
       enemy.body.linearDamping = 1;
@@ -189,8 +190,8 @@ class GameState extends Phaser.State {
       const isLeft = dir === "left";
       const directionCoefficient = isLeft ? -1 : 1;
 
-      obj.body.velocity.x += 5 * directionCoefficient;
       if (speed !== "slow") {
+        obj.body.velocity.x += 5 * directionCoefficient;
         if (
           speed === "fast" &&
           ((isLeft && obj.body.velocity.x < -184) ||
@@ -205,6 +206,8 @@ class GameState extends Phaser.State {
           obj.body.velocity.x =
             (120 + SPEED * (SCALE / 2)) * directionCoefficient;
         }
+      } else {
+        obj.body.velocity.x += 1 * directionCoefficient;
       }
     };
 
@@ -250,6 +253,8 @@ class GameState extends Phaser.State {
         return !gameFinished;
       }
     );
+
+    // add enemies to map
     enemies.map((enemy, index) => {
       this.physics.arcade.collide(
         enemy,
@@ -259,6 +264,8 @@ class GameState extends Phaser.State {
           return enemy?.alive;
         }
       );
+      const fallDown =
+        enemy.body.y + enemy.body.height === this.world.height && enemy.alive;
 
       if (enemy && enemy.alive) enemy.animations.play("walkEnemy", 3);
 
@@ -272,6 +279,12 @@ class GameState extends Phaser.State {
           this.enemiesDirection[index] = "left";
         }
         walk(enemy, this.enemiesDirection[index]);
+      }
+
+      // enemy fall down
+      if (fallDown) {
+        enemy.alive = false;
+        enemy.body.collideWorldBounds = false;
       }
     });
 
