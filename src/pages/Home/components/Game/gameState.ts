@@ -14,6 +14,7 @@ class GameState extends Phaser.State {
   private enemies: Phaser.Sprite[] = [];
   private doNothing = true;
   private gameFinished = false;
+  private hitOneOfEnemies = false;
   private direction: Direction = "right";
   private enemiesDirection: Direction[] = [];
 
@@ -73,11 +74,16 @@ class GameState extends Phaser.State {
               strokeThickness: 4,
             };
             game.add.text(20, 40, "SuperMariotek", style);
-            game.add.text(1650, 100, "...", {
+            game.add.text(1650, 100, "خدا وکیلی", {
               ...style,
-              font: "18px 'SuperMario'",
+              font: "11px 'SDF'",
             });
-            game.add.text(1800, 200, "😉", { ...style, font: "18px tahoma" });
+            game.add.text(1830, 155, "😉", { ...style, font: "18px tahoma" });
+
+            game.add.text(2450, 146, "عباس بوعذار", {
+              font: "14px 'SDF'",
+              fill: "#000",
+            });
           },
           this
         );
@@ -121,6 +127,7 @@ class GameState extends Phaser.State {
     mario.anchor.y = 0.5;
     mario.animations.add("walk");
 
+    this.enemies = [];
     ENEMIES.map(({ x }) => {
       const enemy = this.add.sprite(50, 50, "enemy");
       enemy.scale.setTo(1 + SCALE / 12, 1 + SCALE / 12);
@@ -177,6 +184,7 @@ class GameState extends Phaser.State {
       jumpButton,
       runButton,
       gameFinished,
+      hitOneOfEnemies,
     } = this;
     if (!mario) return;
 
@@ -251,12 +259,13 @@ class GameState extends Phaser.State {
       layer,
       () => undefined,
       () => {
-        return !gameFinished;
+        return mario.alive;
       }
     );
 
     // add enemies to map
     enemies.map((enemy, index) => {
+      if (!enemy.body) return;
       this.physics.arcade.collide(
         enemy,
         layer,
@@ -287,6 +296,17 @@ class GameState extends Phaser.State {
         enemy.alive = false;
         enemy.body.collideWorldBounds = false;
       }
+
+      // hit enemy
+      const hitEnemy =
+        mario.body.x + mario.body.width > enemy.body.x &&
+        mario.body.x < enemy.body.x + enemy.body.width &&
+        mario.body.y > 380 &&
+        enemy &&
+        enemy.alive;
+      if (hitEnemy) {
+        this.hitOneOfEnemies = true;
+      }
     });
 
     this.doNothing = true;
@@ -313,32 +333,27 @@ class GameState extends Phaser.State {
           alert("ssss");
         }
       }
-    }
 
-    // stay
-    if (this.doNothing) {
-      wait(mario);
-      if (mario.body.onFloor()) {
-        mario.animations.play("wait", 20, true);
+      // check kill enemy
+      if (
+        mario.body.x + mario.body.width > enemies[0].body.x &&
+        mario.body.x < enemies[0].body.x + enemies[0].body.width &&
+        mario.body.y > 370 &&
+        mario.body.velocity.y > 100 &&
+        !mario.body.onFloor() &&
+        enemies[0] &&
+        enemies[0].alive
+      ) {
+        enemies[0].animations.stop("walkEnemy");
+        enemies[0].animations.play("dieEnemy", 20, true);
+        this.add.text(enemies[0].body.x, enemies[0].body.y, "+ صد تومن", {
+          font: "14px 'SuperMario', 'SDF'",
+          fill: "#fff",
+        });
+        enemies[0].body.collideWorldBounds = false;
+        this.sound.play("stomp", 0.5);
+        enemies[0].alive = false;
       }
-    }
-
-    // check death
-    const fallDown =
-      mario.body.y + mario.body.height === this.world.height && mario.alive;
-    const hitEnemy = false;
-    if (hitEnemy || fallDown) {
-      this.direction = "right";
-      this.sound.removeByKey("background");
-      this.sound.play("die", 0.5);
-      mario.animations.play("die", 20, true);
-      mario.body.velocity.y = -310 - SPEED * SCALE * 1.2;
-      mario.alive = false;
-      mario.body.collideWorldBounds = false;
-
-      setTimeout(() => {
-        this.game.state.restart();
-      }, 1300);
     }
 
     // Game end
@@ -360,8 +375,6 @@ class GameState extends Phaser.State {
         }
       );
 
-      // mario.body.x = 6450;
-
       const walkInterval = setInterval(() => {
         walkMario(mario, "right", "slow");
       }, 100);
@@ -373,22 +386,33 @@ class GameState extends Phaser.State {
       }, 5400);
     }
 
-    // check enemy death
-    if (
-      mario.body.x + mario.body.width > enemies[0].body.x &&
-      mario.body.x < enemies[0].body.x + enemies[0].body.width &&
-      mario.body.y > 370 &&
-      mario.body.velocity.y > 100 &&
-      !mario.body.onFloor() &&
-      enemies[0] &&
-      enemies[0].alive
-    ) {
-      enemies[0].animations.stop("walkEnemy");
-      enemies[0].animations.play("dieEnemy", 20, true);
-      enemies[0].body.collideWorldBounds = false;
-      this.sound.play("stomp", 0.5);
+    // check death
+    const fallDown = mario.body.y + mario.body.height === this.world.height;
+    if ((hitOneOfEnemies || (!hitOneOfEnemies && fallDown)) && mario.alive) {
+      this.direction = "right";
+      this.sound.removeByKey("background");
+      this.sound.play("die", 0.5);
+      mario.body.velocity.y = -310 - SPEED * SCALE * 1.2;
 
-      enemies[0].alive = false;
+      const dieInterval = setInterval(() => {
+        mario.animations.play("die", 20, true);
+        mario.body.collideWorldBounds = false;
+      }, 10);
+      mario.alive = false;
+
+      setTimeout(() => {
+        clearInterval(dieInterval);
+        this.hitOneOfEnemies = false;
+        this.game.state.restart();
+      }, 1300);
+    }
+
+    // stay waiting
+    if (this.doNothing) {
+      wait(mario);
+      if (mario.body.onFloor()) {
+        mario.animations.play("wait", 20, true);
+      }
     }
   }
 
