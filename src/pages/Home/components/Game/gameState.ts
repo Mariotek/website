@@ -9,11 +9,11 @@ class GameState extends Phaser.State {
   private runButton: Phaser.Key | undefined;
 
   private mario: Phaser.Sprite | undefined;
-  private enemy: Phaser.Sprite | undefined;
+  private enemies: [Phaser.Sprite] | undefined;
   private doNothing = true;
   private gameFinished = false;
   private direction: "right" | "left" = "right";
-  private enemyDirection: "right" | "left" = "right";
+  private enemiesDirection: string[] = ["right"];
 
   init() {
     this.stage.backgroundColor = "#5C94FC";
@@ -103,6 +103,7 @@ class GameState extends Phaser.State {
 
     map.addTilesetImage("items", "tiles");
     map.setCollisionBetween(14, 16);
+    map.setCollisionBetween(14, 16);
     map.setCollisionBetween(21, 22);
     map.setCollisionBetween(27, 28);
     map.setCollisionByIndex(10);
@@ -175,8 +176,22 @@ class GameState extends Phaser.State {
     } = this;
     if (!mario) return;
 
-    this.physics.arcade.collide(mario, layer);
-    this.physics.arcade.collide(enemy, layer);
+    this.physics.arcade.collide(
+      mario,
+      layer,
+      () => undefined,
+      () => {
+        return !gameFinished;
+      }
+    );
+    this.physics.arcade.collide(
+      enemy,
+      layer,
+      () => undefined,
+      () => {
+        return enemy?.alive;
+      }
+    );
 
     if (enemy && enemy.alive) enemy.animations.play("walkEnemy", 3);
     this.doNothing = true;
@@ -321,14 +336,26 @@ class GameState extends Phaser.State {
       this.sound.removeByKey("background");
       this.sound.play("endGame", 0.5);
 
-      this.add.text(6400, mario.body.y, "4000", {
-        font: "14px 'SuperMario'",
-        fill: "#fff",
-      });
+      this.add.text(
+        6400,
+        mario.body.y + mario.body.height / 2,
+        Math.floor(4000 - mario.body.y * 10).toString(),
+        {
+          font: "14px 'SuperMario'",
+          fill: "#fff",
+        }
+      );
+
+      // mario.body.x = 6450;
+
+      const walkInterval = setInterval(() => {
+        walkMario(mario, "right", "slow");
+      }, 100);
 
       setTimeout(() => {
         this.gameFinished = false;
         this.game.state.restart();
+        clearInterval(walkInterval);
       }, 5400);
     }
 
@@ -346,7 +373,6 @@ class GameState extends Phaser.State {
       enemy.animations.stop("walkEnemy");
       enemy.animations.play("dieEnemy", 20, true);
       enemy.body.collideWorldBounds = false;
-      enemy.body.y = 550;
 
       enemy.alive = false;
     }

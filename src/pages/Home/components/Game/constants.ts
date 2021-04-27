@@ -21,4 +21,6 @@ export const DEBUG = true;
 /**
  * Do we want to play game sounds
  */
-export const PLAY_SOUND = true;
+export const PLAY_SOUND = false;
+
+
