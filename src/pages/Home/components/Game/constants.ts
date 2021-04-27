@@ -1,7 +1,7 @@
 /**
  * Game world gravity
  */
-export const GRAVITY = 700;
+export const GRAVITY = 720;
 
 /**
  * Mario running speed
@@ -30,13 +30,16 @@ export const ENEMIES = [
   {
     x: 1348,
     showOn: 0,
+    added: false,
   },
   {
     x: 2683,
-    showOn: 2600,
+    showOn: 1900,
+    added: false,
   },
   {
-    x: 2700,
-    showOn: 2600,
+    x: 2750,
+    showOn: 1900,
+    added: false,
   },
 ];

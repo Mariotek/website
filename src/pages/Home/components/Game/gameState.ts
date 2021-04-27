@@ -3,6 +3,11 @@ import { DEBUG, ENEMIES, GRAVITY, PLAY_SOUND, SCALE, SPEED } from "./constants";
 
 type Direction = "right" | "left";
 
+const resetGame = (game: Phaser.Game) => {
+  game.state.restart();
+  ENEMIES.map((enemy) => (enemy.added = false));
+};
+
 class GameState extends Phaser.State {
   private map: Phaser.Tilemap | undefined;
   private layer: Phaser.TilemapLayer | undefined;
@@ -78,7 +83,7 @@ class GameState extends Phaser.State {
               ...style,
               font: "11px 'SDF'",
             });
-            game.add.text(1830, 155, "😉", { ...style, font: "18px tahoma" });
+            game.add.text(1830, 144, "😉", { ...style, font: "18px tahoma" });
 
             game.add.text(2450, 146, "عباس بوعذار", {
               font: "14px 'SDF'",
@@ -128,24 +133,6 @@ class GameState extends Phaser.State {
     mario.animations.add("walk");
 
     this.enemies = [];
-    ENEMIES.map(({ x }) => {
-      const enemy = this.add.sprite(50, 50, "enemy");
-      enemy.scale.setTo(1 + SCALE / 12, 1 + SCALE / 12);
-      enemy.x = x;
-      enemy.anchor.x = 0.5;
-      enemy.anchor.y = 0.5;
-      enemy.animations.add("walkEnemy", [0, 1], 10, true);
-      enemy.animations.add("dieEnemy", [2], 10, true);
-
-      this.physics.enable(enemy);
-      this.enemies.push(enemy);
-      this.enemiesDirection.push("left");
-
-      enemy.body.bounce.y = 0;
-      enemy.body.linearDamping = 1;
-      enemy.body.collideWorldBounds = true;
-      enemy.body.fixedRotation = true;
-    });
 
     this.physics.enable(mario);
     this.physics.arcade.gravity.y = GRAVITY + SCALE * 20;
@@ -216,10 +203,13 @@ class GameState extends Phaser.State {
             (120 + SPEED * (SCALE / 2)) * directionCoefficient;
         }
       } else {
-        obj.body.velocity.x += 1 * directionCoefficient;
+        obj.body.velocity.x += 0.5 * directionCoefficient;
       }
     };
 
+    /**
+     * Do nothing velocity fix
+     */
     const wait = (obj: Phaser.Sprite) => {
       if (obj.body.velocity.x > 10) {
         obj.body.velocity.x -= 10;
@@ -263,6 +253,30 @@ class GameState extends Phaser.State {
       }
     );
 
+    // add enemy based on mario position
+    ENEMIES.map(({ x, showOn, added }, index) => {
+      if (mario.body.x > showOn && !added) {
+        const enemy = this.add.sprite(50, 50, "enemy");
+        enemy.scale.setTo(1 + SCALE / 12, 1 + SCALE / 12);
+        enemy.x = x;
+        enemy.anchor.x = 0.5;
+        enemy.anchor.y = 0.5;
+        enemy.animations.add("walkEnemy", [0, 1], 10, true);
+        enemy.animations.add("dieEnemy", [2], 10, true);
+
+        this.physics.enable(enemy);
+        this.enemies.push(enemy);
+        this.enemiesDirection.push("left");
+
+        enemy.body.bounce.y = 0;
+        enemy.body.linearDamping = 1;
+        enemy.body.collideWorldBounds = true;
+        enemy.body.fixedRotation = true;
+
+        ENEMIES[index].added = true;
+      }
+    });
+
     // add enemies to map
     enemies.map((enemy, index) => {
       if (!enemy.body) return;
@@ -301,11 +315,37 @@ class GameState extends Phaser.State {
       const hitEnemy =
         mario.body.x + mario.body.width > enemy.body.x &&
         mario.body.x < enemy.body.x + enemy.body.width &&
+        mario.body.y === enemy.body.y &&
         mario.body.y > 380 &&
         enemy &&
         enemy.alive;
       if (hitEnemy) {
         this.hitOneOfEnemies = true;
+      }
+
+      // check kill enemy
+      if (
+        mario.body.x + mario.body.width > enemies[0].body.x &&
+        mario.body.x < enemies[0].body.x + enemies[0].body.width &&
+        mario.body.y > 370 &&
+        mario.body.velocity.y > 100 &&
+        !mario.body.onFloor() &&
+        enemy &&
+        enemy.alive
+      ) {
+        enemy.animations.stop("walkEnemy");
+        enemy.animations.play("dieEnemy", 20, true);
+        this.add.text(enemy.body.x, enemy.body.y, "+ صد تومن", {
+          font: "14px 'SuperMario', 'SDF'",
+          fill: "#fff",
+        });
+        enemy.body.collideWorldBounds = false;
+        this.sound.play("stomp", 0.5);
+        enemy.alive = false;
+
+        // jump
+        mario.body.velocity.y = -200;
+        mario.animations.play("jump", 20, true);
       }
     });
 
@@ -332,27 +372,6 @@ class GameState extends Phaser.State {
         if (mario.body.blocked.top) {
           alert("ssss");
         }
-      }
-
-      // check kill enemy
-      if (
-        mario.body.x + mario.body.width > enemies[0].body.x &&
-        mario.body.x < enemies[0].body.x + enemies[0].body.width &&
-        mario.body.y > 370 &&
-        mario.body.velocity.y > 100 &&
-        !mario.body.onFloor() &&
-        enemies[0] &&
-        enemies[0].alive
-      ) {
-        enemies[0].animations.stop("walkEnemy");
-        enemies[0].animations.play("dieEnemy", 20, true);
-        this.add.text(enemies[0].body.x, enemies[0].body.y, "+ صد تومن", {
-          font: "14px 'SuperMario', 'SDF'",
-          fill: "#fff",
-        });
-        enemies[0].body.collideWorldBounds = false;
-        this.sound.play("stomp", 0.5);
-        enemies[0].alive = false;
       }
     }
 
@@ -381,7 +400,7 @@ class GameState extends Phaser.State {
 
       setTimeout(() => {
         this.gameFinished = false;
-        this.game.state.restart();
+        resetGame(this.game);
         clearInterval(walkInterval);
       }, 5400);
     }
@@ -403,7 +422,7 @@ class GameState extends Phaser.State {
       setTimeout(() => {
         clearInterval(dieInterval);
         this.hitOneOfEnemies = false;
-        this.game.state.restart();
+        resetGame(this.game);
       }, 1300);
     }
 
