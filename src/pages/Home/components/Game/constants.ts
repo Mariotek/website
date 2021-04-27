@@ -16,7 +16,7 @@ export const SCALE = 2;
 /**
  * Control and debug mario object
  */
-export const DEBUG = false;
+export const DEBUG = true;
 
 /**
  * Do we want to play game sounds

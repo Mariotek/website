@@ -53,6 +53,7 @@ class GameState extends Phaser.State {
     this.load.audio("jump", "static/audio/jump.ogg");
     this.load.audio("background", "static/audio/background.ogg");
     this.load.audio("die", "static/audio/die.wav");
+    this.load.audio("stomp", "static/audio/stomp.wav");
     this.load.audio("endGame", "static/audio/endGame.mp3");
 
     // The Google WebFont Loader will look for this object, so create it before loading the script.
@@ -374,18 +375,18 @@ class GameState extends Phaser.State {
 
     // check enemy death
     if (
-      mario.body.x + mario.body.width > 1386 &&
-      mario.body.x < 1414 &&
-      // mario.body.y > 300 &&
+      mario.body.x + mario.body.width > enemies[0].body.x &&
+      mario.body.x < enemies[0].body.x + enemies[0].body.width &&
+      mario.body.y > 370 &&
+      mario.body.velocity.y > 100 &&
       !mario.body.onFloor() &&
       enemies[0] &&
       enemies[0].alive
     ) {
-      // eslint-disable-next-line no-console
-      console.log("HIT killing");
       enemies[0].animations.stop("walkEnemy");
       enemies[0].animations.play("dieEnemy", 20, true);
       enemies[0].body.collideWorldBounds = false;
+      this.sound.play("stomp", 0.5);
 
       enemies[0].alive = false;
     }
