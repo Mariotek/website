@@ -31,6 +31,13 @@
   src: local('Lalezar Regular'), url('../fonts/Lalezar-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family: "SuperMario";
+  src: url("../fonts/SuperMario.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
