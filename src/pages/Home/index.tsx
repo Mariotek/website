@@ -4,7 +4,6 @@ import LightBeam from "./components/Icons/LightBeam";
 import Footer from "../../components/layout/footer";
 import OrderBox from "./components/OrderBox";
 import Game from "./components/Game";
-import { StyledGithubLink } from "./styles";
 
 const Home = () => (
   <>
