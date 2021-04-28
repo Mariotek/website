@@ -474,7 +474,7 @@ a, a:link {
   transform: translateZ(-100px) rotateY(-90deg);
 }
 
-#cube.show-hadi {
+#cube.show-mahsa {
   -webkit-transform: translateZ(-50px) rotateY(90deg);
   -moz-transform: translateZ(-50px) rotateY(90deg);
   -o-transform: translateZ(-50px) rotateY(90deg);

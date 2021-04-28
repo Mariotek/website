@@ -16,7 +16,7 @@ export const SCALE = 2;
 /**
  * Control and debug mario object
  */
-export const DEBUG = true;
+export const DEBUG = false;
 
 /**
  * Do we want to play game sounds
@@ -80,6 +80,16 @@ export const ENEMIES = [
   {
     x: 3348,
     showOn: 2483,
+    added: false,
+  },
+  {
+    x: 5568,
+    showOn: 3348,
+    added: false,
+  },
+  {
+    x: 5662,
+    showOn: 3348,
     added: false,
   },
 ];

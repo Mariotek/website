@@ -63,6 +63,25 @@ class GameState extends Phaser.State {
       34,
       7
     );
+    game.load.spritesheet(
+      "buttonRun",
+      "static/images/mario/button-round-a.png",
+      64,
+      64
+    );
+    game.load.spritesheet(
+      "buttonJump",
+      "static/images/mario/button-round-b.png",
+      64,
+      64
+    );
+    game.load.spritesheet(
+      "buttonHorizontal",
+      "static/images/mario/button-horizontal.png",
+      64,
+      32
+    );
+
     this.load.spritesheet("enemy", "static/images/mario/enemy1.png", 41, 36, 3);
 
     // load sounds
@@ -165,6 +184,110 @@ class GameState extends Phaser.State {
     this.cursors = this.input.keyboard.createCursorKeys();
     this.jumpButton = this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     this.runButton = this.input.keyboard.addKey(Phaser.Keyboard.SHIFT);
+
+    /**
+     * Mobile game play
+     */
+    if (this.game.device.desktop) {
+      const jumpButton = this.game.add.button(
+        this.world.camera.width - 100,
+        this.world.camera.height - 90,
+        "buttonJump",
+        () => undefined,
+        this,
+        0,
+        1,
+        0,
+        1
+      );
+      jumpButton.fixedToCamera = true;
+      jumpButton.events.onInputOver.add(() => {
+        this.jumpButton?.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      jumpButton.events.onInputOut.add(() => {
+        this?.jumpButton?.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+      jumpButton.events.onInputDown.add(() => {
+        this.jumpButton?.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      jumpButton.events.onInputUp.add(() => {
+        this?.jumpButton?.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+
+      const runButton = this.game.add.button(
+        this.world.camera.width - 190,
+        this.world.camera.height - 90,
+        "buttonRun",
+        () => undefined,
+        this,
+        0,
+        1,
+        0,
+        1
+      );
+      runButton.fixedToCamera = true;
+      runButton.events.onInputOver.add(() => {
+        this.runButton?.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      runButton.events.onInputOut.add(() => {
+        this?.runButton?.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+      runButton.events.onInputDown.add(() => {
+        this.runButton?.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      runButton.events.onInputUp.add(() => {
+        this?.runButton?.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+
+      const leftButton = this.game.add.button(
+        20,
+        this.world.camera.height - 70,
+        "buttonHorizontal",
+        () => undefined,
+        this,
+        0,
+        1,
+        0,
+        1
+      );
+      leftButton.fixedToCamera = true;
+      leftButton.events.onInputOver.add(() => {
+        this.cursors?.left?.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      leftButton.events.onInputOut.add(() => {
+        this?.cursors?.left?.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+      leftButton.events.onInputDown.add(() => {
+        this.cursors?.left.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      leftButton.events.onInputUp.add(() => {
+        this?.cursors?.left.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+      const rightButton = this.game.add.button(
+        140,
+        this.world.camera.height - 70,
+        "buttonHorizontal",
+        () => undefined,
+        this,
+        0,
+        1,
+        0,
+        1
+      );
+      rightButton.fixedToCamera = true;
+      rightButton.events.onInputOver.add(() => {
+        this.cursors?.right?.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      rightButton.events.onInputOut.add(() => {
+        this?.cursors?.right?.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+      rightButton.events.onInputDown.add(() => {
+        this.cursors?.right.processKeyDown(new KeyboardEvent("Nothing"));
+      });
+      rightButton.events.onInputUp.add(() => {
+        this?.cursors?.right.processKeyUp(new KeyboardEvent("Nothing"));
+      });
+    }
 
     this.mario = mario;
     this.map = map;

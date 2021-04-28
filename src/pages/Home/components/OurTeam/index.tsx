@@ -3,7 +3,8 @@ import { useState } from "react";
 /* eslint-disable jsx-a11y/click-events-have-key-events,jsx-a11y/interactive-supports-focus */
 
 const OurTeam = () => {
-  const [member, SetMember] = useState("sayjeyhi");
+  const [member, setMember] = useState("sayjeyhi");
+
   return (
     <div className="ourTeam">
       <div className="text">ما کی هستیم؟</div>
@@ -11,7 +12,7 @@ const OurTeam = () => {
         <div
           role="button"
           className={`member code ${member === "sayjeyhi" ? "active" : ""}`}
-          onClick={() => SetMember("sayjeyhi")}
+          onClick={() => setMember("sayjeyhi")}
         >
           <h3>جعفررضایی</h3>
           <div className="memberInfo">
@@ -41,7 +42,7 @@ const OurTeam = () => {
         <div
           role="button"
           className={`member graphic ${member === "masud" ? "active" : ""}`}
-          onClick={() => SetMember("masud")}
+          onClick={() => setMember("masud")}
         >
           <h3>مسعود ساجدی</h3>
           <div className="memberInfo">
@@ -64,12 +65,12 @@ const OurTeam = () => {
         <div
           role="button"
           className={`member edit ${member === "mehdi" ? "active" : ""}`}
-          onClick={() => SetMember("mehdi")}
+          onClick={() => setMember("mehdi")}
         >
           <h3> مهدی رحیمی</h3>
           <div className="memberInfo">
-            دوست خوش حوصله و خندان ما که در امر نگارش و ویراستاری کتاب ها همواره
-            پشت ما هستن
+            دوست خوش حوصله و خندان ما که در موقع نگارش و ویراستاری کتاب ها
+            تقریبا همیشه پشت مون هست ;)
           </div>
           <div className="socialNetwork">
             <a href="http://twitter.com" target="_blank" rel="noreferrer">
@@ -79,14 +80,14 @@ const OurTeam = () => {
         </div>
         <div
           role="button"
-          className={`member help ${member === "hadi" ? "active" : ""}`}
-          onClick={() => SetMember("hadi")}
+          className={`member help ${member === "mahsa" ? "active" : ""}`}
+          onClick={() => setMember("mahsa")}
         >
-          <h3>هادی تبادلی</h3>
+          <h3>مهسا مصباح</h3>
           <div className="memberInfo">
             {" "}
-            هادی ، یک شخص سوم که مطالب محتوای آموزشی رو میخونه و نظرسازنده میده
-            :)
+            مهسا یه فرانت‌اند کار حرفه‌ایه که الان توی دیجی‌کالا کار می‌کنه و
+            توی ترجمه کتاب‌ها کمک خیییلی زیادی کرده
           </div>
           <div className="socialNetwork">
             <a href="https:instagram.com" target="_blank" rel="noreferrer">
@@ -97,7 +98,7 @@ const OurTeam = () => {
         <div
           role="button"
           className={`member help ${member === "you1" ? "active" : ""}`}
-          onClick={() => SetMember("you1")}
+          onClick={() => setMember("you1")}
         >
           <h3>آرش میلانی</h3>
           <div className="memberInfo">
@@ -110,7 +111,7 @@ const OurTeam = () => {
         <div
           role="button"
           className={`member help ${member === "you2" ? "active" : ""}`}
-          onClick={() => SetMember("you2")}
+          onClick={() => setMember("you2")}
         >
           <h3>جای شما</h3>
           <div className="memberInfo">
@@ -131,7 +132,7 @@ const OurTeam = () => {
             <img src="/static/images/mehdiRahimi.jpeg" alt="MehdiRahimi" />
           </figure>
           <figure className="left">
-            <img src="/static/images/hadiTabadoli.jpeg" alt="HadiTabadoli" />
+            <img src="/static/images/mahsa.jpeg" alt="MahsaMesbah" />
           </figure>
           <figure className="top">
             <img src="/static/images/ArshMilani.jpeg" alt="ArshMilani" />
