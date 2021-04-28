@@ -270,6 +270,7 @@ class GameState extends Phaser.State {
         const enemy = this.add.sprite(50, 50, "enemy");
         enemy.scale.setTo(1 + SCALE / 12, 1 + SCALE / 12);
         enemy.x = x;
+        enemy.y = 0;
         enemy.anchor.x = 0.5;
         enemy.anchor.y = 0.5;
         enemy.animations.add("walkEnemy", [0, 1], 10, true);
