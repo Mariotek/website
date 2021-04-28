@@ -322,50 +322,50 @@ class GameState extends Phaser.State {
         enemy.body.collideWorldBounds = false;
       }
 
-      // hit enemy
-      const hitEnemy =
-        mario.body.x + mario.body.width > enemy.body.x &&
-        mario.body.x < enemy.body.x + enemy.body.width &&
-        // mario.body.y === enemy.body.y &&
-        mario.body.y > 380 &&
-        enemy &&
-        enemy.alive;
-      if (hitEnemy) {
-        this.hitOneOfEnemies = true;
-      }
-
       // check kill enemy
       if (
         mario.alive &&
         mario.body.x + mario.body.width > enemy.body.x &&
         mario.body.x < enemy.body.x + enemy.body.width &&
         mario.body.y + mario.body.height > enemy.body.y &&
-        mario.body.velocity.y > 100 &&
+        mario.body.y < enemy.body.y + enemy.body.height &&
         !mario.body.onFloor() &&
         enemy &&
         enemy.alive
       ) {
+        enemy.alive = false;
         enemy.animations.stop("walkEnemy");
         enemy.animations.play("dieEnemy", 20, true);
 
-        let price = "صد";
+        let price = "۱۰۰";
         if (killedEnemies > 0) {
-          price = "صد و سی";
+          price = "۱۳۰";
         }
 
         this.killedEnemies = killedEnemies + 1;
-        this.add.text(enemy.body.x, enemy.body.y, ` ${price} تومن +`, {
+        this.add.text(enemy.body.x, enemy.body.y, ` ${price}+`, {
           font: "14px 'SuperMario', 'SDF'",
           fontWeight: 700,
           fill: "#fff",
         });
         enemy.body.collideWorldBounds = false;
         if (PLAY_SOUND) this.sound.play("stomp", VFX_VOLUME);
-        enemy.alive = false;
 
         // jump
         mario.body.velocity.y = -200;
         mario.animations.play("jump", 20, true);
+      }
+
+      // hit enemy
+      const hitEnemy =
+        mario.body.x + mario.body.width > enemy.body.x &&
+        mario.body.x < enemy.body.x + enemy.body.width &&
+        mario.body.y + mario.body.height > enemy.body.y &&
+        mario.body.y < enemy.body.y + enemy.body.height &&
+        enemy &&
+        enemy.alive;
+      if (hitEnemy) {
+        this.hitOneOfEnemies = true;
       }
     });
 
