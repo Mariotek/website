@@ -188,7 +188,7 @@ class GameState extends Phaser.State {
     /**
      * Mobile game play
      */
-    if (this.game.device.desktop) {
+    if (!this.game.device.desktop) {
       const jumpButton = this.game.add.button(
         this.world.camera.width - 100,
         this.world.camera.height - 90,
