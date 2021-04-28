@@ -66,20 +66,20 @@ class GameState extends Phaser.State {
     game.load.spritesheet(
       "buttonRun",
       "static/images/mario/button-round-a.png",
-      64,
-      64
+      96,
+      96
     );
     game.load.spritesheet(
       "buttonJump",
       "static/images/mario/button-round-b.png",
-      64,
-      64
+      96,
+      96
     );
     game.load.spritesheet(
       "buttonHorizontal",
       "static/images/mario/button-horizontal.png",
-      64,
-      32
+      96,
+      64
     );
 
     this.load.spritesheet("enemy", "static/images/mario/enemy1.png", 41, 36, 3);
@@ -215,7 +215,7 @@ class GameState extends Phaser.State {
       });
 
       const runButton = this.game.add.button(
-        this.world.camera.width - 190,
+        this.world.camera.width - 210,
         this.world.camera.height - 90,
         "buttonRun",
         () => undefined,
@@ -264,7 +264,7 @@ class GameState extends Phaser.State {
         this?.cursors?.left.processKeyUp(new KeyboardEvent("Nothing"));
       });
       const rightButton = this.game.add.button(
-        140,
+        170,
         this.world.camera.height - 70,
         "buttonHorizontal",
         () => undefined,
