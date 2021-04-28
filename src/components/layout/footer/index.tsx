@@ -1,9 +1,11 @@
+import { StyledFooter } from "./styles";
+
 const Footer = () => {
   return (
-    <div className={"footer"}>
+    <StyledFooter>
       تمامی حقوق برای ماریوتک محفوظ می‌باشد.
-      <span className={"from"}>از سال ۱۳۹۷</span>
-    </div>
+      <span className="from">از سال ۱۳۹۷</span>
+    </StyledFooter>
   );
 };
 
