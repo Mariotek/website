@@ -1,0 +1,4826 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "f9c88e9dd4c172563426",
+  "publicPath": "/",
+  "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+  "assetsByChunkName": {
+    "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+    "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+    "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+    "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+    "vendors~repositories-save~ticket-view": "js/vendors~repositories-save~ticket-view.e7990815.chunk.js",
+    "admin-settings": "js/admin-settings.de8f31e0.chunk.js",
+    "algorithms-history": [
+      "static/css/6.0241b812.chunk.css",
+      "js/algorithms-history.0241b812.chunk.js"
+    ],
+    "algorithms-list": [
+      "static/css/7.678dce5b.chunk.css",
+      "js/algorithms-list.678dce5b.chunk.js"
+    ],
+    "algorithms-save": "js/algorithms-save.648192bd.chunk.js",
+    "auth": "js/auth.2ebd10da.chunk.js",
+    "error": "js/error.623c248c.chunk.js",
+    "home": "js/home.39f290ad.chunk.js",
+    "main": [
+      "static/css/12.ee7657ce.chunk.css",
+      "js/main.ee7657ce.chunk.js"
+    ],
+    "media-bank-list": [
+      "static/css/13.332ddced.chunk.css",
+      "js/media-bank-list.332ddced.chunk.js"
+    ],
+    "media-bank-save": "js/media-bank-save.6c40ee57.chunk.js",
+    "reports-index": "js/reports-index.839ab1fe.chunk.js",
+    "reports-result": "js/reports-result.4470bfa0.chunk.js",
+    "repositories-list": "js/repositories-list.6631810e.chunk.js",
+    "repositories-save": "js/repositories-save.ba4f2a8d.chunk.js",
+    "runtime~main": "js/bundle.09e16421.js",
+    "ticket-list": [
+      "static/css/20.0b59f6d1.chunk.css",
+      "js/ticket-list.0b59f6d1.chunk.js"
+    ],
+    "ticket-send": [
+      "static/css/21.69e8b4ce.chunk.css",
+      "js/ticket-send.69e8b4ce.chunk.js"
+    ],
+    "ticket-view": "js/ticket-view.be32d826.chunk.js",
+    "user-settings": "js/user-settings.90723d3b.chunk.js",
+    "users-groups-list": "js/users-groups-list.1517f5c5.chunk.js",
+    "users-groups-save": "js/users-groups-save.db1f51fc.chunk.js",
+    "users-list": "js/users-list.f820a271.chunk.js",
+    "users-save": "js/users-save.d1630cb3.chunk.js",
+    "vendors~auth": "js/vendors~auth.3b4c4168.chunk.js",
+    "vendors~error": "js/vendors~error.0dc80fc9.chunk.js",
+    "vendors~home": "js/vendors~home.52864ce0.chunk.js",
+    "vendors~ticket-view": [
+      "static/css/31.5999500f.chunk.css",
+      "js/vendors~ticket-view.5999500f.chunk.js"
+    ],
+    "vendors~users-groups-save": "js/vendors~users-groups-save.9a27dec8.chunk.js",
+    "visualization-index": "js/visualization-index.b41de143.chunk.js"
+  },
+  "assets": [
+    {
+      "name": "d1811192b5788af7e10c10fee7b8d551.mp4",
+      "size": 1511090,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/3bfea2dbdedc3e77c1bb97bf5c29242e.woff2",
+      "size": 41132,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/3eaf5be195ab6c87d4c8853b11c3af7f.woff2",
+      "size": 36536,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/40b4d779e437ae01e0c0ed6f4a3ec005.woff2",
+      "size": 24908,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/430431fe6b0e18172ad8224a3c4a6dc1.woff2",
+      "size": 23496,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/49a7fe6820d6dac26d72c4b06d95f676.woff2",
+      "size": 23600,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/610195651407f14a6fa9964c6d2bcb05.woff2",
+      "size": 34816,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/62972dd3add0118556afadf651d59df5.woff2",
+      "size": 25120,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/95ad256df7e6d786fa313e540ff6d325.woff2",
+      "size": 23340,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/963ac01f1fab4f950b0f685165b72d37.woff2",
+      "size": 24812,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/9d2f75c2373a175fd2ac6dbe8c32c5ac.woff2",
+      "size": 24996,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/a863b82c5facdd68b6a5ee1bbe925145.woff2",
+      "size": 24568,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/b45a22bb8ec009827967b2baab9aa5ed.woff2",
+      "size": 24456,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/ca7cf4a4c0fa77a170cc1fa20b1a7845.woff2",
+      "size": 36228,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/e19748266ac7fbb3f102a166fd65157a.woff2",
+      "size": 23592,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/f699ebb29bd9a217f962788f9d919c4c.woff2",
+      "size": 23536,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/f74a190a2496c8727551e7cd4d9a2992.woff2",
+      "size": 43220,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/7dc4dc0b7e3407268d8ba706c9f18cd5.png",
+      "size": 9508,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/7ea7db06c5c9f57639810862187f9b14.png",
+      "size": 14502,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/cc3fc7599fdd2a6915c668da8d07a04d.png",
+      "size": 15800,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/e2e25b5bcdf4e9c89033f356f3eba5dc.png",
+      "size": 4429,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/favicon.874d2876e35ce2540b9cd7936601d657.ico",
+      "size": 2462,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "index.html",
+      "size": 448,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "js/admin-settings.de8f31e0.chunk.js",
+      "size": 414970,
+      "chunks": [
+        5,
+        4
+      ],
+      "chunkNames": [
+        "admin-settings"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/algorithms-history.0241b812.chunk.js",
+      "size": 424748,
+      "chunks": [
+        6,
+        4
+      ],
+      "chunkNames": [
+        "algorithms-history"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/algorithms-list.678dce5b.chunk.js",
+      "size": 434273,
+      "chunks": [
+        7,
+        4
+      ],
+      "chunkNames": [
+        "algorithms-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/algorithms-save.648192bd.chunk.js",
+      "size": 72143,
+      "chunks": [
+        8
+      ],
+      "chunkNames": [
+        "algorithms-save"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/auth.2ebd10da.chunk.js",
+      "size": 9149,
+      "chunks": [
+        9
+      ],
+      "chunkNames": [
+        "auth"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/bundle.09e16421.js",
+      "size": 5067,
+      "chunks": [
+        19
+      ],
+      "chunkNames": [
+        "runtime~main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/error.623c248c.chunk.js",
+      "size": 2957,
+      "chunks": [
+        10
+      ],
+      "chunkNames": [
+        "error"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/home.39f290ad.chunk.js",
+      "size": 20463,
+      "chunks": [
+        11
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/main.ee7657ce.chunk.js",
+      "size": 913112,
+      "chunks": [
+        12
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/media-bank-list.332ddced.chunk.js",
+      "size": 410721,
+      "chunks": [
+        13,
+        4
+      ],
+      "chunkNames": [
+        "media-bank-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/media-bank-save.6c40ee57.chunk.js",
+      "size": 70363,
+      "chunks": [
+        14
+      ],
+      "chunkNames": [
+        "media-bank-save"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/reports-index.839ab1fe.chunk.js",
+      "size": 308,
+      "chunks": [
+        15
+      ],
+      "chunkNames": [
+        "reports-index"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/reports-result.4470bfa0.chunk.js",
+      "size": 307,
+      "chunks": [
+        16
+      ],
+      "chunkNames": [
+        "reports-result"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/repositories-list.6631810e.chunk.js",
+      "size": 206200,
+      "chunks": [
+        17,
+        4
+      ],
+      "chunkNames": [
+        "repositories-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/repositories-save.ba4f2a8d.chunk.js",
+      "size": 11068,
+      "chunks": [
+        18
+      ],
+      "chunkNames": [
+        "repositories-save"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/ticket-list.0b59f6d1.chunk.js",
+      "size": 661121,
+      "chunks": [
+        20,
+        4
+      ],
+      "chunkNames": [
+        "ticket-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/ticket-send.69e8b4ce.chunk.js",
+      "size": 497562,
+      "chunks": [
+        21,
+        4
+      ],
+      "chunkNames": [
+        "ticket-send"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/ticket-view.be32d826.chunk.js",
+      "size": 7101,
+      "chunks": [
+        22
+      ],
+      "chunkNames": [
+        "ticket-view"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/user-settings.90723d3b.chunk.js",
+      "size": 48249,
+      "chunks": [
+        23,
+        4
+      ],
+      "chunkNames": [
+        "user-settings"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/users-groups-list.1517f5c5.chunk.js",
+      "size": 258655,
+      "chunks": [
+        24,
+        4,
+        32
+      ],
+      "chunkNames": [
+        "users-groups-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/users-groups-save.db1f51fc.chunk.js",
+      "size": 4951,
+      "chunks": [
+        25
+      ],
+      "chunkNames": [
+        "users-groups-save"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/users-list.f820a271.chunk.js",
+      "size": 232563,
+      "chunks": [
+        26,
+        4
+      ],
+      "chunkNames": [
+        "users-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/users-save.d1630cb3.chunk.js",
+      "size": 47858,
+      "chunks": [
+        27,
+        4
+      ],
+      "chunkNames": [
+        "users-save"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+      "size": 16366,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+      "size": 29250,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+      "size": 44045,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+      "size": 18774,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~auth.3b4c4168.chunk.js",
+      "size": 41016,
+      "chunks": [
+        28
+      ],
+      "chunkNames": [
+        "vendors~auth"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~error.0dc80fc9.chunk.js",
+      "size": 49012,
+      "chunks": [
+        29
+      ],
+      "chunkNames": [
+        "vendors~error"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~home.52864ce0.chunk.js",
+      "size": 1564177,
+      "chunks": [
+        30
+      ],
+      "chunkNames": [
+        "vendors~home"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~repositories-save~ticket-view.e7990815.chunk.js",
+      "size": 27596,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "vendors~repositories-save~ticket-view"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~ticket-view.5999500f.chunk.js",
+      "size": 449551,
+      "chunks": [
+        31
+      ],
+      "chunkNames": [
+        "vendors~ticket-view"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/vendors~users-groups-save.9a27dec8.chunk.js",
+      "size": 67937,
+      "chunks": [
+        32
+      ],
+      "chunkNames": [
+        "vendors~users-groups-save"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "js/visualization-index.b41de143.chunk.js",
+      "size": 356,
+      "chunks": [
+        33
+      ],
+      "chunkNames": [
+        "visualization-index"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "static/css/12.ee7657ce.chunk.css",
+      "size": 589554,
+      "chunks": [
+        12
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "static/css/13.332ddced.chunk.css",
+      "size": 7181,
+      "chunks": [
+        13,
+        4
+      ],
+      "chunkNames": [
+        "media-bank-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "static/css/20.0b59f6d1.chunk.css",
+      "size": 48294,
+      "chunks": [
+        20,
+        4
+      ],
+      "chunkNames": [
+        "ticket-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "static/css/21.69e8b4ce.chunk.css",
+      "size": 48294,
+      "chunks": [
+        21,
+        4
+      ],
+      "chunkNames": [
+        "ticket-send"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "static/css/31.5999500f.chunk.css",
+      "size": 48294,
+      "chunks": [
+        31
+      ],
+      "chunkNames": [
+        "vendors~ticket-view"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "static/css/6.0241b812.chunk.css",
+      "size": 7181,
+      "chunks": [
+        6,
+        4
+      ],
+      "chunkNames": [
+        "algorithms-history"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "static/css/7.678dce5b.chunk.css",
+      "size": 7181,
+      "chunks": [
+        7,
+        4
+      ],
+      "chunkNames": [
+        "algorithms-list"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        19,
+        12
+      ],
+      "assets": [
+        "js/bundle.09e16421.js",
+        "static/css/12.ee7657ce.chunk.css",
+        "js/main.ee7657ce.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        19,
+        12
+      ],
+      "assets": [
+        "js/bundle.09e16421.js",
+        "static/css/12.ee7657ce.chunk.css",
+        "js/main.ee7657ce.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "auth": {
+      "chunks": [
+        0,
+        28,
+        9
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~auth.3b4c4168.chunk.js",
+        "js/auth.2ebd10da.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "home": {
+      "chunks": [
+        1,
+        30,
+        11
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~home.52864ce0.chunk.js",
+        "js/home.39f290ad.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "repositories-list": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        17
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/repositories-list.6631810e.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "media-bank-list": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "static/css/13.332ddced.chunk.css",
+        "js/media-bank-list.332ddced.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "repositories-save": {
+      "chunks": [
+        0,
+        1,
+        4,
+        18
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~repositories-save~ticket-view.e7990815.chunk.js",
+        "js/repositories-save.ba4f2a8d.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "media-bank-save": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        14
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/media-bank-save.6c40ee57.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "algorithms-list": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        7
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "static/css/7.678dce5b.chunk.css",
+        "js/algorithms-list.678dce5b.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "algorithms-save": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        8
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/algorithms-save.648192bd.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "algorithms-history": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "static/css/6.0241b812.chunk.css",
+        "js/algorithms-history.0241b812.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "users-list": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        26
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/users-list.f820a271.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "users-groups-list": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        24
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/users-groups-list.1517f5c5.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "users-save": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        27
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/users-save.d1630cb3.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "users-groups-save": {
+      "chunks": [
+        0,
+        1,
+        2,
+        32,
+        25
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~users-groups-save.9a27dec8.chunk.js",
+        "js/users-groups-save.db1f51fc.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "ticket-list": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        20
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "static/css/20.0b59f6d1.chunk.css",
+        "js/ticket-list.0b59f6d1.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "ticket-view": {
+      "chunks": [
+        0,
+        1,
+        4,
+        31,
+        22
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~repositories-save~ticket-view.e7990815.chunk.js",
+        "static/css/31.5999500f.chunk.css",
+        "js/vendors~ticket-view.5999500f.chunk.js",
+        "js/ticket-view.be32d826.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "ticket-send": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        21
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "static/css/21.69e8b4ce.chunk.css",
+        "js/ticket-send.69e8b4ce.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "reports-index": {
+      "chunks": [
+        15
+      ],
+      "assets": [
+        "js/reports-index.839ab1fe.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "reports-result": {
+      "chunks": [
+        16
+      ],
+      "assets": [
+        "js/reports-result.4470bfa0.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "visualization-index": {
+      "chunks": [
+        33
+      ],
+      "assets": [
+        "js/visualization-index.b41de143.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "user-settings": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        23
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/user-settings.90723d3b.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "admin-settings": {
+      "chunks": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js",
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js",
+        "js/admin-settings.de8f31e0.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "error": {
+      "chunks": [
+        0,
+        29,
+        10
+      ],
+      "assets": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js",
+        "js/vendors~error.0dc80fc9.chunk.js",
+        "js/error.623c248c.chunk.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed)",
+      "size": 42365,
+      "names": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed"
+      ],
+      "files": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~auth~error~media-bank-list~927778ed.9775d953.chunk.js"
+      ],
+      "hash": "9775d953aea10989fb7a",
+      "siblings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248)",
+      "size": 70194,
+      "names": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248"
+      ],
+      "files": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~home~media-bank-list~media~0b0fd248.7470b637.chunk.js"
+      ],
+      "hash": "7470b637064e4c27073f",
+      "siblings": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        14,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        30,
+        31,
+        32
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027)",
+      "size": 45408,
+      "names": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027"
+      ],
+      "files": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~94826027.616f2baf.chunk.js"
+      ],
+      "hash": "616f2baf416df5c95fbd",
+      "siblings": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        17,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27,
+        32
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 3,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0)",
+      "size": 119445,
+      "names": [
+        "vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0"
+      ],
+      "files": [
+        "js/vendors~admin-settings~algorithms-history~algorithms-list~algorithms-save~media-bank-list~media-bank~094e8fb0.f23bdd73.chunk.js"
+      ],
+      "hash": "f23bdd739882683d6b60",
+      "siblings": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        17,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 4,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~repositories-save~ticket-view)",
+      "size": 60018,
+      "names": [
+        "vendors~repositories-save~ticket-view"
+      ],
+      "files": [
+        "js/vendors~repositories-save~ticket-view.e7990815.chunk.js"
+      ],
+      "hash": "e79908154a96ef11f414",
+      "siblings": [
+        0,
+        1,
+        18,
+        22,
+        31
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 5,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 962939,
+      "names": [
+        "admin-settings"
+      ],
+      "files": [
+        "js/admin-settings.de8f31e0.chunk.js"
+      ],
+      "hash": "de8f31e0575ee927b427",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 6,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 937483,
+      "names": [
+        "algorithms-history"
+      ],
+      "files": [
+        "static/css/6.0241b812.chunk.css",
+        "js/algorithms-history.0241b812.chunk.js"
+      ],
+      "hash": "0241b81204c9e7d2625b",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 7,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 955845,
+      "names": [
+        "algorithms-list"
+      ],
+      "files": [
+        "static/css/7.678dce5b.chunk.css",
+        "js/algorithms-list.678dce5b.chunk.js"
+      ],
+      "hash": "678dce5b929e25af4548",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 8,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 151630,
+      "names": [
+        "algorithms-save"
+      ],
+      "files": [
+        "js/algorithms-save.648192bd.chunk.js"
+      ],
+      "hash": "648192bd4e4e72d98548",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 9,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 14571,
+      "names": [
+        "auth"
+      ],
+      "files": [
+        "js/auth.2ebd10da.chunk.js"
+      ],
+      "hash": "2ebd10daec4bca56a33d",
+      "siblings": [
+        0,
+        28
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 10,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 4197,
+      "names": [
+        "error"
+      ],
+      "files": [
+        "js/error.623c248c.chunk.js"
+      ],
+      "hash": "623c248c0ffbda0c76e9",
+      "siblings": [
+        0,
+        29
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 11,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 24535,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "js/home.39f290ad.chunk.js"
+      ],
+      "hash": "39f290add742bfe39b65",
+      "siblings": [
+        1,
+        30
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 12,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "size": 3010914,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "static/css/12.ee7657ce.chunk.css",
+        "js/main.ee7657ce.chunk.js"
+      ],
+      "hash": "ee7657ce9248a4980233",
+      "siblings": [
+        19
+      ],
+      "parents": [],
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 13,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 909976,
+      "names": [
+        "media-bank-list"
+      ],
+      "files": [
+        "static/css/13.332ddced.chunk.css",
+        "js/media-bank-list.332ddced.chunk.js"
+      ],
+      "hash": "332ddced2b2ec0b01f3a",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 14,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 146959,
+      "names": [
+        "media-bank-save"
+      ],
+      "files": [
+        "js/media-bank-save.6c40ee57.chunk.js"
+      ],
+      "hash": "6c40ee5726888deafa54",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 15,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 227,
+      "names": [
+        "reports-index"
+      ],
+      "files": [
+        "js/reports-index.839ab1fe.chunk.js"
+      ],
+      "hash": "839ab1fe4f692b91b25b",
+      "siblings": [],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 16,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 218,
+      "names": [
+        "reports-result"
+      ],
+      "files": [
+        "js/reports-result.4470bfa0.chunk.js"
+      ],
+      "hash": "4470bfa099f506c3f5f3",
+      "siblings": [],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 17,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 495791,
+      "names": [
+        "repositories-list"
+      ],
+      "files": [
+        "js/repositories-list.6631810e.chunk.js"
+      ],
+      "hash": "6631810e6318b798c8d5",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 18,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 20416,
+      "names": [
+        "repositories-save"
+      ],
+      "files": [
+        "js/repositories-save.ba4f2a8d.chunk.js"
+      ],
+      "hash": "ba4f2a8de79d149ca0a8",
+      "siblings": [
+        0,
+        1,
+        4
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 19,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 0,
+      "names": [
+        "runtime~main"
+      ],
+      "files": [
+        "js/bundle.09e16421.js"
+      ],
+      "hash": "09e16421138f95558d0e",
+      "siblings": [
+        12
+      ],
+      "parents": [],
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 20,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 1643265,
+      "names": [
+        "ticket-list"
+      ],
+      "files": [
+        "static/css/20.0b59f6d1.chunk.css",
+        "js/ticket-list.0b59f6d1.chunk.js"
+      ],
+      "hash": "0b59f6d165483b3f3cbc",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 21,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 1242006,
+      "names": [
+        "ticket-send"
+      ],
+      "files": [
+        "static/css/21.69e8b4ce.chunk.css",
+        "js/ticket-send.69e8b4ce.chunk.js"
+      ],
+      "hash": "69e8b4ce6f8fd92b63cf",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 22,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 12684,
+      "names": [
+        "ticket-view"
+      ],
+      "files": [
+        "js/ticket-view.be32d826.chunk.js"
+      ],
+      "hash": "be32d8264d55704590ed",
+      "siblings": [
+        0,
+        1,
+        4,
+        31
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 23,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 92879,
+      "names": [
+        "user-settings"
+      ],
+      "files": [
+        "js/user-settings.90723d3b.chunk.js"
+      ],
+      "hash": "90723d3b073a86ae7f99",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 24,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 625261,
+      "names": [
+        "users-groups-list"
+      ],
+      "files": [
+        "js/users-groups-list.1517f5c5.chunk.js"
+      ],
+      "hash": "1517f5c5832192ef5508",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 25,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 8294,
+      "names": [
+        "users-groups-save"
+      ],
+      "files": [
+        "js/users-groups-save.db1f51fc.chunk.js"
+      ],
+      "hash": "db1f51fcfd69dd98fadf",
+      "siblings": [
+        0,
+        1,
+        2,
+        32
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 26,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 536499,
+      "names": [
+        "users-list"
+      ],
+      "files": [
+        "js/users-list.f820a271.chunk.js"
+      ],
+      "hash": "f820a2711b602efecaca",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 27,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 93051,
+      "names": [
+        "users-save"
+      ],
+      "files": [
+        "js/users-save.d1630cb3.chunk.js"
+      ],
+      "hash": "d1630cb3d66ce4752605",
+      "siblings": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 28,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~auth)",
+      "size": 93223,
+      "names": [
+        "vendors~auth"
+      ],
+      "files": [
+        "js/vendors~auth.3b4c4168.chunk.js"
+      ],
+      "hash": "3b4c41681f508ee04275",
+      "siblings": [
+        0,
+        9
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 29,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~error)",
+      "size": 61875,
+      "names": [
+        "vendors~error"
+      ],
+      "files": [
+        "js/vendors~error.0dc80fc9.chunk.js"
+      ],
+      "hash": "0dc80fc9e6adbf80a477",
+      "siblings": [
+        0,
+        10
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 30,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~home)",
+      "size": 4612195,
+      "names": [
+        "vendors~home"
+      ],
+      "files": [
+        "js/vendors~home.52864ce0.chunk.js"
+      ],
+      "hash": "52864ce0ace466b01c04",
+      "siblings": [
+        1,
+        11
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 31,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~ticket-view)",
+      "size": 1142920,
+      "names": [
+        "vendors~ticket-view"
+      ],
+      "files": [
+        "static/css/31.5999500f.chunk.css",
+        "js/vendors~ticket-view.5999500f.chunk.js"
+      ],
+      "hash": "5999500fdb49b76993ec",
+      "siblings": [
+        0,
+        1,
+        4,
+        22
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 32,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~users-groups-save)",
+      "size": 174180,
+      "names": [
+        "vendors~users-groups-save"
+      ],
+      "files": [
+        "js/vendors~users-groups-save.9a27dec8.chunk.js"
+      ],
+      "hash": "9a27dec8c7238d60f919",
+      "siblings": [
+        0,
+        1,
+        2,
+        25
+      ],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": 33,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 282,
+      "names": [
+        "visualization-index"
+      ],
+      "files": [
+        "js/visualization-index.b41de143.chunk.js"
+      ],
+      "hash": "b41de1434cf62e2840fa",
+      "siblings": [],
+      "parents": [
+        12,
+        19
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [
+        {
+          "name": "index.html",
+          "size": 548177,
+          "chunks": [
+            0
+          ],
+          "chunkNames": [],
+          "info": {},
+          "emitted": false
+        }
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "undefined": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "undefined": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 544049,
+          "names": [],
+          "files": [
+            "index.html"
+          ],
+          "hash": "d3e2097bc7b05d859877",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "0e6fe4a50aa62aa5e238",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs",
+              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs",
+              "index": 0,
+              "index2": 3,
+              "size": 517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            },
+            {
+              "id": "553ca1cc063be22036a5",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/webpack/buildin/global.js",
+              "name": "(webpack)/buildin/global.js",
+              "index": 2,
+              "index2": 0,
+              "size": 472,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/lodash/lodash.js",
+              "issuerId": "a827fd8b51680bea2dca",
+              "issuerName": "./node_modules/lodash/lodash.js",
+              "issuerPath": [
+                {
+                  "id": "0e6fe4a50aa62aa5e238",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs",
+                  "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs"
+                },
+                {
+                  "id": "a827fd8b51680bea2dca",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/lodash/lodash.js",
+                  "name": "./node_modules/lodash/lodash.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "a827fd8b51680bea2dca",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/lodash/lodash.js",
+                  "module": "./node_modules/lodash/lodash.js",
+                  "moduleName": "./node_modules/lodash/lodash.js",
+                  "type": "cjs require",
+                  "userRequest": "global",
+                  "loc": "1:0-41"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 2
+            },
+            {
+              "id": "5f20fef423e369361a6c",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/webpack/buildin/module.js",
+              "name": "(webpack)/buildin/module.js",
+              "index": 3,
+              "index2": 1,
+              "size": 497,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/lodash/lodash.js",
+              "issuerId": "a827fd8b51680bea2dca",
+              "issuerName": "./node_modules/lodash/lodash.js",
+              "issuerPath": [
+                {
+                  "id": "0e6fe4a50aa62aa5e238",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs",
+                  "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs"
+                },
+                {
+                  "id": "a827fd8b51680bea2dca",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/lodash/lodash.js",
+                  "name": "./node_modules/lodash/lodash.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "a827fd8b51680bea2dca",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/lodash/lodash.js",
+                  "module": "./node_modules/lodash/lodash.js",
+                  "moduleName": "./node_modules/lodash/lodash.js",
+                  "type": "cjs require",
+                  "userRequest": "module",
+                  "loc": "1:0-41"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 2
+            },
+            {
+              "id": "a827fd8b51680bea2dca",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/lodash/lodash.js",
+              "name": "./node_modules/lodash/lodash.js",
+              "index": 1,
+              "index2": 2,
+              "size": 542563,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs",
+              "issuerId": "0e6fe4a50aa62aa5e238",
+              "issuerName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs",
+              "issuerPath": [
+                {
+                  "id": "0e6fe4a50aa62aa5e238",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs",
+                  "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "0e6fe4a50aa62aa5e238",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs",
+                  "module": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs",
+                  "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs",
+                  "type": "cjs require",
+                  "userRequest": "!!../node_modules/lodash/lodash.js",
+                  "loc": "1:8-53"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "",
+              "request": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/html-webpack-plugin/lib/loader.js!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/index.ejs",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "html-webpack-plugin for \"index.html\""
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 772669,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "c8a7fa85f94ee963107b",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/antd/dist/antd.css",
+              "issuerId": "fad83ccaee3e72dd3087",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/antd/dist/antd.css",
+              "issuerPath": [
+                {
+                  "id": "fad83ccaee3e72dd3087",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/antd/dist/antd.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/antd/dist/antd.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "fad83ccaee3e72dd3087",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/antd/dist/antd.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/antd/dist/antd.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/antd/dist/antd.css",
+                  "type": "cjs require",
+                  "userRequest": "../../css-loader/dist/runtime/api.js",
+                  "loc": "2:34-81"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "fad83ccaee3e72dd3087",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/antd/dist/antd.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/antd/dist/antd.css",
+              "index": 0,
+              "index2": 1,
+              "size": 770152,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/antd/dist/antd.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/antd/dist/antd.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/antd/dist/antd.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 51272,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "82d0b3ed6ba67345f299",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "06fa2d4794070636be38",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/braft-editor/dist/index.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/braft-editor/dist/index.css",
+              "index": 0,
+              "index2": 1,
+              "size": 48755,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/braft-editor/dist/index.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            },
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/braft-editor/dist/index.css",
+              "issuerId": "06fa2d4794070636be38",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/braft-editor/dist/index.css",
+              "issuerPath": [
+                {
+                  "id": "06fa2d4794070636be38",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/braft-editor/dist/index.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/braft-editor/dist/index.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "06fa2d4794070636be38",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/braft-editor/dist/index.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/braft-editor/dist/index.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/braft-editor/dist/index.css",
+                  "type": "cjs require",
+                  "userRequest": "../../css-loader/dist/runtime/api.js",
+                  "loc": "2:34-81"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/braft-editor/dist/index.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/braft-editor/dist/index.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 11956,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "5bba1fc340c3d6eff1f6",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "1b7ad78d50af4bad7646",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/react-image-gallery/styles/css/image-gallery.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/react-image-gallery/styles/css/image-gallery.css",
+              "index": 0,
+              "index2": 1,
+              "size": 9439,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/react-image-gallery/styles/css/image-gallery.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            },
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/react-image-gallery/styles/css/image-gallery.css",
+              "issuerId": "1b7ad78d50af4bad7646",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/react-image-gallery/styles/css/image-gallery.css",
+              "issuerPath": [
+                {
+                  "id": "1b7ad78d50af4bad7646",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/react-image-gallery/styles/css/image-gallery.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/react-image-gallery/styles/css/image-gallery.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "1b7ad78d50af4bad7646",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/react-image-gallery/styles/css/image-gallery.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/react-image-gallery/styles/css/image-gallery.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/react-image-gallery/styles/css/image-gallery.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../css-loader/dist/runtime/api.js",
+                  "loc": "2:34-84"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/react-image-gallery/styles/css/image-gallery.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/react-image-gallery/styles/css/image-gallery.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 8440,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "4b1c8dd63ec0d1842671",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "08c5e4d806127f09d4f2",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-Light.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-Light.woff2",
+              "index": 11,
+              "index2": 10,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-Light.woff2",
+                  "loc": "12:36-81"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "1ebe34f74eaa3d628729",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-FD-Medium.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-FD-Medium.woff2",
+              "index": 5,
+              "index2": 4,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-FD-Medium.woff2",
+                  "loc": "6:36-85"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "25ba78b71dd2c38a278d",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-Thin.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-Thin.woff2",
+              "index": 12,
+              "index2": 11,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-Thin.woff2",
+                  "loc": "13:36-80"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "54adcf233331ac40e107",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-Black.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-Black.woff2",
+              "index": 8,
+              "index2": 7,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-Black.woff2",
+                  "loc": "9:36-81"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "54f7c871eb52365667a6",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "index": 0,
+              "index2": 12,
+              "size": 4443,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            },
+            {
+              "id": "9a1116dbea8d4c63c8dc",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/getUrl.js",
+              "name": "./node_modules/css-loader/dist/runtime/getUrl.js",
+              "index": 2,
+              "index2": 1,
+              "size": 830,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/getUrl.js",
+                  "loc": "3:38-104"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "2:34-97"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "bac538fe8616d2cd8458",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-FD-Bold.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-FD-Bold.woff2",
+              "index": 4,
+              "index2": 3,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-FD-Bold.woff2",
+                  "loc": "5:36-83"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "c379df2809761da61da5",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-Medium.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-Medium.woff2",
+              "index": 10,
+              "index2": 9,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-Medium.woff2",
+                  "loc": "11:36-82"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "deb59300d33a927c7df8",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-Bold.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-Bold.woff2",
+              "index": 9,
+              "index2": 8,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-Bold.woff2",
+                  "loc": "10:36-80"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "df751430ce68a9d4d4dd",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-FD-Light.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-FD-Light.woff2",
+              "index": 6,
+              "index2": 5,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-FD-Light.woff2",
+                  "loc": "7:36-84"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "e4af53db72c2215b2ca8",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-FD-Black.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-FD-Black.woff2",
+              "index": 3,
+              "index2": 2,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-FD-Black.woff2",
+                  "loc": "4:36-84"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "e71b0a28e30ab4b2f831",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Estedad-FD-Thin.woff2",
+              "name": "./src/Resources/fonts/woff2/Estedad-FD-Thin.woff2",
+              "index": 7,
+              "index2": 6,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "issuerId": "54f7c871eb52365667a6",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+              "issuerPath": [
+                {
+                  "id": "54f7c871eb52365667a6",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "54f7c871eb52365667a6",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontiran.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Estedad-FD-Thin.woff2",
+                  "loc": "8:36-83"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontiran.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/Resources/styles/fontiran.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 4130,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "cfe13752b1e377e1e181",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "73c94ac9335004367cad",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+              "index": 0,
+              "index2": 3,
+              "size": 718,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            },
+            {
+              "id": "9a1116dbea8d4c63c8dc",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/getUrl.js",
+              "name": "./node_modules/css-loader/dist/runtime/getUrl.js",
+              "index": 2,
+              "index2": 1,
+              "size": 830,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+              "issuerId": "73c94ac9335004367cad",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+              "issuerPath": [
+                {
+                  "id": "73c94ac9335004367cad",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "73c94ac9335004367cad",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/getUrl.js",
+                  "loc": "3:38-104"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+              "issuerId": "73c94ac9335004367cad",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+              "issuerPath": [
+                {
+                  "id": "73c94ac9335004367cad",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "73c94ac9335004367cad",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "2:34-97"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "b760e0b415c0750667e5",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Vazir-Medium-FD.woff2",
+              "name": "./src/Resources/fonts/woff2/Vazir-Medium-FD.woff2",
+              "index": 3,
+              "index2": 2,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+              "issuerId": "73c94ac9335004367cad",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+              "issuerPath": [
+                {
+                  "id": "73c94ac9335004367cad",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "73c94ac9335004367cad",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/fontvazir.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Vazir-Medium-FD.woff2",
+                  "loc": "4:36-83"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/fontvazir.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/Resources/styles/fontvazir.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 4134,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "c35c24c114558e62e0e4",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "9a1116dbea8d4c63c8dc",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/getUrl.js",
+              "name": "./node_modules/css-loader/dist/runtime/getUrl.js",
+              "index": 2,
+              "index2": 1,
+              "size": 830,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+              "issuerId": "db993a366a1fc1f65bdb",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+              "issuerPath": [
+                {
+                  "id": "db993a366a1fc1f65bdb",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "db993a366a1fc1f65bdb",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/getUrl.js",
+                  "loc": "3:38-104"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+              "issuerId": "db993a366a1fc1f65bdb",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+              "issuerPath": [
+                {
+                  "id": "db993a366a1fc1f65bdb",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "db993a366a1fc1f65bdb",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "2:34-97"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "cfb94b10e7afc304f078",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/KalamehWeb_Regular.woff2",
+              "name": "./src/Resources/fonts/woff2/KalamehWeb_Regular.woff2",
+              "index": 3,
+              "index2": 2,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+              "issuerId": "db993a366a1fc1f65bdb",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+              "issuerPath": [
+                {
+                  "id": "db993a366a1fc1f65bdb",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "db993a366a1fc1f65bdb",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/KalamehWeb_Regular.woff2",
+                  "loc": "4:36-86"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "db993a366a1fc1f65bdb",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/kalameh.css",
+              "index": 0,
+              "index2": 3,
+              "size": 722,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/kalameh.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/Resources/styles/kalameh.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 13064,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "c0b93d01f0651283b8e6",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "5596e1a7e502d71a48ee",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/sanitize.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/sanitize.css",
+              "index": 0,
+              "index2": 1,
+              "size": 10547,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/sanitize.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            },
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/sanitize.css",
+              "issuerId": "5596e1a7e502d71a48ee",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/sanitize.css",
+              "issuerPath": [
+                {
+                  "id": "5596e1a7e502d71a48ee",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/sanitize.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/sanitize.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "5596e1a7e502d71a48ee",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/sanitize.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/sanitize.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/sanitize.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "2:34-97"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/sanitize.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/Resources/styles/sanitize.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 5416,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "bb0e7ca313e8b6aacd8b",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "31f89bb0f84ca1ec9fbf",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Shabnam-Medium-FD.woff2",
+              "name": "./src/Resources/fonts/woff2/Shabnam-Medium-FD.woff2",
+              "index": 6,
+              "index2": 5,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "issuerId": "9194e880102cf81ec91a",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+              "issuerPath": [
+                {
+                  "id": "9194e880102cf81ec91a",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "9194e880102cf81ec91a",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Shabnam-Medium-FD.woff2",
+                  "loc": "7:36-85"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "616ee7f997d8b7f3591e",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Shabnam-FD.woff2",
+              "name": "./src/Resources/fonts/woff2/Shabnam-FD.woff2",
+              "index": 3,
+              "index2": 2,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "issuerId": "9194e880102cf81ec91a",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+              "issuerPath": [
+                {
+                  "id": "9194e880102cf81ec91a",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "9194e880102cf81ec91a",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Shabnam-FD.woff2",
+                  "loc": "4:36-78"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "714bef95ca2e6a24cb2d",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Shabnam-Bold-FD.woff2",
+              "name": "./src/Resources/fonts/woff2/Shabnam-Bold-FD.woff2",
+              "index": 5,
+              "index2": 4,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "issuerId": "9194e880102cf81ec91a",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+              "issuerPath": [
+                {
+                  "id": "9194e880102cf81ec91a",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "9194e880102cf81ec91a",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Shabnam-Bold-FD.woff2",
+                  "loc": "6:36-83"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "9194e880102cf81ec91a",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+              "index": 0,
+              "index2": 6,
+              "size": 1809,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            },
+            {
+              "id": "9a1116dbea8d4c63c8dc",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/getUrl.js",
+              "name": "./node_modules/css-loader/dist/runtime/getUrl.js",
+              "index": 2,
+              "index2": 1,
+              "size": 830,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "issuerId": "9194e880102cf81ec91a",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+              "issuerPath": [
+                {
+                  "id": "9194e880102cf81ec91a",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "9194e880102cf81ec91a",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/getUrl.js",
+                  "loc": "3:38-104"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "ad9267f4a32434209478",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "issuerId": "9194e880102cf81ec91a",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+              "issuerPath": [
+                {
+                  "id": "9194e880102cf81ec91a",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "9194e880102cf81ec91a",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "type": "cjs require",
+                  "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "2:34-97"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            },
+            {
+              "id": "ecae9c934e8854b37d24",
+              "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/file-loader/dist/cjs.js??ref--6-0!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/fonts/woff2/Shabnam-Light-FD.woff2",
+              "name": "./src/Resources/fonts/woff2/Shabnam-Light-FD.woff2",
+              "index": 4,
+              "index2": 3,
+              "size": 65,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "issuerId": "9194e880102cf81ec91a",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+              "issuerPath": [
+                {
+                  "id": "9194e880102cf81ec91a",
+                  "identifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "9194e880102cf81ec91a",
+                  "moduleIdentifier": "/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/Resources/styles/shabnam.css",
+                  "type": "cjs require",
+                  "userRequest": "../fonts/woff2/Shabnam-Light-FD.woff2",
+                  "loc": "5:36-84"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/node_modules/css-loader/dist/cjs.js??ref--5-1!/Users/sayjeyhi/Desktop/Projects/sarbazi/danafe/src/Resources/styles/shabnam.css",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/Resources/styles/shabnam.css"
+    }
+  ],
+  "generator": "loadable-components"
+}

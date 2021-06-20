@@ -1,0 +1,1 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[15],{"93098a3d6a3c640feddf":function(a,e,_){"use strict";_.r(e);var n=_("a2037f49db6530f88dd0"),t=_.n(n),d=_("4b4bbaea56bbab73741d");e.default=function(){Object(d.a)();return t.a.createElement(t.a.Fragment,null,"Reports")}}}]);
